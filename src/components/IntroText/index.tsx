@@ -1,4 +1,4 @@
-import styles from "./IntroText.module.css";
+import styles from "./index.module.css";
 
 export default function IntroText() {
   return (

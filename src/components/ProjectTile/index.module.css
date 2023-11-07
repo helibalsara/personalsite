@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.roleType {
+  color: #878686;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.title {
+  color: #000;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 1px;
+}
+
+.subtitle {
+  color: #000;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.description {
+  color: #878686;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-top: 20px;
+}

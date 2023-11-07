@@ -1,7 +1,7 @@
-import styles from "./Navbar.module.css";
+import styles from "./index.module.css";
 import Image from "next/image";
 
-export default function Home() {
+export default function Navbar() {
   return (
     <div className={styles.outerContainer}>
       <div className={styles.container}>

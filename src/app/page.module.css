@@ -16,7 +16,10 @@
 }
 
 .introTextContainer {
-  padding: 274px 189px 0 289px;
+  padding: 274px 70px 0 70px;
+  text-wrap: balance;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .projectTilesContainer {

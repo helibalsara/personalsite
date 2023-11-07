@@ -7,7 +7,7 @@
 
 .container {
   display: flex;
-  height: 85px; /* make responsive */
+  height: 80px; /* make responsive */
   position: relative;
   flex-direction: row;
   justify-content: space-between;
@@ -23,7 +23,7 @@
 
 .linkText {
   color: #000;
-  font-size: 28px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;

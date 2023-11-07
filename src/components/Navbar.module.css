@@ -1,22 +1,30 @@
 .outerContainer {
-    position: fixed;
-    top: 54px;
-    left: 70px;
-    width: calc(100% - 140px);
+  position: fixed;
+  top: 54px;
+  left: 70px;
+  width: calc(100% - 140px);
 }
 
 .container {
-    display: flex;
-    height: 85px; /* make responsive */
-    position: relative;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  height: 85px; /* make responsive */
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .linksContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.linkText {
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }

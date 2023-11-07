@@ -16,9 +16,9 @@ export default function Home() {
 
         {/* TODO: Turn these into links */}
         <div className={styles.linksContainer}>
-          <p>projects</p>
-          <p>about</p>
-          <p>resume</p>
+          <p className={styles.linkText}>projects</p>
+          <p className={styles.linkText}>about</p>
+          <p className={styles.linkText}>resume</p>
         </div>
       </div>
     </div>

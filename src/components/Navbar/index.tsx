@@ -1,7 +1,20 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import styles from "./index.module.css";
 import Image from "next/image";
 
 export default function Navbar() {
+  const [scrollPosition, setScrollPosition] = useState<number>(0);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrollPosition(window.pageYOffset);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <div className={styles.outerContainer}>
       <div className={styles.container}>

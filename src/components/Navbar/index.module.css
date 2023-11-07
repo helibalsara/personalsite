@@ -1,5 +1,5 @@
 .outerContainer {
-  position: fixed;
+  position: absolute;
   top: 54px;
   left: 70px;
   width: calc(100% - 140px);
@@ -7,7 +7,7 @@
 
 .container {
   display: flex;
-  height: 80px; /* make responsive */
+  height: 60px; /* make responsive */
   position: relative;
   flex-direction: row;
   justify-content: space-between;

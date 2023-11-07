@@ -7,7 +7,7 @@ import projects from "./projectInfo.json";
 export default function Home() {
   return (
     <>
-      <div className={styles.gradient}>
+      <div className={styles.gradient + " " + styles.topGradient}>
         <Navbar />
         <div className={styles.introTextContainer}>
           <IntroText />
@@ -17,6 +17,11 @@ export default function Home() {
         {projects.map((properties) => (
           <ProjectTile key={properties.title} {...properties} />
         ))}
+      </div>
+
+      <div className={styles.gradient + " " + styles.bottomGradient}>
+        <h1 className={styles.getInTouch}>get in touch!</h1>
+        
       </div>
     </>
   );

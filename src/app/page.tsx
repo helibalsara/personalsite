@@ -1,8 +1,9 @@
 import styles from "./page.module.css";
-import Navbar from "../components/Navbar";
-import IntroText from "../components/IntroText";
+import Navbar from "@/components/Navbar";
+import IntroText from "@/components/IntroText";
 import ProjectTile from "@/components/ProjectTile";
 import projects from "./projectInfo.json";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -21,7 +22,9 @@ export default function Home() {
 
       <div className={styles.gradient + " " + styles.bottomGradient}>
         <h1 className={styles.getInTouch}>get in touch!</h1>
-        
+        <div className={styles.contactFormContainer}>
+          <ContactForm />
+        </div>
       </div>
     </>
   );

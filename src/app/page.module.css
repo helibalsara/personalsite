@@ -12,7 +12,8 @@
 }
 
 .bottomGradient {
-  padding: 26px 119px 205px 144px;
+  padding: 26px 250px 205px 144px;
+  width: calc(100% - 144px - 250px);
 }
 
 .introTextContainer {
@@ -35,4 +36,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: inline-block;
+}
+
+.contactFormContainer {
+  padding-top: 48px;
 }

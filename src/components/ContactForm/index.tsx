@@ -2,21 +2,28 @@
 
 import styles from "./index.module.css";
 
+interface EmailParams {
+  email: string;
+  name: string;
+  message: string;
+}
+
 export default function ContactForm() {
   return (
     <form
-      onSubmit={(e) => {
+      onSubmit={async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const target = e.target as typeof e.target & {
-          name: { value: string };
-          email: { value: string };
-          message: { value: string };
-        };
-        const name = target.name.value;
-        const email = target.email.value;
-        const message = target.message.value;
+        const form = e.target as HTMLFormElement;
+        const formData = new FormData(form);
 
-        console.log(email, message, name);
+        const data = Object.fromEntries(formData) as unknown as EmailParams;
+        await fetch("/api/email", {
+          method: "POST",
+          body: JSON.stringify(data),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
       }}
     >
       <div className={styles.container}>

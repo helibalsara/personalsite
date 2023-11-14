@@ -8,7 +8,7 @@ import ContactForm from "@/components/ContactForm";
 export default function Home() {
   return (
     <>
-      <div className={styles.gradient + " " + styles.topGradient}>
+      <div className={styles.gradient}>
         <Navbar />
         <div className={styles.introTextContainer}>
           <IntroText />
@@ -20,11 +20,8 @@ export default function Home() {
         ))}
       </div>
 
-      <div className={styles.gradient + " " + styles.bottomGradient}>
-        <h1 className={styles.getInTouch}>get in touch!</h1>
-        <div className={styles.contactFormContainer}>
-          <ContactForm />
-        </div>
+      <div className={styles.bottomBackground}>
+        <ContactForm />
       </div>
     </>
   );

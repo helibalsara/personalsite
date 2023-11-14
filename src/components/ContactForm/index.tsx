@@ -20,39 +20,41 @@ export default function ContactForm() {
       }}
     >
       <div className={styles.container}>
-        <div className={styles.leftContainer}>
-          <div className={styles.textField}>
-            <input
-              className={styles.name}
-              name="name"
-              type="text"
-              placeholder="name"
-              required
-            />
-            <div className={styles.line} />
+        <div className={styles.contentContainer}>
+          <div className={styles.leftContainer}>
+            <h1 className={styles.getInTouch}>get in touch!</h1>
+            <h1 className={styles.emailText}>hbalsara@berkeley.edu</h1>
           </div>
-          <div className={styles.textField}>
-            <input
-              className={styles.email}
-              name="email"
-              type="email"
-              placeholder="email"
-              required
-            />
-            <div className={styles.line} />
+          <div className={styles.middleContainer}>
+            <div className={styles.textField}>
+              <input
+                className={styles.nameEmail}
+                name="name"
+                type="text"
+                placeholder="name"
+                required
+              />
+            </div>
+            <div className={styles.textField}>
+              <input
+                className={styles.nameEmail}
+                name="email"
+                type="email"
+                placeholder="email"
+                required
+              />
+            </div>
           </div>
-        </div>
-        <div className={styles.rightContainer}>
           <textarea
             className={styles.message}
             name="message"
             placeholder="message"
             required
           />
-          <button className={styles.submit} type="submit">
-            submit!
-          </button>
         </div>
+        <button className={styles.submit} type="submit">
+          submit
+        </button>
       </div>
     </form>
   );

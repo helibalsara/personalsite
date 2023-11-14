@@ -5,15 +5,12 @@
     rgba(251, 251, 251, 0.2) 100%
   );
   width: 100%;
-}
-
-.topGradient {
   height: 100%;
 }
 
-.bottomGradient {
-  padding: 26px 250px 205px 144px;
-  width: calc(100% - 144px - 250px);
+.bottomBackground {
+  background: #E1E1E1;
+  padding: 81px 144px 73px 88px;
 }
 
 .introTextContainer {
@@ -27,18 +24,5 @@
   display: flex;
   flex-direction: column;
   gap: 118px;
-  padding: 76px 169px 410px 146px;
-}
-
-.getInTouch {
-  color: #000;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  display: inline-block;
-}
-
-.contactFormContainer {
-  padding-top: 48px;
+  padding: 76px 169px 140px 146px;
 }

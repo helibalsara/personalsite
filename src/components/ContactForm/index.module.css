@@ -1,56 +1,69 @@
 .line {
-    width: 100%;
-    border-top: 1px solid;
+  width: 100%;
+  border-top: 1px solid;
+}
+
+.getInTouch {
+  color: #000;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: inline-block;
+  /* margin-right: 64px; */
+}
+
+.emailText {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: inline-block;
 }
 
 /* .textField {} */
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 24px;
 }
 
 .leftContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+}
+
+.middleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
 }
 
 .rightContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: flex-end;
 }
 
-.name {
-  border: none;
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 83px;
+}
+
+.nameEmail {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #605e5e;
   outline: none;
   background: none;
-  padding: 0;
   margin: 0;
   box-sizing: border-box;
 
-  color: #000;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  font-family: var(--font-neuton);
-}
-
-.email {
-  border: none;
-  outline: none;
-  background: none;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-
-  color: #000;
-  font-size: 32px;
+  color: #605e5e;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -58,32 +71,36 @@
 }
 
 .message {
-  border-radius: 12px;
-  background: #f3f3f3;
+  border-radius: 10px;
+  background: none;
+  border: 1px solid #605e5e;
   resize: none;
-  border: none;
   outline: none;
 
-  color: #000;
-  font-size: 32px;
+  color: #605e5e;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   font-family: var(--font-neuton);
 
-  padding-left: 12px;
+  padding: 10px;
+  padding-bottom: 0;
+
+  height: 100%;
 }
 
 .submit {
-  transition: font-weight 0.3s ease;
-  border: none;
-  background: none;
-  padding: 0;
+  border-radius: 10px;
+  border: 1px solid #605e5e;
+  background: #605e5e;
+  padding: 10px;
   color: inherit;
   cursor: pointer;
+  float: right;
 
-  color: #000;
-  font-size: 32px;
+  color: #fff;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -91,5 +108,5 @@
 }
 
 .submit:hover {
-  font-weight: 700;
+  background: #000;
 }

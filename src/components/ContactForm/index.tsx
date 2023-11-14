@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import styles from "./index.module.css";
 
 interface EmailParams {
@@ -9,6 +10,8 @@ interface EmailParams {
 }
 
 export default function ContactForm() {
+  const [hasSent, setHasSent] = useState<boolean>(false);
+
   return (
     <form
       onSubmit={async (e: React.FormEvent<HTMLFormElement>) => {
@@ -24,6 +27,11 @@ export default function ContactForm() {
             "Content-Type": "application/json",
           },
         });
+
+        setHasSent(true);
+        setTimeout(() => {
+          setHasSent(false);
+        }, 1000);
       }}
     >
       <div className={styles.container}>
@@ -62,7 +70,7 @@ export default function ContactForm() {
           </div>
         </div>
         <button className={styles.submit} type="submit">
-          submit
+          {hasSent ? "sent!" : "submit"}
         </button>
       </div>
     </form>

@@ -45,12 +45,14 @@ export default function ContactForm() {
               />
             </div>
           </div>
-          <textarea
-            className={styles.message}
-            name="message"
-            placeholder="message"
-            required
-          />
+          <div className={styles.rightContainer}>
+            <textarea
+              className={styles.message}
+              name="message"
+              placeholder="message"
+              required
+            />
+          </div>
         </div>
         <button className={styles.submit} type="submit">
           submit

@@ -7,6 +7,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
+  const [showDropdown, setShowDropdown] = useState<boolean>(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -36,10 +37,53 @@ export default function Navbar() {
 
         {/* TODO: Turn these into links */}
         <div className={styles.linksContainer}>
-          <Link className={styles.linkText} href="/projects/smartnotes">
-            projects
-          </Link>
-          <Link className={styles.linkText} href="/">
+          <div className={styles.dropdown}>
+            <button
+              className={styles.dropdownButton}
+              onClick={() =>
+                setShowDropdown((prevState: boolean) => !prevState)
+              }
+            >
+              <div className={styles.dropdownTextIcon}>
+                <p className={styles.linkText}>projects</p>
+                <Image
+                  src="/dropdownIcon.svg"
+                  alt=""
+                  width={0}
+                  height={0}
+                  style={{
+                    height: "100%",
+                    width: "auto",
+                    transform: showDropdown ? "rotate(180deg)" : "rotate(0deg)",
+                  }}
+                />
+              </div>
+            </button>
+            {showDropdown && (
+              <div className={styles.dropdownContent}>
+                <div />
+                <Link
+                  className={styles.dropdownOptionText}
+                  href="/projects/pinterest"
+                >
+                  Pinterest
+                </Link>
+                <Link
+                  className={styles.dropdownOptionText}
+                  href="/projects/tours-by-tenants"
+                >
+                  Tours by Tenants
+                </Link>
+                <Link
+                  className={styles.dropdownOptionText}
+                  href="/projects/smartnotes"
+                >
+                  SmartNotes
+                </Link>
+              </div>
+            )}
+          </div>
+          <Link className={styles.linkText} href="/about">
             about
           </Link>
           <Link className={styles.linkText} href="/Heli_Balsara_resume.pdf">

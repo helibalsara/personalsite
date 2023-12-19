@@ -19,20 +19,32 @@ export default function Navbar() {
   return (
     <div className={styles.outerContainer}>
       <div className={styles.container}>
-        <Image
-          src="/logo.svg"
-          alt="HB Logo"
-          className={styles.vercelLogo}
-          width={0}
-          height={0}
-          style={{ height: "100%", width: "auto" }} // optional
-        />
+        <Link
+          className={styles.linkText}
+          href="/"
+          style={{ height: "100%", width: "auto" }}
+        >
+          <Image
+            src="/logo.svg"
+            alt="HB Logo"
+            className={styles.vercelLogo}
+            width={0}
+            height={0}
+            style={{ height: "100%", width: "auto" }} // optional
+          />
+        </Link>
 
         {/* TODO: Turn these into links */}
         <div className={styles.linksContainer}>
-          <Link className={styles.linkText} href="/smart-notes">projects</Link>
-          <Link className={styles.linkText} href="/">about</Link>
-          <Link className={styles.linkText} href="/Heli_Balsara_resume.pdf">resume</Link>
+          <Link className={styles.linkText} href="/projects/smartnotes">
+            projects
+          </Link>
+          <Link className={styles.linkText} href="/">
+            about
+          </Link>
+          <Link className={styles.linkText} href="/Heli_Balsara_resume.pdf">
+            resume
+          </Link>
         </div>
       </div>
     </div>

@@ -27,4 +27,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  font-family: var(--font-manrope);
+  text-decoration: none;
 }

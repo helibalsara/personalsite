@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import styles from "./index.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
@@ -29,9 +30,9 @@ export default function Navbar() {
 
         {/* TODO: Turn these into links */}
         <div className={styles.linksContainer}>
-          <p className={styles.linkText}>projects</p>
-          <p className={styles.linkText}>about</p>
-          <p className={styles.linkText}>resume</p>
+          <Link className={styles.linkText} href="/smart-notes">projects</Link>
+          <Link className={styles.linkText} href="/">about</Link>
+          <Link className={styles.linkText} href="/Heli_Balsara_resume.pdf">resume</Link>
         </div>
       </div>
     </div>

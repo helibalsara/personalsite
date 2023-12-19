@@ -2,7 +2,7 @@ import styles from "./page.module.css";
 import Navbar from "@/components/Navbar";
 import IntroText from "@/components/IntroText";
 import ProjectTile from "@/components/ProjectTile";
-import projects from "./projectInfo.json";
+import projects from "../projectInfo.json";
 import ContactForm from "@/components/ContactForm";
 
 export default function Home() {

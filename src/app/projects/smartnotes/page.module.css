@@ -8,7 +8,6 @@
 .imageContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   width: 100%;
   gap: 64px;
 }
@@ -72,8 +71,21 @@
   padding-right: 400px;
 }
 
-.imageContainer {
+.graphicContainer {
   width: 100%;
   height: 100%;
   padding-left: 48px;
+}
+
+.littleSectionContainer {
+  padding-left: 80px;
+  padding-right: 48px;
+  padding-top: 108px;
+  gap: 52px;
+}
+
+.topLittleSection {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 }

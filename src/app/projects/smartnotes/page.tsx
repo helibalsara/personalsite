@@ -58,22 +58,51 @@ export default function SmartNotes() {
       <div className={styles.greySection}>
         <div className={styles.insideSection}>
           <h1>Research Methods</h1>
-          <div className={styles.imageContainer}>
+          <div className={styles.graphicContainer}>
             <Image
               src="/smartnotesGraphic.svg"
               width={0}
               height={0}
-              style={{ height: "100%", width: "auto" }}
+              style={{ height: "auto", width: "100%" }}
               alt=""
             />
           </div>
-          <LittleSection title="Survey">
-            <p>
-              After conducting secondary research online and finding students
-              were less engaged and motivated in class, I gathered quantitative
-              research focused on the students at Berkeley through a survey.
-            </p>
-          </LittleSection>
+          <div className={styles.littleSectionContainer}>
+            <LittleSection title="Survey">
+              <div className={styles.topLittleSection}>
+                <p>
+                  After conducting secondary research online and finding
+                  students were less engaged and motivated in class, I gathered
+                  quantitative research focused on the students at Berkeley
+                  through a survey.
+                </p>
+                <Image
+                  src="/smartnotesGraphic2.svg"
+                  width={0}
+                  height={0}
+                  style={{ height: "auto", width: "100%" }}
+                  alt=""
+                />
+              </div>
+            </LittleSection>
+            <LittleSection title="User Interviews">
+              <div className={styles.topLittleSection}>
+                <p>
+                  Why was there was such a large difference in engagement levels
+                  inside and outside of class? I conducted 4 30-minute
+                  interviews with students, one from each graduating class and
+                  found 3 main pain points.
+                </p>
+                <Image
+                  src="/smartnotesGraphic2.svg"
+                  width={0}
+                  height={0}
+                  style={{ height: "auto", width: "100%" }}
+                  alt=""
+                />
+              </div>
+            </LittleSection>
+          </div>
         </div>
       </div>
     </div>

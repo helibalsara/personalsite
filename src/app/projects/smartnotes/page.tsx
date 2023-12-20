@@ -1,12 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "@/components/Navbar";
+import LittleSection from "@/components/LittleSection";
 
 export default function SmartNotes() {
   return (
-    <>
+    <div>
       <Navbar />
-      <div className={styles.container}>
+      <div className={styles.topContainer}>
         <div className={styles.imageContainer}>
           <Image
             src="/smartnotes.svg"
@@ -35,7 +36,46 @@ export default function SmartNotes() {
             </div>
           </div>
         </div>
+        <div className={styles.horizontalLine} />
+        <div className={styles.problemSection}>
+          <h1>The Problem</h1>
+          <p>
+            The college learning experience is a vast, end-to-end process both
+            inside and outside the classroom. There&apos;s a myriad of ways we
+            learn and engage with course content. However, many find the{" "}
+            <strong>current learning process disengaging</strong> and{" "}
+            <strong>unaccommodating</strong> to each individual student’s needs.
+          </p>
+        </div>
+        <div className={styles.questionSection}>
+          <p>Ultimately, our question is...</p>
+          <p className={styles.bigP}>
+            <strong>HMW</strong> improve a college student’s learning
+            experience?
+          </p>
+        </div>
       </div>
-    </>
+      <div className={styles.greySection}>
+        <div className={styles.insideSection}>
+          <h1>Research Methods</h1>
+          <div className={styles.imageContainer}>
+            <Image
+              src="/smartnotesGraphic.svg"
+              width={0}
+              height={0}
+              style={{ height: "100%", width: "auto" }}
+              alt=""
+            />
+          </div>
+          <LittleSection title="Survey">
+            <p>
+              After conducting secondary research online and finding students
+              were less engaged and motivated in class, I gathered quantitative
+              research focused on the students at Berkeley through a survey.
+            </p>
+          </LittleSection>
+        </div>
+      </div>
+    </div>
   );
 }

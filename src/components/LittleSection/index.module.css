@@ -1,0 +1,17 @@
+.title {
+  color: #000;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 96px;
+}
+
+.childrenContainer {
+    padding-top: 4px;
+}

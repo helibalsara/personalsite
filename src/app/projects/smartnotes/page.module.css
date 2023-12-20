@@ -1,6 +1,5 @@
-.container {
-  top: 153px;
-  position: relative;
+.topContainer {
+  padding-top: 153px;
   height: 100%;
   padding-left: 144px;
   padding-right: 144px;
@@ -26,6 +25,55 @@
   gap: 8px;
 }
 
+.horizontalLine {
+  height: 1px;
+  width: 100%;
+  background-color: #000;
+  margin-top: 100px;
+  margin-bottom: 48px;
+}
+
 .noBold {
   font-weight: 400;
+}
+
+.problemSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.questionSection {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.bigP {
+  font-size: 32px;
+}
+
+.greySection {
+  background: #EDEDED;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 48px;
+  padding-left: 144px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  gap: 16px;
+}
+
+.insideSection {
+  border-left: 2px solid #000;
+  padding-left: 16px;
+  height: 100%;
+  width: 100%;
+  padding-right: 400px;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  padding-left: 48px;
 }

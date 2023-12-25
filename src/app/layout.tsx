@@ -4,6 +4,20 @@ import { Manrope, Neuton } from "next/font/google";
 export const metadata = {
   title: "Heli Balsara",
   description: "Heli's portfolio",
+  icons: [
+    {
+      rel: 'icon',
+      type: 'image/x-icon',
+      url: '/favicon.ico',
+      media: '(prefers-color-scheme: light)',
+    },
+    {
+      rel: 'icon',
+      type: 'image/x-icon',
+      url: '/favicon-dark.ico',
+      media: '(prefers-color-scheme: dark)',
+    },
+  ],
 };
 
 const manrope = Manrope({

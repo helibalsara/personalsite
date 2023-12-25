@@ -8,7 +8,7 @@ export const metadata = {
     {
       rel: 'icon',
       type: 'image/x-icon',
-      url: '/favicon.ico',
+      url: '/favicon-light.ico',
       media: '(prefers-color-scheme: light)',
     },
     {

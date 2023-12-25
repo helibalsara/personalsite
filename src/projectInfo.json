@@ -4,20 +4,31 @@
     "title": "Pinterest",
     "subtitle": "Ad Creation Process",
     "description": "Improving the 3-step ad creation process for new small-medium businesses promoting their products.",
-    "image": "/pinterest.svg"
+    "image": "/pinterest.svg",
+    "route": "/pinterest"
   },
   {
     "roleType": "Product Design/Mobile Design/UI",
     "title": "Tours by Tenants",
     "subtitle": "Housing Search",
     "description": "TT makes searching for your dream home simple and time-efficient by providing easy access to tours of the property so you don’t have to.",
-    "image": "/tt.svg"
+    "image": "/tt.svg",
+    "route": "/tours-by-tenants"
   },
   {
     "roleType": "UX Research/Product Design",
     "title": "SmartNotes",
     "subtitle": "AI Pen Tool",
     "description": "Improving the learning experience for college students through an AI note-taking pen",
-    "image": "/smartnotes.svg"
+    "image": "/smartnotes.svg",
+    "route": "/smartnotes"
+  },
+  {
+    "roleType": "UX RESEARCH/ PHYSICAL PRODUCT DESIGN",
+    "title": "InclusivePlay",
+    "subtitle": "Card Reader",
+    "description": "Creating a party card reader for the visually impaired to foster social inclusivity.",
+    "image": "/inclusiveplay.svg",
+    "route": "/inclusiveplay"
   }
 ]

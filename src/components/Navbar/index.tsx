@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import styles from "./index.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import projects from "../../projectInfo.json";
 
 export default function Navbar() {
   const [scrollPosition, setScrollPosition] = useState<number>(0);
@@ -62,24 +63,17 @@ export default function Navbar() {
             {showDropdown && (
               <div className={styles.dropdownContent}>
                 <div />
-                <Link
-                  className={styles.dropdownOptionText}
-                  href="/projects/pinterest"
-                >
-                  Pinterest
-                </Link>
-                <Link
-                  className={styles.dropdownOptionText}
-                  href="/projects/tours-by-tenants"
-                >
-                  Tours by Tenants
-                </Link>
-                <Link
-                  className={styles.dropdownOptionText}
-                  href="/projects/smartnotes"
-                >
-                  SmartNotes
-                </Link>
+                {projects.map(
+                  ({ title, route }: { title: string; route: string }) => (
+                    <Link
+                      className={styles.dropdownOptionText}
+                      href={"/projects" + route}
+                      key={title}
+                    >
+                      {title}
+                    </Link>
+                  )
+                )}
               </div>
             )}
           </div>

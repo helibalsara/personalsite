@@ -2,7 +2,7 @@ import styles from "./index.module.css";
 
 interface Props {
     title: string;
-    children: any;
+    children?: any;
 }
 
 export default function LittleSection({

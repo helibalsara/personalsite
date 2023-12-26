@@ -19,10 +19,7 @@ export default function Home() {
           <ProjectTile key={properties.title} {...properties} />
         ))}
       </div>
-
-      <div className={styles.bottomBackground}>
-        <ContactForm />
-      </div>
+      <ContactForm />
     </>
   );
 }

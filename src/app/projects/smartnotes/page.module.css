@@ -51,26 +51,6 @@
   font-size: 32px;
 }
 
-.greySection {
-  background: #EDEDED;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding-top: 48px;
-  padding-left: 144px;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  gap: 16px;
-}
-
-.insideSection {
-  border-left: 2px solid #000;
-  padding-left: 16px;
-  height: 100%;
-  width: 100%;
-  padding-right: 400px;
-}
-
 .graphicContainer {
   width: 100%;
   height: 100%;
@@ -78,6 +58,8 @@
 }
 
 .littleSectionContainer {
+  display: flex;
+  flex-direction: column;
   padding-left: 80px;
   padding-right: 48px;
   padding-top: 108px;
@@ -87,5 +69,65 @@
 .topLittleSection {
   display: flex;
   flex-direction: column;
+  gap: 36px;
+}
+
+.painPointsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+}
+
+.painPoint {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.buffer {
+  height: 140px;
+}
+
+.affinityContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.figjamAndText {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.figTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.figTitle {
+  color: #28536b;
+  font-weight: 700;
+}
+
+.rightAlignText {
+  max-width: 60%;
+}
+
+.rightAlignDiv {
+  text-align: right;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.arrowAndText {
+  display: flex;
+  flex-direction: row;
   gap: 36px;
 }

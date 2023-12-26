@@ -360,7 +360,7 @@ export default function SmartNotes() {
                 src="/smartnotes/voiceSearch.svg"
                 width={0}
                 height={0}
-                style={{ height: "auto", width: "auto", paddingLeft: "128px" }}
+                style={{ height: "auto", width: "auto" }}
                 alt="voiceSearch"
               />
               <div className={styles.addressTextAndCircle}>
@@ -416,7 +416,7 @@ export default function SmartNotes() {
           <LittleSection title="User Feedback">
             <p>
               Users enjoyed how it was a compact and usable everyday solution.
-              They thought the summaries would be usefulness in supplementing
+              They thought the summaries would be useful in supplementing
               lecture content. The varying levels of synthesis could help
               “pinpoint what I need to hear while studying.” One user expressed
               that they were a visual learner and hearing the summary would be

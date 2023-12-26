@@ -60,7 +60,7 @@ export default function SmartNotes() {
       <BigSection title="Research Methods" color="grey" topBorder>
         <div className={styles.graphicContainer}>
           <Image
-            src="/smartnotesGraphic.svg"
+            src="/smartnotes/smartnotesGraphic.svg"
             width={0}
             height={0}
             style={{ height: "auto", width: "100%" }}
@@ -77,7 +77,7 @@ export default function SmartNotes() {
                 through a survey.
               </p>
               <Image
-                src="/smartnotesGraphic2.svg"
+                src="/smartnotes/smartnotesGraphic2.svg"
                 width={0}
                 height={0}
                 style={{ height: "auto", width: "100%" }}
@@ -97,7 +97,7 @@ export default function SmartNotes() {
               <div className={styles.painPointsContainer}>
                 <div className={styles.painPoint}>
                   <Image
-                    src="/checkboxesIcon.svg"
+                    src="/smartnotes/checkboxesIcon.svg"
                     width={0}
                     height={0}
                     style={{ height: "30px", width: "auto" }}
@@ -110,7 +110,7 @@ export default function SmartNotes() {
                 </div>
                 <div className={styles.painPoint}>
                   <Image
-                    src="/checkboxesIcon.svg"
+                    src="/smartnotes/puzzledIcon.svg"
                     width={0}
                     height={0}
                     style={{ height: "30px", width: "auto" }}
@@ -123,7 +123,7 @@ export default function SmartNotes() {
                 </div>
                 <div className={styles.painPoint}>
                   <Image
-                    src="/expiredIcon.svg"
+                    src="/smartnotes/expiredIcon.svg"
                     width={0}
                     height={0}
                     style={{ height: "30px", width: "auto" }}
@@ -138,7 +138,6 @@ export default function SmartNotes() {
               </div>
             </div>
           </LittleSection>
-          <div className={styles.buffer} />
         </div>
       </BigSection>
       <BigSection title="Synthesis" color="white">
@@ -169,7 +168,7 @@ export default function SmartNotes() {
                   </div>
                 </div>
                 <Image
-                  src="/affinityMap.png"
+                  src="/smartnotes/affinityMap.png"
                   width={515.606}
                   height={489}
                   alt="affinity map"
@@ -179,16 +178,16 @@ export default function SmartNotes() {
           </LittleSection>
           <LittleSection title="Persona">
             <Image
-              src="/persona.png"
+              src="/smartnotes/persona.png"
               width={756}
               height={425.25}
               style={{ width: "100%", height: "auto" }}
               alt="persona map"
             />
           </LittleSection>
-          <LittleSection title="Persona">
+          <LittleSection title="User Journey">
             <Image
-              src="/journey.png"
+              src="/smartnotes/journey.png"
               width={756}
               height={603.056}
               style={{ width: "100%", height: "auto" }}
@@ -206,9 +205,241 @@ export default function SmartNotes() {
         </div>
       </BigSection>
       <BigSection title="Redefining the HMW" color="white">
-        <div className={styles.arrowsAndText}>
-          <p>HMW improve a college student’s learning experience?</p>
-          
+        <div className={styles.redefiningContainer}>
+          <div className={styles.arrowAndText}>
+            <p>HMW improve a college student’s learning experience?</p>
+            <Image
+              src="/smartnotes/arrow.svg"
+              width={0}
+              height={0}
+              style={{ height: "auto", width: "auto" }}
+              alt="arrow"
+            />
+            <p>
+              <strong>
+                HMW improve a college student’s focus in class to aid
+                understanding course content?
+              </strong>
+            </p>
+          </div>
+          <div className={styles.whyContainer}>
+            <div className={styles.whyAndText}>
+              <div className={styles.iconAndWhy}>
+                <div className={styles.circleWithOne}>
+                  <h6>1</h6>
+                </div>
+                <p className={styles.tealText}>Why focus in classrooms?</p>
+              </div>
+              <p>
+                Many students struggle with maintaining concentration during
+                lectures and preparing for exams. This often results in a sense
+                of being pressed for time while understanding course content
+                effectively. According to my survey, a significant{" "}
+                <strong>66.7%</strong> of respondents said they{" "}
+                <strong>disagreed to staying engaged during class</strong>.
+              </p>
+            </div>
+            <div className={styles.whyAndText}>
+              <div className={styles.iconAndWhy}>
+                <div className={styles.circleWithOne}>
+                  <h6>2</h6>
+                </div>
+                <p className={styles.tealText}>Why aid understanding?</p>
+              </div>
+              <p>
+                Struggling to comprehend course material often causes students
+                to feel anxious about their exams. This lack of understanding
+                leads to a <strong>decrease in focus</strong>, creating a
+                <strong>detrimental cycle</strong> where the inability to
+                concentrate further impedes their understanding of the content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </BigSection>
+      <BigSection title="Ideation" color="white">
+        <div className={styles.littleSectionContainer}>
+          <LittleSection title="Crazy 8's">
+            <div className={styles.crazy8sContainer}>
+              <p>
+                With all of my research synthesised into actionable insights, it
+                was finally time to explore different solutions. I needed to
+                hone in a solution that would help students maintain{" "}
+                <strong>focus</strong> in the classroom and{" "}
+                <strong>understand course content</strong> in a timely manner to
+                get rid of that detrimental cycle of losing concentration.
+              </p>
+              <Image
+                src="/smartnotes/crazy8s.png"
+                width={753}
+                height={391.56}
+                style={{ width: "100%", height: "auto" }}
+                alt="crazy8s"
+              />
+            </div>
+          </LittleSection>
+          <LittleSection title="Effort/ Impact Matrix">
+            <div className={styles.effortContainer}>
+              <p>
+                The effort refers to the effort required to implement the
+                solution in terms of resources of time, money, and technological
+                feasibility. The impact is the ability of the product to meet
+                all user needs outlined through research and synthesis.
+              </p>
+              <Image
+                src="/smartnotes/effort.png"
+                width={752.81}
+                height={616.511}
+                style={{ width: "100%", height: "auto" }}
+                alt="effort"
+              />
+              <div className={styles.rightAlignDiv}>
+                <p className={styles.rightAlignText}>
+                  The blue sticky notes are solutions I decided to flesh out
+                  further by building a pros/cons analysis as they were on the
+                  higher side of the impact scale. After mapping out the pros
+                  and cons, I decided to go with my <strong>SmartNotes</strong>{" "}
+                  concept.
+                </p>
+              </div>
+            </div>
+          </LittleSection>
+        </div>
+      </BigSection>
+      <BigSection
+        title="So... how will SmartNotes work?"
+        color="white"
+        extendLineBottom
+        noBorderBottom
+      >
+        <div className={styles.littleSectionContainer}>
+          <LittleSection title="Initial Sketches & Mid-Fi">
+            <div className={styles.sketchesContainer}>
+              <Image
+                src="/smartnotes/lowfi.png"
+                width={471}
+                height={322}
+                style={{ height: "100%", width: "auto" }}
+                alt="arrow"
+              />
+              <Image
+                src="/smartnotes/midfi.svg"
+                width={0}
+                height={0}
+                style={{ height: "auto", width: "auto" }}
+                alt="midfi"
+              />
+            </div>
+          </LittleSection>
+        </div>
+      </BigSection>
+      <BigSection color="grey" extendLineTop>
+        <div className={styles.painContainer}>
+          <h2 className={styles.addressPain}>
+            How does it address user pain points?
+          </h2>
+          <div className={styles.addressColumnsContainer}>
+            <div className={styles.addressColumn}>
+              <div className={styles.addressTextAndCircle}>
+                <div className={styles.circleWithOne}>1</div>
+                <div>
+                  <h3 className={styles.addressText}>
+                    Lack of focus during class time
+                  </h3>
+                  <p>
+                    SmartNotes gently vibrates when it detects the user has lost
+                    focus,{" "}
+                    <strong>
+                      shift their attention and focus back into the class
+                    </strong>
+                    .
+                  </p>
+                </div>
+              </div>
+              <Image
+                src="/smartnotes/voiceSearch.svg"
+                width={0}
+                height={0}
+                style={{ height: "auto", width: "auto", paddingLeft: "128px" }}
+                alt="voiceSearch"
+              />
+              <div className={styles.addressTextAndCircle}>
+                <div className={styles.circleWithOne}>3</div>
+                <div>
+                  <h3 className={styles.addressText}>
+                    Time pressure to understand content
+                  </h3>
+                  <p>
+                    With the reminders and summaries, students can{" "}
+                    <strong>spend less time</strong> going back to rewatch
+                    lecture and refer back to readings.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.addressColumn}>
+              <Image
+                src="/smartnotes/studyTogether.svg"
+                width={0}
+                height={0}
+                style={{ height: "auto", width: "auto" }}
+                alt="studyTogether"
+              />
+              <div className={styles.addressTextAndCircle}>
+                <div className={styles.circleWithOne}>2</div>
+                <div>
+                  <h3 className={styles.addressText}>
+                    Difficulty understanding course content
+                  </h3>
+                  <p>
+                    SmartNotes provides{" "}
+                    <strong>supplemental digestible summaries</strong> of the
+                    lecture which can be as{" "}
+                    <strong>broad or as detailed as needed</strong>. This can be
+                    personalised to the students’ needs.
+                  </p>
+                </div>
+              </div>
+              <Image
+                src="/smartnotes/savingTime.svg"
+                width={0}
+                height={0}
+                style={{ height: "auto", width: "auto" }}
+                alt="savingTime"
+              />
+            </div>
+          </div>
+        </div>
+      </BigSection>
+      <BigSection color="white" title="Reflection">
+        <div className={styles.littleSectionContainer}>
+          <LittleSection title="User Feedback">
+            <p>
+              Users enjoyed how it was a compact and usable everyday solution.
+              They thought the summaries would be usefulness in supplementing
+              lecture content. The varying levels of synthesis could help
+              “pinpoint what I need to hear while studying.” One user expressed
+              that they were a visual learner and hearing the summary would be
+              difficult to understand, which is something I would explore
+              further with this project.
+            </p>
+            <div className={styles.reflectionContainer}>
+              <p>
+                Having such a broad HMW statement was daunting at first, but I
+                realized the importance of strong user research to narrow the
+                scope. I wish I had established goals for my user research
+                before diving deep into it and had spent more time developing a
+                cleaner design.
+              </p>
+              <Image
+                src="/smartnotes/reflection.svg"
+                width={0}
+                height={0}
+                style={{ height: "auto", width: "auto" }}
+                alt="reflection"
+              />
+            </div>
+          </LittleSection>
         </div>
       </BigSection>
       <ContactForm />

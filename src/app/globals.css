@@ -8,9 +8,18 @@ html, body {
 p {
     font-family: var(--font-manrope);
     margin: 0;
+    font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-neuton);
     margin: 0;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 40px;
 }

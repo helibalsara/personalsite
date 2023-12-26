@@ -2,11 +2,17 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding-top: 48px;
   padding-left: 144px;
   border-bottom: 1px solid #000;
   gap: 16px;
+}
+
+.shortenLineBottom {
   padding-bottom: 48px;
+}
+
+.shortenLineTop {
+  padding-top: 48px;
 }
 
 .greySection {
@@ -14,8 +20,6 @@
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding-top: 48px;
-  padding-bottom: 48px;
   padding-left: 144px;
   border-bottom: 1px solid #000;
   gap: 16px;
@@ -30,5 +34,9 @@
 }
 
 #top {
-    border-top: 1px solid #000;
+  border-top: 1px solid #000;
+}
+
+#noBorderBottom {
+  border-bottom: none;
 }

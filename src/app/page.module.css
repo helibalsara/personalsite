@@ -14,10 +14,14 @@
 }
 
 .introTextContainer {
-  padding: 274px 70px 0 70px;
   text-wrap: balance;
   margin: 0 auto;
   max-width: 800px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .projectTilesContainer {

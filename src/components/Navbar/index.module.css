@@ -52,6 +52,10 @@
   gap: 16px;
 }
 
+.white {
+  background-color: white;
+}
+
 .dropdownTextIcon {
   display: flex;
   flex-direction: row;

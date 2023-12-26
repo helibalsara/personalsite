@@ -5,18 +5,12 @@ import styles from "./index.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import projects from "../../projectInfo.json";
+import { usePathname } from 'next/navigation'
 
 export default function Navbar() {
-  const [scrollPosition, setScrollPosition] = useState<number>(0);
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
 
-  useEffect(() => {
-    const onScroll = () => {
-      setScrollPosition(window.pageYOffset);
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  const currentUrl = usePathname();
 
   return (
     <div className={styles.outerContainer}>
@@ -61,7 +55,7 @@ export default function Navbar() {
               </div>
             </button>
             {showDropdown && (
-              <div className={styles.dropdownContent}>
+              <div className={`${styles.dropdownContent} ${currentUrl.startsWith("/projects") && styles.white}`}>
                 <div />
                 {projects.map(
                   ({ title, route }: { title: string; route: string }) => (

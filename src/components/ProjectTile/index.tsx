@@ -22,7 +22,13 @@ export default function ProjectTile({
   return (
     <Link href={"/projects" + route} className={styles.link}>
       <div className={styles.container}>
-        <Image src={image} alt={title} width={576} height={337} />
+        <Image
+          src={image}
+          alt={title}
+          width={576}
+          height={337}
+          className={styles.image}
+        />
         <div className={styles.textContainer}>
           <p className={styles.roleType}>{roleType}</p>
           <h1 className={styles.title}>{title}</h1>

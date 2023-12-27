@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import projects from "../../projectInfo.json";
-import { usePathname } from 'next/navigation'
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
@@ -35,6 +35,7 @@ export default function Navbar() {
           <div className={styles.dropdown}>
             <button
               className={styles.dropdownButton}
+              id={styles.projects}
               onClick={() =>
                 setShowDropdown((prevState: boolean) => !prevState)
               }
@@ -55,7 +56,11 @@ export default function Navbar() {
               </div>
             </button>
             {showDropdown && (
-              <div className={`${styles.dropdownContent} ${currentUrl.startsWith("/projects") && styles.white}`}>
+              <div
+                className={`${styles.dropdownContent} ${
+                  currentUrl.startsWith("/projects") && styles.white
+                }`}
+              >
                 <div />
                 {projects.map(
                   ({ title, route }: { title: string; route: string }) => (

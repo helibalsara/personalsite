@@ -31,6 +31,10 @@
   text-decoration: none;
 }
 
+.linkText:hover {
+  color: #888888;
+}
+
 .dropdownButton {
   appearance: none;
   border: none;
@@ -42,6 +46,11 @@
 
 #projects {
   padding-left: 12px;
+}
+
+#projects:hover {
+  padding-left: 12px;
+  color: #000;
 }
 
 .dropdown {
@@ -76,4 +85,8 @@
   font-weight: 400;
   line-height: 20px;
   text-decoration: none;
+}
+
+.dropdownOptionText:hover {
+  color: #888888;
 }

@@ -35,13 +35,14 @@ export default function Navbar() {
           <div className={styles.dropdown}>
             <button
               className={styles.dropdownButton}
-              id={styles.projects}
               onClick={() =>
                 setShowDropdown((prevState: boolean) => !prevState)
               }
             >
               <div className={styles.dropdownTextIcon}>
-                <p className={styles.linkText}>projects</p>
+                <p className={styles.linkText} id={styles.projects}>
+                  projects
+                </p>
                 <Image
                   src="/dropdownIcon.svg"
                   alt=""

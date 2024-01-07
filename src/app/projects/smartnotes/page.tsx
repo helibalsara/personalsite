@@ -7,7 +7,7 @@ import BigSection from "@/components/BigSection";
 
 export default function SmartNotes() {
   return (
-    <div>
+    <>
       <Navbar />
       <div className={styles.topContainer}>
         <div className={styles.imageContainer}>
@@ -17,6 +17,7 @@ export default function SmartNotes() {
             height={0}
             style={{ height: "100%", width: "auto" }}
             alt="smartnotes"
+            priority
           />
           <div className={styles.textContainer}>
             <h3 className={styles.noBold}>
@@ -443,6 +444,6 @@ export default function SmartNotes() {
         </div>
       </BigSection>
       <ContactForm />
-    </div>
+    </>
   );
 }

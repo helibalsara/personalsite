@@ -24,5 +24,6 @@
 }
 
 .childrenContainer {
-    padding-top: 4px;
+  padding-top: 4px;
+  width: 100%;
 }

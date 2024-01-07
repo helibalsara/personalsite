@@ -1,0 +1,37 @@
+.title {
+  color: #000;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+
+.afterAndText {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding-left: 48px;
+}
+
+.featuresContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  justify-content: center;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

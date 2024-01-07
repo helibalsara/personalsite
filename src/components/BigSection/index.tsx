@@ -2,12 +2,13 @@ import styles from "./index.module.css";
 
 interface Props {
   title?: string;
-  color: "grey" | "white";
+  color: "grey" | "white" | string;
   children?: any;
   topBorder?: boolean;
   extendLineBottom?: boolean;
   extendLineTop?: boolean;
   noBorderBottom?: boolean;
+  noLine?: boolean;
 }
 
 export default function BigSection({
@@ -18,6 +19,7 @@ export default function BigSection({
   extendLineBottom,
   extendLineTop,
   noBorderBottom,
+  noLine,
 }: Props) {
   return (
     <div
@@ -26,9 +28,10 @@ export default function BigSection({
         (!extendLineBottom ? " " + styles.shortenLineBottom : "") +
         (!extendLineTop ? " " + styles.shortenLineTop : "")
       }
+      style={color !== "grey" && color !== "white" ? { background: color } : {}}
       id={topBorder ? styles.top : noBorderBottom ? styles.noBorderBottom : ""}
     >
-      <div className={styles.insideSection}>
+      <div className={styles.insideSection} id={noLine ? styles.noLine : ""}>
         {title && <h1>{title}</h1>}
         {children}
       </div>

@@ -7,7 +7,11 @@ import Link from "next/link";
 import projects from "../../projectInfo.json";
 import { usePathname } from "next/navigation";
 
-export default function Navbar() {
+interface Props {
+  darkTheme: boolean;
+}
+
+export default function Navbar({ darkTheme }: Props) {
   const [showDropdown, setShowDropdown] = useState<boolean>(false);
 
   const currentUrl = usePathname();
@@ -21,7 +25,7 @@ export default function Navbar() {
           style={{ height: "100%", width: "auto" }}
         >
           <Image
-            src="/logo.svg"
+            src={darkTheme ? "/logoLight.svg" : "/logo.svg"}
             alt="HB Logo"
             className={styles.vercelLogo}
             width={0}
@@ -40,11 +44,18 @@ export default function Navbar() {
               }
             >
               <div className={styles.dropdownTextIcon}>
-                <p className={styles.linkText} id={styles.projects}>
+                <p
+                  className={
+                    styles.linkText + " " + (darkTheme && styles.light)
+                  }
+                  id={styles.projects}
+                >
                   projects
                 </p>
                 <Image
-                  src="/dropdownIcon.svg"
+                  src={
+                    darkTheme ? "/dropdownIconLight.svg" : "/dropdownIcon.svg"
+                  }
                   alt=""
                   width={0}
                   height={0}
@@ -66,7 +77,11 @@ export default function Navbar() {
                 {projects.map(
                   ({ title, route }: { title: string; route: string }) => (
                     <Link
-                      className={styles.dropdownOptionText}
+                      className={
+                        styles.dropdownOptionText +
+                        " " +
+                        (darkTheme && styles.light)
+                      }
                       href={"/projects" + route}
                       key={title}
                     >
@@ -77,10 +92,16 @@ export default function Navbar() {
               </div>
             )}
           </div>
-          <Link className={styles.linkText} href="/about">
+          <Link
+            className={styles.linkText + " " + (darkTheme && styles.light)}
+            href="/about"
+          >
             about
           </Link>
-          <Link className={styles.linkText} href="/Heli_Balsara_resume.pdf">
+          <Link
+            className={styles.linkText + " " + (darkTheme && styles.light)}
+            href="/Heli_Balsara_resume.pdf"
+          >
             resume
           </Link>
         </div>

@@ -90,3 +90,7 @@
 .dropdownOptionText:hover {
   color: #888888;
 }
+
+.light {
+  color: #fff;
+}

@@ -204,15 +204,73 @@ export default function Pinterest() {
           <FlowChart style={{ flexShrink: 0 }} />
         </div>
         <div className={styles.littleSectionContainer}>
-          <LittleSection title="Secondary Research">
-            <p>
-              We learned more about the digital marketing space through various
-              articles from big news articles to smaller blog accounts on
-              marketing. Here, we learned some key insights on new merchant
-              struggles, common new business practices, and pros of different
-              platforms. Some of the main insights are:
-            </p>
-          </LittleSection>
+          <div id="secondary-research">
+            <LittleSection title="Secondary Research">
+              <p>
+                We learned more about the digital marketing space through
+                various articles from big news articles to smaller blog accounts
+                on marketing. Here, we learned some key insights on new merchant
+                struggles, common new business practices, and pros of different
+                platforms. Some of the main insights are:
+              </p>
+              <div className={styles.pinsAndImage}>
+                <div className={styles.pinsContainer}>
+                  <div className={styles.pinRectangle}>
+                    <Image
+                      src="/pinterest/pin.png"
+                      alt="articles"
+                      width={48}
+                      height={48}
+                    />
+                    <p>
+                      New SMBs struggle with <strong>investing</strong> enough{" "}
+                      <strong>time to grow</strong> on social media
+                    </p>
+                  </div>
+                  <div className={styles.pinRectangle}>
+                    <Image
+                      src="/pinterest/pin.png"
+                      alt="articles"
+                      width={48}
+                      height={48}
+                    />
+                    <p>
+                      Setting the right budget and allocating{" "}
+                      <strong>enough funds</strong> to grow is essential
+                    </p>
+                  </div>
+                  <div className={styles.pinRectangle}>
+                    <Image
+                      src="/pinterest/pin.png"
+                      alt="articles"
+                      width={48}
+                      height={48}
+                    />
+                    <p>
+                      <strong>Targeting</strong> the right audience is important
+                      for SMBs to stand out
+                    </p>
+                  </div>
+                </div>
+                <Image
+                  src="/pinterest/articles.png"
+                  alt="articles"
+                  width={348}
+                  height={261}
+                  style={{ width: "auto", height: "auto" }}
+                />
+              </div>
+            </LittleSection>
+          </div>
+          <div id="survey">
+            <LittleSection title="Survey"></LittleSection>
+          </div>
+          <div id="contextual-inquiries">
+            <LittleSection title="Contextual Inquiries"></LittleSection>
+          </div>
+          <div id="competitive-analysis">
+            <LittleSection title="Competitive Analysis"></LittleSection>
+          </div>
         </div>
       </BigSection>
       <ContactForm />

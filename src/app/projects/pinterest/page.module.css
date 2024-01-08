@@ -81,7 +81,6 @@
   gap: 20px;
 }
 
-
 .howGetHereContainer {
   background-color: #353434;
   padding: 48px 144px 48px 144px;
@@ -137,4 +136,29 @@
   gap: 76px;
   padding-top: 48px;
   padding-left: 96px;
+}
+
+.pinsAndImage {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  justify-content: space-between;
+  padding-top: 28px;
+}
+
+.pinsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: space-evenly;
+}
+
+.pinRectangle {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  background: #ededed;
+  border-radius: 8px;
 }

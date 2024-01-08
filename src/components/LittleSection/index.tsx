@@ -2,7 +2,7 @@ import styles from "./index.module.css";
 
 interface Props {
   title: string;
-  children?: any;
+  children?: React.ReactNode;
 }
 
 export default function LittleSection({ title, children }: Props) {

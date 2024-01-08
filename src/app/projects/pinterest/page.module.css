@@ -1,6 +1,5 @@
 .topContainer {
   padding-top: 153px;
-  height: 100%;
   padding-left: 144px;
   padding-right: 144px;
 }
@@ -40,5 +39,102 @@
 .problemSection {
   display: flex;
   flex-direction: column;
+  gap: 40px;
+}
+
+.bigP {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.red {
+  color: #bd081c;
+}
+
+.questionSection {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.finalRecsContainer {
+  display: flex;
+  flex-direction: column;
+  background: #ededed;
+  padding-top: 32px;
+  padding-left: 144px;
+  padding-right: 144px;
+  padding-bottom: 64px;
+  gap: 80px;
+}
+
+.italic {
+  color: #000;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.finalRecsTop {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
+}
+
+
+.howGetHereContainer {
+  background-color: #353434;
+  padding: 48px 144px 48px 144px;
+  /* check the padding */
+}
+
+.white {
+  color: #fff;
+}
+
+.stepsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 48px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.stepText {
+  color: #fff;
+  font-family: var(--font-neuton);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.numberAndText {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.littleSectionContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 108px;
+  gap: 52px;
+}
+
+.researchTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 76px;
+  padding-top: 48px;
+  padding-left: 96px;
 }

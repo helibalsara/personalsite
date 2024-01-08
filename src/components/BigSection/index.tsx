@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 interface Props {
   title?: string;
   color: "grey" | "white" | string;
-  children?: any;
+  children?: React.ReactNode;
   topBorder?: boolean;
   extendLineBottom?: boolean;
   extendLineTop?: boolean;

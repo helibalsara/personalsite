@@ -8,7 +8,7 @@ import projects from "../../projectInfo.json";
 import { usePathname } from "next/navigation";
 
 interface Props {
-  darkTheme: boolean;
+  darkTheme?: boolean;
 }
 
 export default function Navbar({ darkTheme }: Props) {

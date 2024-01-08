@@ -1,14 +1,9 @@
-.background {
-  background: #3b3b3b;
-  height: 100%;
-  width: 100%;
-  color: #ededed;
-}
-
 .container {
   padding-left: 164px;
   padding-right: 164px;
   padding-top: 240px;
+  color: #ededed;
+  padding-bottom: 48px;
 }
 
 .topContainer {
@@ -37,8 +32,36 @@
   gap: 40px;
 }
 
-.imageGrid {
-  display: "grid";
-  grid-template-columns: "repeat(3, 1fr)";
-  gap: "20px";
+.imageColumn {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  flex: 1;
+}
+
+.images {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.rightImages {
+  flex: 2;
+}
+
+.heartsAndText {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.heartsAndText > p {
+  color: #ededed;
+  text-align: right;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: var(--font-neuton);
 }

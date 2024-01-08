@@ -48,7 +48,7 @@ export default function Navbar({ darkTheme }: Props) {
                   className={
                     styles.linkText + " " + (darkTheme && styles.light)
                   }
-                  id={styles.projects}
+                  id={darkTheme ? styles.projectsLight : styles.projectsDark}
                 >
                   projects
                 </p>

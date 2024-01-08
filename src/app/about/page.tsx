@@ -2,10 +2,11 @@ import ContactForm from "@/components/ContactForm";
 import styles from "./page.module.css";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import "./page.css";
 
 export default function About() {
   return (
-    <div className={styles.background}>
+    <>
       <Navbar darkTheme />
       <div className={styles.container}>
         <div className={styles.topContainer}>
@@ -31,35 +32,100 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div
-          className={styles.imageGrid}
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: "20px",
-          }}
-        >
-          <Image
-            alt="image1"
-            src="/about/image1.png"
-            width={300}
-            height={300}
-          />
-          <Image
-            alt="image2"
-            src="/about/image2.png"
-            width={300}
-            height={300}
-          />
-          <Image
-            alt="image3"
-            src="/about/image3.png"
-            width={300}
-            height={300}
-          />
+        <div className={styles.images}>
+          <div className={styles.imageColumn}>
+            <Image
+              alt="image1"
+              src="/about/image1.png"
+              width={300}
+              height={200}
+              style={{ width: "100%", height: "auto" }}
+            />
+            <Image
+              alt="image4"
+              src="/about/image4.png"
+              width={300}
+              height={360}
+              style={{ width: "100%", height: "auto" }}
+            />
+            <Image
+              alt="image8"
+              src="/about/image8.png"
+              width={300}
+              height={419.5}
+              style={{ width: "100%", height: "auto" }}
+            />
+          </div>
+          <div className={styles.rightImages}>
+            <div className={styles.images}>
+              <div className={styles.imageColumn}>
+                <Image
+                  alt="image2"
+                  src="/about/image2.png"
+                  width={300}
+                  height={200}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Image
+                  alt="image5"
+                  src="/about/image5.png"
+                  width={300}
+                  height={208.5}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Image
+                  alt="image6"
+                  src="/about/image6.png"
+                  width={300}
+                  height={203}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Image
+                  alt="image9"
+                  src="/about/image9.png"
+                  width={300}
+                  height={213.5}
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </div>
+              <div className={styles.imageColumn}>
+                <Image
+                  alt="image3"
+                  src="/about/image3.png"
+                  width={300}
+                  height={434}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Image
+                  alt="image7"
+                  src="/about/image7.png"
+                  width={300}
+                  height={200}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <Image
+                  alt="image10"
+                  src="/about/image10.png"
+                  width={300}
+                  height={214}
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </div>
+            </div>
+            <div className={styles.heartsAndText}>
+              <Image
+                alt="hearts"
+                src="/about/hearts.svg"
+                width={0}
+                height={80}
+                style={{ width: "auto", height: "auto" }}
+              />
+              <p>message for any photography inquiries, thanks!</p>
+            </div>
+          </div>
         </div>
       </div>
       <ContactForm />
-    </div>
+    </>
   );
 }

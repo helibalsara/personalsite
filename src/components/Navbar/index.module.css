@@ -44,13 +44,22 @@
   cursor: pointer;
 }
 
-#projects {
+#projectsDark {
   padding-left: 12px;
 }
 
-#projects:hover {
+#projectsLight {
+  padding-left: 12px;
+}
+
+#projectsDark:hover {
   padding-left: 12px;
   color: #000;
+}
+
+#projectsLight:hover {
+  padding-left: 12px;
+  color: #fff;
 }
 
 .dropdown {

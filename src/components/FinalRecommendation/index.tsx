@@ -25,9 +25,9 @@ export default function FinalRecommendation({
       <Image
         src={image}
         alt={image}
-        width={0}
-        height={0}
-        style={{ width: "auto", height: "auto" }}
+        width={456}
+        height={285}
+        style={{ height: "auto" }}
       />
     </div>
   );

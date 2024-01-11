@@ -1,0 +1,41 @@
+.container h2 {
+  font-family: var(--font-manrope);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.container p {
+  font-size: 12px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 76px;
+}
+
+.row > * {
+  flex: 1;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

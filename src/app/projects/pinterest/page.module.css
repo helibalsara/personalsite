@@ -138,12 +138,27 @@
   padding-left: 96px;
 }
 
+.researchTop > * > h6 {
+  color: #000;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.researchTop > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .pinsAndImage {
   display: flex;
   align-items: center;
   gap: 48px;
   justify-content: space-between;
   padding-top: 28px;
+  padding-bottom: 48px;
 }
 
 .pinsContainer {
@@ -158,7 +173,95 @@
   padding: 8px;
   align-items: center;
   gap: 8px;
-  justify-content: space-between;
   background: #ededed;
   border-radius: 8px;
+}
+
+.surveyContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.responses {
+  display: flex;
+  gap: 16px;
+  justify-content: space-around;
+  padding-top: 32px;
+}
+
+.responses > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.responses > div > div > p {
+  font-size: 14px;
+}
+
+.contextPins {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 24px;
+  padding-top: 32px;
+  align-items: center;
+}
+
+.competitorAnalysis {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.createAndAsterisk {
+  display: flex;
+  padding-left: 48px;
+}
+
+.conceptSelection {
+  display: flex;
+  gap: 48px;
+  justify-content: space-between;
+}
+
+.conceptSelection > * {
+  flex: 1;
+}
+
+.conceptSelectionTextAndPins {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.conceptSelectionPins {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.compare {
+  color: #fff;
+}
+
+.reflectionContainer {
+  padding-left: 80px;
+  padding-right: 144px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+  padding-top: 24px;
+}
+
+.compareContainer {
+  display: flex;
+  gap: 56px;
+  flex-direction: column;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }

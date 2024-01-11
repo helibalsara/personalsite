@@ -2,7 +2,6 @@ import ContactForm from "@/components/ContactForm";
 import styles from "./page.module.css";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import "./page.css";
 
 export default function About() {
   return (

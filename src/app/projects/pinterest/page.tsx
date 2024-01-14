@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from "@/components/Navbar";
 import styles from "./page.module.css";
 import Image from "next/image";
@@ -7,8 +9,13 @@ import BigSection from "@/components/BigSection";
 import LittleSection from "@/components/LittleSection";
 import FlowChart from "./flowchart.svg";
 import Compare from "@/components/Compare";
+import { useState } from "react";
 
 export default function Pinterest() {
+  const [isHovered1, setIsHovered1] = useState<boolean>(false);
+  const [isHovered2, setIsHovered2] = useState<boolean>(false);
+  const [isHovered3, setIsHovered3] = useState<boolean>(false);
+
   return (
     <>
       <Navbar />
@@ -288,7 +295,13 @@ export default function Pinterest() {
               <div className={styles.responses}>
                 <div>
                   <Image
-                    src="/pinterest/pieChart.svg"
+                    onMouseOver={() => setIsHovered1(true)}
+                    onMouseOut={() => setIsHovered1(false)}
+                    src={
+                      isHovered1
+                        ? "/pinterest/pieChart2.svg"
+                        : "/pinterest/pieChart.svg"
+                    }
                     width={0}
                     height={0}
                     style={{
@@ -307,7 +320,13 @@ export default function Pinterest() {
                 </div>
                 <div>
                   <Image
-                    src="/pinterest/barChart.svg"
+                    onMouseOver={() => setIsHovered2(true)}
+                    onMouseOut={() => setIsHovered2(false)}
+                    src={
+                      isHovered2
+                        ? "/pinterest/barChart2.svg"
+                        : "/pinterest/barChart.svg"
+                    }
                     width={0}
                     height={0}
                     style={{
@@ -326,7 +345,13 @@ export default function Pinterest() {
                 </div>
                 <div>
                   <Image
-                    src="/pinterest/goals.svg"
+                    onMouseOver={() => setIsHovered3(true)}
+                    onMouseOut={() => setIsHovered3(false)}
+                    src={
+                      isHovered3
+                        ? "/pinterest/goals2.svg"
+                        : "/pinterest/goals.svg"
+                    }
                     width={0}
                     height={0}
                     style={{

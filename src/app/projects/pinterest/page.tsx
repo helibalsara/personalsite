@@ -157,7 +157,7 @@ export default function Pinterest() {
         </FinalRecommendation>
       </div>
       <div className={styles.howGetHereContainer}>
-        <h1 className={styles.white}>Wait... how did we get here? 🤔</h1>
+        <h1 className={styles.white}>You’re probably wondering how we ended up here...</h1>
         <div className={styles.stepsContainer}>
           <div className={styles.step}>
             <p className={styles.stepText}>RESEARCH</p>

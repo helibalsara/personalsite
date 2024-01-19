@@ -158,6 +158,21 @@
   background: #bfd3df;
 }
 
+.insightsContainer {
+  position: relative;
+}
+
+.insightsContainer::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  /* left: ; */
+  width: 75%;
+  height: 2px;
+  background-color: #BFD3DF;
+  /* z-index: -1; */
+}
+
 .insight > p {
   font-size: 15px;
   font-weight: 500;

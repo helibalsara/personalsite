@@ -9,11 +9,11 @@
   },
   {
     "roleType": "UX RESEARCH/ PHYSICAL PRODUCT DESIGN",
-    "title": "DeckScan",
+    "title": "Whisper",
     "subtitle": "Card Reader",
     "description": "Creating a party card reader for the visually impaired to foster social inclusivity.",
     "image": "/deckscan.svg",
-    "route": "/deckscan"
+    "route": "/whisper"
   },
   {
     "roleType": "UX Research/Product Design",

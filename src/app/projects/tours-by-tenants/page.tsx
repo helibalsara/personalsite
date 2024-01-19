@@ -317,7 +317,7 @@ export default function SmartNotes() {
             <PageSection
               title="Home Page"
               before="/tt/before1.png"
-              after="/tt/after1.png"
+              after="/tt/after1.gif"
               features={[
                 {
                   heading: "OPTIMISTIC WELCOME",
@@ -341,7 +341,7 @@ export default function SmartNotes() {
             <PageSection
               title="Apartment Page"
               before="/tt/before2.png"
-              after="/tt/after2.png"
+              after="/tt/after2.gif"
               features={[
                 {
                   heading: "CONSISTENT INFO",
@@ -366,7 +366,7 @@ export default function SmartNotes() {
             <PageSection
               title="Filtering"
               before="/tt/before3.png"
-              after="/tt/after3.png"
+              after="/tt/after3.gif"
               features={[
                 {
                   heading: "EASY ACCESS FILTERS",

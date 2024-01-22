@@ -12,7 +12,7 @@
     "title": "Whisper",
     "subtitle": "Card Reader",
     "description": "Creating a party card reader for the visually impaired to foster social inclusivity.",
-    "image": "/deckscan.svg",
+    "image": "/whisper.png",
     "route": "/whisper"
   },
   {

@@ -66,7 +66,7 @@ export default function SmartNotes() {
         <div className={styles.finalDesignsContainer2}>
           <div className={styles.finalDesignsTextContainer}>
             <h1>Final Designs</h1>
-            <h6 className={styles.italic}>Sneak Peak!!</h6>
+            <h6 className={styles.italic}>Sneak Peek!!</h6>
             <p>Taking a look ahead at my final iteration of designs...</p>
             <p>
               Tours by Tenants is a <strong>housing search mobile app</strong>{" "}

@@ -84,7 +84,7 @@ export default function Pinterest() {
       <div className={styles.finalRecsContainer}>
         <div className={styles.finalRecsTop}>
           <h1>Final Recommendations</h1>
-          <h6 className={styles.italic}>Sneak Peak!! 🤫</h6>
+          <h6 className={styles.italic}>Sneak Peek!! 🤫</h6>
         </div>
         <FinalRecommendation
           number={1}

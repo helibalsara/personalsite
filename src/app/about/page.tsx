@@ -18,10 +18,20 @@ export default function About() {
             />
           </div>
           <div className={styles.textContainer}>
-            <h1>hi, i&apos;m heli!</h1>
+            <div className={styles.heli}>
+              <h1>hi, i&apos;m heli...</h1>
+              <Image
+                alt="helicopter"
+                src="/about/helicopter.svg"
+                width={200}
+                height={200}
+                // style={{ height: "auto", width: "auto" }}
+              />
+            </div>
             <p>
-              I’m a senior at UC Berkeley majoring in Cognitive Science &
-              minoring in Data Science with a certificate in Design Innovation.
+              Like helicopter! I’m a senior at UC Berkeley majoring in Cognitive
+              Science & minoring in Data Science with a certificate in Design
+              Innovation.
             </p>
             <p>
               You can catch me fostering a design community at Design @

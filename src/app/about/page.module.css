@@ -4,7 +4,7 @@
   padding-top: 240px;
   color: #ededed;
   padding-bottom: 400px;
-  background: #3B3B3B;
+  background: #3b3b3b;
 }
 
 .topContainer {
@@ -20,11 +20,16 @@
   flex: 1;
 }
 
-.textContainer > h1 {
+.textContainer > * > h1 {
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-bottom: 32px;
+}
+
+.textContainer > p {
+  max-width: 80%;
 }
 
 .textContainer {
@@ -65,4 +70,11 @@
   font-weight: 400;
   line-height: normal;
   font-family: var(--font-neuton);
+}
+
+.heli {
+  display: flex;
+  justify-content: row;
+  align-items: flex-end;
+  gap: 48px;
 }

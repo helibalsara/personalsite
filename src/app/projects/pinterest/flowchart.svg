@@ -3,6 +3,9 @@
 rect:hover {
 fill: #990515; /* Replace with the color you want on hover */
 }
+path:hover {
+fill: #990515; /* Replace with the color you want on hover */
+}
 </style>
 <a xlink:href="/projects/pinterest/#competitive-analysis">
 <rect x="173" width="105.106" height="70.0704" rx="10" fill="#BD081C"/>

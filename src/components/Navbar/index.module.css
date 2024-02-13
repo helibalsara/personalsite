@@ -59,7 +59,7 @@
 
 #projectsLight:hover {
   padding-left: 12px;
-  color: #fff;
+  color: #FBFBFB;
 }
 
 .dropdown {
@@ -76,7 +76,7 @@
 }
 
 .white {
-  background-color: white;
+  background-color: #FBFBFB;
 }
 
 .dropdownTextIcon {
@@ -101,5 +101,5 @@
 }
 
 .light {
-  color: #fff;
+  color: #FBFBFB;
 }

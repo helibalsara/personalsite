@@ -22,7 +22,7 @@ export default function InternConnect() {
           <div className={styles.textContainer}>
             <h3 className={styles.noBold}>
               InternConnect is an online <strong>community</strong> platform for
-              computer science students looking to
+              computer science students looking to{" "}
               <strong>level up their career</strong>.
             </h3>
             <div className={styles.titleAndDescription}>

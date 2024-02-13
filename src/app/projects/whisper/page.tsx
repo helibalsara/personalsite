@@ -144,7 +144,7 @@ export default function Whisper() {
           </div>
         </div>
       </div>
-      {/* <BigSection title="Research" color="white">
+      <BigSection title="Research" color="white">
         <div className={styles.littleSectionContainer}>
           <LittleSection title="Competitive Analysis">
             <p>
@@ -189,7 +189,7 @@ export default function Whisper() {
             </div>
           </LittleSection>
         </div>
-      </BigSection> */}
+      </BigSection>
 
       <div className={styles.wipContainer}>
         <h6 className={styles.italic} id={styles.wip}>

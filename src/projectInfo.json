@@ -16,12 +16,12 @@
     "route": "/whisper"
   },
   {
-    "roleType": "UX Research/Product Design",
-    "title": "SmartNotes",
-    "subtitle": "AI Pen Tool",
-    "description": "Improving the learning experience for college students through an AI note-taking pen",
-    "image": "/smartnotes.svg",
-    "route": "/smartnotes"
+    "roleType": "Mobile/Desktop UI Design",
+    "title": "InternConnect",
+    "subtitle": "Online Community",
+    "description": "InternConnect connects computer science students with targeted internship opportunities to empower their career journey.",
+    "image": "/internConnect.svg",
+    "route": "/internconnect"
   },
   {
     "roleType": "Product Design/Mobile Design/UI",
@@ -30,5 +30,13 @@
     "description": "TT makes searching for your dream home simple and time-efficient by providing easy access to tours of the property so you don’t have to.",
     "image": "/tt.svg",
     "route": "/tours-by-tenants"
+  },
+  {
+    "roleType": "UX Research/Product Design",
+    "title": "SmartNotes",
+    "subtitle": "AI Pen Tool",
+    "description": "Improving the learning experience for college students through an AI note-taking pen",
+    "image": "/smartnotes.svg",
+    "route": "/smartnotes"
   }
 ]

@@ -3,8 +3,9 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import BigSection from "@/components/BigSection";
+import LittleSection from "@/components/LittleSection";
 
-export default function SmartNotes() {
+export default function Whisper() {
   return (
     <>
       <Navbar />
@@ -15,7 +16,7 @@ export default function SmartNotes() {
             width={536}
             height={339}
             style={{ height: "100%", width: "auto" }}
-            alt="deckscan"
+            alt="whisper"
             priority
           />
           <div className={styles.textContainer}>
@@ -104,8 +105,96 @@ export default function SmartNotes() {
           />
         </div>
       </div>
+      <div className={styles.howGetHereContainer}>
+        <h1 className={styles.white}>Let’s rewind. How did we get here?</h1>
+        <div className={styles.stepsContainer}>
+          <div className={styles.step}>
+            <p className={styles.stepText}>RESEARCH</p>
+            <div className={styles.numberAndText}>
+              <p className={styles.stepText}>1.</p>
+              <p className={styles.stepText}>
+                competitive analysis & understanding experiences
+              </p>
+            </div>
+          </div>
+          <div className={styles.step}>
+            <p className={styles.stepText}>SYNTHESIS</p>
+            <div className={styles.numberAndText}>
+              <p className={styles.stepText}>2.</p>
+              <p className={styles.stepText}>
+                organizing key insights & VOA analysis
+              </p>
+            </div>
+          </div>
+          <div className={styles.step}>
+            <p className={styles.stepText}>IDEATIONS</p>
+            <div className={styles.numberAndText}>
+              <p className={styles.stepText}>3.</p>
+              <p className={styles.stepText}>concept generation & selection</p>
+            </div>
+          </div>
+          <div className={styles.step}>
+            <p className={styles.stepText}>DESIGN</p>
+            <div className={styles.numberAndText}>
+              <p className={styles.stepText}>4.</p>
+              <p className={styles.stepText}>
+                user testing & iterating prototypes
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <BigSection title="Research" color="white">
+        <div className={styles.littleSectionContainer}>
+          <LittleSection title="Competitive Analysis">
+            <p>
+              We started looking at what solutions were already on the market
+              and understanding what sort of pain points they already relieve.
+              We found three main competitors that our HMW statement already
+              solved.
+            </p>
+            <div className={styles.competitiveContainer}>
+              <div className={styles.competitiveColumn}>
+                <p>
+                  <strong>64 Ounce Games</strong>
+                </p>
+                <div className={styles.competitiveCard}>
+                  <Image
+                    src="/whisper/comp1.png"
+                    alt="comp1"
+                    width={85.5}
+                    height={87.875}
+                    style={{ height: "auto", alignSelf: "center" }}
+                  />
+                  <p>Direct Competitor</p>
+                  <p>
+                    <ul>
+                      <li>hi</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <div className={styles.competitiveColumn}>
+                <p>
+                  <strong>LEAP</strong>
+                </p>
+                <div className={styles.competitiveCard}></div>
+              </div>
+              <div className={styles.competitiveColumn}>
+                <p>
+                  <strong>Tactile Playing Cards</strong>
+                </p>
+                <div className={styles.competitiveCard}></div>
+              </div>
+            </div>
+          </LittleSection>
+        </div>
+      </BigSection> */}
+
       <div className={styles.wipContainer}>
-        <h6 className={styles.italic} id={styles.wip}>Work in progress... Come back soon!</h6>
+        <h6 className={styles.italic} id={styles.wip}>
+          Work in progress... Come back soon!
+        </h6>
         <Image
           src="/whisper/panda.svg"
           alt="WIP Panda"

@@ -167,11 +167,11 @@ export default function Whisper() {
                     style={{ height: "auto", alignSelf: "center" }}
                   />
                   <p>Direct Competitor</p>
-                  <p>
+                  <span>
                     <ul>
-                      <li>hi</li>
+                      <li>Adding Braille to existing card games</li>
                     </ul>
-                  </p>
+                  </span>
                 </div>
               </div>
               <div className={styles.competitiveColumn}>

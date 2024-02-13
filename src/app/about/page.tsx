@@ -2,6 +2,7 @@ import ContactForm from "@/components/ContactForm";
 import styles from "./page.module.css";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
+import Hearts from "./hearts.svg";
 
 export default function About() {
   return (
@@ -122,13 +123,7 @@ export default function About() {
               </div>
             </div>
             <div className={styles.heartsAndText}>
-              <Image
-                alt="hearts"
-                src="/about/hearts.svg"
-                width={0}
-                height={80}
-                style={{ width: "auto", height: "auto" }}
-              />
+              <Hearts />
               <p>message for any photography inquiries, thanks!</p>
             </div>
           </div>

@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${manrope.variable} ${neuton.variable}`}>
       <body>{children}</body>
-      <Analytics />;
+      <Analytics />
     </html>
   );
 }

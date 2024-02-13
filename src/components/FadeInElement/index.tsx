@@ -36,6 +36,7 @@ const FadeInElement: React.FC<{ children: React.ReactNode }> = ({
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

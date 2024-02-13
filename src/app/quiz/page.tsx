@@ -2,7 +2,7 @@
 
 import Button from "@/components/Button";
 import styles from "./page.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import RadioButton from "@/components/RadioButton";
 import Hearts from "./hearts.svg";
 
@@ -13,6 +13,7 @@ const questions = [
   "When we went horse riding, what was my horse's name?",
   "What was the first gift I got you?",
   "How much do I love you?",
+  "How much do you love me?",
   "Will you be my Valentine?",
 ];
 
@@ -28,6 +29,12 @@ const options = [
   ["Malibu", "Topanga", "Mocha", "Jackie"],
   ["Earrings", "A rose", "A necklace", "A tiny bulbasaur"],
   ["I don't", "INFINITY", "-1", "A little"],
+  [
+    "You don't love me",
+    "You don't love me",
+    "You don't love me",
+    "A lot (I hope)",
+  ],
   ["Maybe", "Nah", "YES <3", "No"],
 ];
 
@@ -38,6 +45,28 @@ export default function Quiz() {
   const [selectedOption, setSelectedOption] = useState<number>();
   const [wrong, setWrong] = useState<boolean>(false);
   const [submitFlipper, setSubmitFlipper] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (index != 0) return;
+
+    const audio = new Audio("/die_for_you.mp3");
+    audio.play();
+
+    audio.addEventListener("canplaythrough", () => {
+      console.log("Audio loaded successfully");
+      audio.play();
+    });
+  
+    audio.addEventListener("error", () => {
+      console.error("Error loading audio");
+    });
+  
+    return () => {
+      audio.pause();
+      audio.removeEventListener("canplaythrough", () => {});
+      audio.removeEventListener("error", () => {});
+    };
+  }, [index]);
 
   return (
     <div className={styles.container}>

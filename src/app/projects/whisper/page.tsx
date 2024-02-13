@@ -31,7 +31,7 @@ export default function Whisper() {
             </div>
             <div className={styles.titleAndDescription}>
               <h3>Duration</h3>
-              <p>September 2023- December 2023</p>
+              <p>September 2023 - December 2023</p>
             </div>
             <div className={styles.titleAndDescription}>
               <h3>Disciplines</h3>

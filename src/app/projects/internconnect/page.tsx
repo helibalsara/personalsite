@@ -31,7 +31,7 @@ export default function InternConnect() {
             </div>
             <div className={styles.titleAndDescription}>
               <h3>Duration</h3>
-              <p>June 2023- August 2023</p>
+              <p>June 2023 - August 2023</p>
             </div>
             <div className={styles.titleAndDescription}>
               <h3>Disciplines</h3>

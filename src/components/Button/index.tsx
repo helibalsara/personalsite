@@ -6,5 +6,9 @@ interface Props {
 }
 
 export default function Button({ onClick, children }: Props) {
-  return <button className={styles.button}>{children}</button>;
+  return (
+    <button className={styles.button} onClick={onClick}>
+      {children}
+    </button>
+  );
 }

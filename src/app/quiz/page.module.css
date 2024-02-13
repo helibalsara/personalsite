@@ -15,5 +15,43 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  align-items: center;
+  align-items: flex-start;
+  width: 30%;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.shake0 {
+  animation: shake0 0.5s;
+}
+
+.shake1 {
+  animation: shake1 0.5s;
+}
+
+@keyframes shake0 {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes shake1 {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
 }

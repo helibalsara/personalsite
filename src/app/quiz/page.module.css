@@ -1,8 +1,18 @@
 .container {
+  position: relative; /* Add this line */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.fillBackground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #de4040;
+  transition: height 1s ease; /* Transition for height */
 }
 
 .card {
@@ -14,9 +24,22 @@
 
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  justify-content: space-between;
   align-items: flex-start;
   width: 30%;
+  height: 50%;
+  background: #fbfbfb;
+  z-index: 999;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+
+  height: 100%;
+  width: 100%;
 }
 
 .optionsContainer {
@@ -41,17 +64,37 @@
 }
 
 @keyframes shake0 {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes shake1 {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-5px); }
-  50% { transform: translateX(5px); }
-  75% { transform: translateX(-5px); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

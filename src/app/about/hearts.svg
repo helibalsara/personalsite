@@ -6,7 +6,7 @@ path {
 
 path:hover {
     cursor: pointer;
-    fill: red;
+    fill: #df4646;
 }
 </style>
 <a xlink:href="/quiz">

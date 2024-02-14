@@ -1,9 +1,14 @@
 .container {
   position: relative; /* Add this line */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.container * {
+  z-index: 1;
 }
 
 .fillBackground {
@@ -11,8 +16,9 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #de4040;
+  background: #df4646;
   transition: height 1s ease; /* Transition for height */
+  z-index: 0;
 }
 
 .card {
@@ -97,4 +103,114 @@
   100% {
     transform: translateX(0);
   }
+}
+
+.end {
+  color: #fbfbfb;
+}
+
+.lets {
+  opacity: 0;
+  animation: fade 1.5s ease-in-out forwards;
+  animation-delay: 0.25s;
+  text-transform: uppercase;
+  font-size: 400px;
+  font-weight: 700;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.go {
+  text-transform: uppercase;
+  font-size: 400px;
+  font-weight: 700;
+  animation: moveRightToLeft 5s linear forwards;
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(90%);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-2000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2000px);
+  }
+}
+
+.scrollContainer {
+  overflow: hidden;
+  align-self: flex-start;
+}
+
+.scroll1 {
+  background: url("/reel1.png") repeat-y;
+  height: 6510px;
+  width: 200px;
+  animation: slide-up 10s linear infinite;
+}
+
+.scroll2 {
+  background: url("/reel2.png") repeat-y;
+  height: 6422px;
+  width: 199px;
+  animation: slide-down 10s linear infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.row {
+  color: #fbfbfb;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 1s ease forwards;
+}
+
+.row > * {
+  flex-shrink: 0;
+}
+
+.right {
+  text-align: right;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 40%;
 }

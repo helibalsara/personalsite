@@ -61,6 +61,7 @@ export default function InternConnect() {
             impairments to play or be left at a disadvantage.
           </p>
         </div>*/}
+        <div />
       </div>
       <div className={styles.wipContainer}>
         <h6 className={styles.italic} id={styles.wip}>

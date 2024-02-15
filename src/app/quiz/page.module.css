@@ -36,6 +36,8 @@
   height: 50%;
   background: #fbfbfb;
   z-index: 999;
+
+  text-wrap: pretty;
 }
 
 .quiz {

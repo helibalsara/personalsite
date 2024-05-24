@@ -6,7 +6,7 @@ html, body {
     background: #FBFBFB;
 }
 
-p {
+p, li {
     font-family: var(--font-manrope);
     margin: 0;
     font-size: 18px;

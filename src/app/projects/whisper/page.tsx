@@ -178,14 +178,181 @@ export default function Whisper() {
                 <p>
                   <strong>LEAP</strong>
                 </p>
-                <div className={styles.competitiveCard}></div>
+                <div className={styles.competitiveCard}>
+                  <Image
+                    src="/whisper/leap.png"
+                    alt="leap"
+                    width={99.86}
+                    height={48.19}
+                    style={{ height: "auto", alignSelf: "center" }}
+                  />
+                  <p>Indirect Competitor</p>
+                  <span>
+                    <ul>
+                      <li>
+                        tictactoe, tennis, musical math online games for
+                        children with blindness
+                      </li>
+                    </ul>
+                  </span>
+                </div>
               </div>
               <div className={styles.competitiveColumn}>
                 <p>
                   <strong>Tactile Playing Cards</strong>
                 </p>
-                <div className={styles.competitiveCard}></div>
+                <div className={styles.competitiveCard}>
+                  <Image
+                    src="/whisper/tactile.png"
+                    alt="leap"
+                    width={108.7}
+                    height={68.25}
+                    style={{ height: "auto", alignSelf: "center" }}
+                  />
+                  <p>Indirect Competitor</p>
+                  <span>
+                    <ul>
+                      <li>
+                        Card games with unique tactile features like patterns
+                        and textures
+                      </li>
+                    </ul>
+                  </span>
+                </div>
               </div>
+            </div>
+          </LittleSection>
+          <LittleSection title="User Survey">
+            <p>
+              We collected 16 responses on our survey with the most common type
+              of impairments being complete blindness and retinitis pigmentosa.
+              Some key insights we discovered were:
+            </p>
+            <ul>
+              <li>
+                Cards represented <strong>only by color</strong> are difficult
+                to play with
+              </li>
+              <li>
+                Playing cards are too <strong>small</strong>
+              </li>
+              <li>
+                Asking friends to help them read the cards creates a{" "}
+                <strong>lack of independence</strong>
+              </li>
+              <li>
+                People are mostly playing in <strong>social settings</strong>
+              </li>
+            </ul>
+          </LittleSection>
+          <LittleSection title="Secondary">
+            <div className={styles.secondary}>
+              <p>
+                We found Kay from the YouTube channel “From Kay to Zee”, where
+                she explained her personal experience with playing board games
+                as visually impaired. Next was Angela from the YouTube channel
+                “Visually Impaired Designer” who listed several game ideas for
+                playing with the visually impaired such as her. Lastly, there
+                was a good breakdown on the forum r/boardgames in Reddit that
+                listed things to know when playing board games with the visually
+                impaired.
+              </p>
+              <Image
+                src="/whisper/79.png"
+                alt="79"
+                width={342.94}
+                height={205}
+                style={{ height: "auto" }}
+              />
+            </div>
+          </LittleSection>
+        </div>
+      </BigSection>
+      <BigSection title="Synthesis" color="white">
+        <div className={styles.littleSectionContainer}>
+          <LittleSection title="Key Insights">
+            <div className={styles.gridContainer}>
+              <div className={styles.gridItem}>
+                <p>
+                  <strong>LACK OF INDEPENDENCE</strong>
+                </p>
+                <p>
+                  The need for friends to read their cards out loud often
+                  compromises their independence.
+                </p>
+              </div>
+              <div className={styles.gridItem}>
+                <p>
+                  <strong>MINIMIZING DOWNTIME</strong>
+                </p>
+                <p>
+                  Maintaining constant engagement during games is important to
+                  overall enjoyment.
+                </p>
+              </div>
+              <div className={styles.gridItem}>
+                <p>
+                  <strong>HIDDEN INFORMATION</strong>
+                </p>
+                <p>
+                  Hidden information in card games is difficult to convey and
+                  challenging to play.
+                </p>
+              </div>
+              <div className={styles.gridItem}>
+                <p>
+                  <strong>MULTIPLE CARDS</strong>
+                </p>
+                <p>
+                  Even with assistive technology, managing multiple cards with
+                  various words is difficult.
+                </p>
+              </div>
+            </div>
+          </LittleSection>
+          <LittleSection title="Persona">
+            <Image
+              src="/whisper/persona.png"
+              alt="persona"
+              width={751}
+              height={422.44}
+              style={{ height: "auto", width: "100%" }}
+            />
+          </LittleSection>
+          <LittleSection title="VOA Analysis">
+            <div className={styles.voa}>
+              <div className={styles.voaColumn}>
+                <p>
+                  A Value Opportunity Analysis was conducted to compare our HMW
+                  statement to a competitor based on 7 value opportunity
+                  attributes: emotion, ergonomics, aesthetics, identity, impact,
+                  core technologies, and quality. We chose to compare our future
+                  product to the competitor <strong>64 Ounce Games</strong>. We
+                  first decided what our product MUST achieve to maximize the
+                  important value propositions. We chose to{" "}
+                  <strong>
+                    maximize the social impact, enabling technologies, tactile
+                    features, and a strong sense of security and independence.
+                  </strong>
+                </p>
+                <div className={styles.legendColumn}>
+                  <div className={styles.legendRow}>
+                    <div className={styles.legendSquareGreen} />
+                    <p>Our Product</p>
+                  </div>
+                  <div className={styles.legendRow}>
+                    <div className={styles.legendSquareBlack} />
+                    <p>64 Ounce Games</p>
+                  </div>
+                </div>
+              </div>
+              <Image
+                src="/whisper/voa.png"
+                alt="voa"
+                width={315}
+                height={469.93}
+                style={{ height: "auto", width: "100%" }}
+              />
             </div>
           </LittleSection>
         </div>

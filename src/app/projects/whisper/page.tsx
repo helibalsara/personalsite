@@ -358,6 +358,132 @@ export default function Whisper() {
         </div>
       </BigSection>
 
+      <BigSection title="Ideation" color="white">
+        <div className={styles.littleSectionContainer}>
+          <LittleSection title="Concept Generation">
+            <div className={styles.conceptRow}>
+              <div className={styles.conceptColumn}>
+                <p>
+                  After ideating over <strong>50 solutions</strong>, we narrowed
+                  down to <strong>10 concepts</strong> which we mapped on a 2x2
+                  matrix focusing on:
+                  <br />
+                  <strong>Tech</strong>
+                  <br />-{">"}how reliant on technology the solution is <br />
+                  <strong>Sensory Element</strong>
+                  <br /> -{">"}
+                  how tactile or auditory focused it is
+                </p>
+                <Image
+                  src="/whisper/concept2.png"
+                  alt="concept2"
+                  width={335}
+                  height={265}
+                  style={{ height: "100%", width: "auto" }}
+                />
+              </div>
+              <div className={styles.conceptColumn}>
+                <Image
+                  src="/whisper/concept1.png"
+                  alt="concept1"
+                  width={362.7}
+                  height={265.3}
+                  style={{ height: "100%", width: "auto" }}
+                />
+                <p>
+                  After a weighted matrix analysis,{" "}
+                  <strong>a smart card reader was the winner!</strong>
+                </p>
+              </div>
+            </div>
+          </LittleSection>
+        </div>
+      </BigSection>
+
+      <BigSection title="User Testing" color="grey">
+        <div className={styles.littleSectionContainer}>
+          <LittleSection title="Prototype 1">
+            <div className={styles.prototypeContainer}>
+              <div className={styles.prototypeRow}>
+                <p>
+                  The initial prototype tested the simple features:
+                  <br />-{">"}two arrows to navigate through a list
+                  <br />-{">"}side button to simulate audio output changing
+                  Visual impairment was simulated with a “Wizard of Oz” approach
+                  and a script. Card scanning and navigation was simulated by a
+                  team member.
+                </p>
+                <div className={styles.prototype1Row}>
+                  <Image
+                    src="/whisper/user-testing-1.png"
+                    alt="user-testing-1"
+                    width={85.68}
+                    height={127}
+                    style={{ height: "auto" }}
+                  />
+                  <Image
+                    src="/whisper/user-testing-2.png"
+                    alt="user-testing-2"
+                    width={85.68}
+                    height={127}
+                    style={{ height: "auto" }}
+                  />
+                </div>
+              </div>
+              <div className={styles.prototypeRow}>
+                <div className={styles.prototypeColumn}>
+                  <p>
+                    Our goals for the first user test were to{" "}
+                    <strong>measure</strong> a{" "}
+                    <strong>sense of independence</strong> via a survey,
+                    understand the{" "}
+                    <strong>cost benefit of freedom vs rigidity</strong>,
+                    especially determining the amount of user interactions, and
+                    the <strong>level of enjoyment.</strong>
+                  </p>
+                  <p>
+                    <strong>Results</strong>
+                    <br />5 mistakes and 9 slip-ups were made in understanding
+                    where cards were. The main feedback from the survey was that
+                    they{" "}
+                    <strong>
+                      needed more assistance and more interaction
+                    </strong>{" "}
+                    with the device.
+                  </p>
+                </div>
+                <Image
+                  src="/whisper/user-testing-3.png"
+                  alt="user-testing-3"
+                  width={177.37}
+                  height={196}
+                  style={{ height: "auto" }}
+                />
+              </div>
+            </div>
+          </LittleSection>
+          <LittleSection title="Prototype 2">
+            <div className={styles.prototypeColumn}>
+              <p>
+                An updated prototype was created out of cardboard and duct tape
+                with additional arrow buttons for more interaction. “Wizard of
+                Oz” testing was done with the same subject as before. New
+                features include:
+                <br />-{">"} navigating the saved cards in{" "}
+                <strong>two dimensions</strong>
+                <br />-{">"} ability to <strong>mark/unmark</strong> and{" "}
+                <strong>re-read cards.</strong>
+              </p>
+              <p>
+                <strong>Results</strong>
+                <br />2 mistakes and 7 slip-ups. Simulated working screens and a
+                3D printed prototype were created to improve the flow.
+              </p>
+            </div>
+          </LittleSection>
+        </div>
+      </BigSection>
+
       <div className={styles.wipContainer}>
         <h6 className={styles.italic} id={styles.wip}>
           Work in progress... Come back soon!

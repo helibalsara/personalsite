@@ -118,7 +118,6 @@
   font-size: 24px;
 }
 
-
 .howGetHereContainer {
   background-color: #353434;
   padding: 64px 144px 64px 144px;
@@ -182,7 +181,7 @@
 }
 
 .competitiveCard {
-  background: #D2E8CB;
+  background: #d2e8cb;
   padding: 10px 5px;
   display: flex;
   flex-direction: column;
@@ -205,7 +204,7 @@
 }
 
 .gridItem {
-  background: #D2E8CB;
+  background: #d2e8cb;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -234,7 +233,7 @@
 .legendSquareGreen {
   width: 20px;
   height: 20px;
-  background: #95C586;
+  background: #95c586;
 }
 
 .legendSquareBlack {
@@ -247,4 +246,40 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.conceptColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.conceptRow {
+  display: flex;
+  flex-direction: row;
+  gap: 52px;
+}
+
+.prototypeRow {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+}
+
+.prototype1Row {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.prototypeColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prototypeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 }

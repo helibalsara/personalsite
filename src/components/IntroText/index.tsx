@@ -9,8 +9,8 @@ export default function IntroText() {
         solutions through human-centric thinking
       </p>
       <div className={styles.roleContainer}>
-        <h4 className={styles.currently}>previously</h4>
-        <p className={styles.role}>a product design consultant @ Pinterest</p>
+        <h4 className={styles.currently}>currently</h4>
+        <p className={styles.role}>a product design intern @ Housecall Pro</p>
       </div>
     </div>
   );

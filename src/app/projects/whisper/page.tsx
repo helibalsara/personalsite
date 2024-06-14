@@ -75,7 +75,7 @@ export default function Whisper() {
             cards with NFC chips. The data of each card is stored within the
             device and users can navigate through each card content with the
             arrow buttons. There is also a side button to toggle the audio from
-            a ear piece to a speaker, based on the game. The final prototype
+            a ear piece to a speaker, based on the game. The final Version
             meant to highlight the <strong>independence</strong> and{" "}
             <strong>ease of use</strong> created by utilising handheld device
             and a few large tactile buttons.
@@ -402,7 +402,7 @@ export default function Whisper() {
 
       <BigSection title="User Testing" color="grey">
         <div className={styles.littleSectionContainer}>
-          <LittleSection title="Prototype 1">
+          <LittleSection title="Version 1">
             <div className={styles.prototypeContainer}>
               <div className={styles.prototypeRow}>
                 <p>
@@ -462,7 +462,7 @@ export default function Whisper() {
               </div>
             </div>
           </LittleSection>
-          <LittleSection title="Prototype 2">
+          <LittleSection title="Version 2">
             <div className={styles.prototypeRow}>
               <div className={styles.prototypeColumn}>
                 <p>
@@ -490,7 +490,7 @@ export default function Whisper() {
               />
             </div>
           </LittleSection>
-          <LittleSection title="Final Prototype">
+          <LittleSection title="Final Version">
             <div className={styles.prototypeRow}>
               <div className={styles.prototypeColumn}>
                 <p>

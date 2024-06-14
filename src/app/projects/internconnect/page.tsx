@@ -4,6 +4,7 @@ import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import BigSection from "@/components/BigSection";
 import LittleSection from "@/components/LittleSection";
+import WIP from "@/components/WIP";
 
 export default function InternConnect() {
   return (
@@ -63,18 +64,7 @@ export default function InternConnect() {
         </div>*/}
         <div />
       </div>
-      <div className={styles.wipContainer}>
-        <h6 className={styles.italic} id={styles.wip}>
-          Work in progress... Come back soon!
-        </h6>
-        <Image
-          src="/whisper/panda.svg"
-          alt="WIP Panda"
-          width={200}
-          height={0}
-          style={{ height: "auto" }}
-        />
-      </div>
+      <WIP />
       <ContactForm />
     </>
   );

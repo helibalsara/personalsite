@@ -101,19 +101,3 @@
 .finalIterationText {
   padding-top: 28px;
 }
-
-.wipContainer {
-  padding-top: 64px;
-  padding-left: 144px;
-  padding-right: 144px;
-  padding-bottom: 64px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-#wip {
-  font-size: 24px;
-}

@@ -463,39 +463,89 @@ export default function Whisper() {
             </div>
           </LittleSection>
           <LittleSection title="Prototype 2">
-            <div className={styles.prototypeColumn}>
-              <p>
-                An updated prototype was created out of cardboard and duct tape
-                with additional arrow buttons for more interaction. “Wizard of
-                Oz” testing was done with the same subject as before. New
-                features include:
-                <br />-{">"} navigating the saved cards in{" "}
-                <strong>two dimensions</strong>
-                <br />-{">"} ability to <strong>mark/unmark</strong> and{" "}
-                <strong>re-read cards.</strong>
-              </p>
-              <p>
-                <strong>Results</strong>
-                <br />2 mistakes and 7 slip-ups. Simulated working screens and a
-                3D printed prototype were created to improve the flow.
-              </p>
+            <div className={styles.prototypeRow}>
+              <div className={styles.prototypeColumn}>
+                <p>
+                  An updated prototype was created out of cardboard and duct
+                  tape with additional arrow buttons for more interaction.
+                  “Wizard of Oz” testing was done with the same subject as
+                  before. New features include:
+                  <br />-{">"} navigating the saved cards in{" "}
+                  <strong>two dimensions</strong>
+                  <br />-{">"} ability to <strong>mark/unmark</strong> and{" "}
+                  <strong>re-read cards.</strong>
+                </p>
+                <p>
+                  <strong>Results</strong>
+                  <br />2 mistakes and 7 slip-ups. Simulated working screens and
+                  a 3D printed prototype were created to improve the flow.
+                </p>
+              </div>
+              <Image
+                src="/whisper/user-testing-4.png"
+                alt="user-testing-4"
+                width={177}
+                height={141.24}
+                style={{ width: "auto" }}
+              />
+            </div>
+          </LittleSection>
+          <LittleSection title="Final Prototype">
+            <div className={styles.prototypeRow}>
+              <div className={styles.prototypeColumn}>
+                <p>
+                  For the final iteration, only 1 mistake and 3 slip-ups were
+                  made. The slips still showed that there was a break in flow in
+                  the game, most likely due to the “Wizard of Oz” experiment
+                  conductor for simulating the button pushes.
+                </p>
+                <p>
+                  There was a <strong>3 minute reduction in downtime</strong>,
+                  from 5 minutes to 2 minutes.
+                </p>
+                <p>
+                  Our end prototype was able to meet the main goals of our VOA,
+                  primarily creating a sense of independence, but also ease of
+                  use and sense of place.
+                </p>
+              </div>
+              <Image
+                src="/whisper/user-testing-5.png"
+                alt="user-testing-5"
+                width={177}
+                height={238}
+                style={{ width: "auto" }}
+              />
             </div>
           </LittleSection>
         </div>
       </BigSection>
 
-      <div className={styles.wipContainer}>
-        <h6 className={styles.italic} id={styles.wip}>
-          Work in progress... Come back soon!
-        </h6>
-        <Image
-          src="/whisper/panda.svg"
-          alt="WIP Panda"
-          width={200}
-          height={0}
-          style={{ height: "auto" }}
-        />
-      </div>
+      <BigSection title="Reflection" color="white">
+        <div className={styles.reflectionContainer}>
+          <p>
+            This was my first physical design project ever, and I enjoyed the
+            whole process. I personally focused more on the research and
+            synthesis portion of the project since I already had experience in
+            those phases. I wish I had contributed more to the prototyping
+            section and learned how to 3D model/print the actual prototype.
+            However, I’m very proud and grateful for my team for all the work we
+            put into this project! Looking back, I would have wanted to gather
+            more primary research to avoid making the assumptions we did about
+            what our user may want. The next development of the prototype would
+            be to test with new social playing card games, to understand how
+            well the concept works with various popular board game options.
+          </p>
+          <Image
+            src="/whisper/reflection.png"
+            alt="reflection"
+            width={245.67}
+            height={184.25}
+            style={{ width: "auto" }}
+          />
+        </div>
+      </BigSection>
+
       <ContactForm />
     </>
   );

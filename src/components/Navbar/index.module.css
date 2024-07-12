@@ -3,6 +3,12 @@
   top: 54px;
   left: 70px;
   width: calc(100% - 140px);
+
+  @media (max-width: 768px) {
+    top: 54px;
+    left: 48px;
+    width: calc(100% - 96px);
+  }
 }
 
 .container {

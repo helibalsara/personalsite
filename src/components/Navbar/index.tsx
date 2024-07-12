@@ -6,6 +6,8 @@ import Link from "next/link";
 import { useMediaQuery } from "react-responsive";
 import Links from "../Links";
 import HamburgerMenu from "../HamburgerMenu";
+import { useState } from "react";
+import MobileLinks from "../MobileLinks";
 
 interface Props {
   darkTheme?: boolean;
@@ -16,6 +18,9 @@ export default function Navbar({ darkTheme }: Props) {
     useMediaQuery({
       minWidth: 769,
     });
+
+  const [mobileLinksOpen, setMobileLinksOpen] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
   return (
     <div className={styles.outerContainer}>
@@ -39,7 +44,22 @@ export default function Navbar({ darkTheme }: Props) {
         {useDesktopMediaQuery() ? (
           <Links darkTheme={darkTheme} />
         ) : (
-          <HamburgerMenu />
+          <button
+            className={styles.button}
+            onClick={() => {
+              setMobileLinksOpen(true);
+              setClicked(true);
+            }}
+          >
+            <HamburgerMenu />
+          </button>
+        )}
+
+        {clicked && (
+          <MobileLinks
+            onClose={() => setMobileLinksOpen(false)}
+            open={mobileLinksOpen}
+          />
         )}
       </div>
     </div>

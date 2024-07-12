@@ -9,15 +9,18 @@
 }
 
 .bottomBackground {
-  background: #E1E1E1;
+  background: #e1e1e1;
   padding: 96px 144px 63px 88px;
 }
 
 .introTextContainer {
   text-wrap: balance;
-  margin: 0 auto;
+  margin: 0 100px;
+  @media (min-width: 1000px) {
+    margin: 0 auto;
+  }
   max-width: 800px;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,5 +31,8 @@
   display: flex;
   flex-direction: column;
   gap: 118px;
-  padding: 76px 169px 140px 146px;
+  padding: 76px 169px 140px 48px;
+  @media (min-width: 1000px) {
+    padding: 76px 169px 140px 146px;
+  }
 }

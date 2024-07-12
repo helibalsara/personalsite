@@ -1,6 +1,9 @@
 .container {
   display: flex;
   gap: 30px;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 }
 
 .textContainer {

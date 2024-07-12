@@ -1,20 +1,21 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import styles from "./index.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import projects from "../../projectInfo.json";
-import { usePathname } from "next/navigation";
+import { useMediaQuery } from "react-responsive";
+import Links from "../Links";
+import HamburgerMenu from "../HamburgerMenu";
 
 interface Props {
   darkTheme?: boolean;
 }
 
 export default function Navbar({ darkTheme }: Props) {
-  const [showDropdown, setShowDropdown] = useState<boolean>(false);
-
-  const currentUrl = usePathname();
+  const useDesktopMediaQuery = () =>
+    useMediaQuery({
+      minWidth: 769,
+    });
 
   return (
     <div className={styles.outerContainer}>
@@ -35,76 +36,11 @@ export default function Navbar({ darkTheme }: Props) {
         </Link>
 
         {/* TODO: Turn these into links */}
-        <div className={styles.linksContainer}>
-          <div className={styles.dropdown}>
-            <button
-              className={styles.dropdownButton}
-              onClick={() =>
-                setShowDropdown((prevState: boolean) => !prevState)
-              }
-            >
-              <div className={styles.dropdownTextIcon}>
-                <p
-                  className={
-                    styles.linkText + " " + (darkTheme && styles.light)
-                  }
-                  id={darkTheme ? styles.projectsLight : styles.projectsDark}
-                >
-                  projects
-                </p>
-                <Image
-                  src={
-                    darkTheme ? "/dropdownIconLight.svg" : "/dropdownIcon.svg"
-                  }
-                  alt=""
-                  width={0}
-                  height={0}
-                  style={{
-                    height: "100%",
-                    width: "auto",
-                    transform: showDropdown ? "rotate(180deg)" : "rotate(0deg)",
-                  }}
-                />
-              </div>
-            </button>
-            {showDropdown && (
-              <div
-                className={`${styles.dropdownContent} ${
-                  currentUrl.startsWith("/projects") && styles.white
-                }`}
-              >
-                <div />
-                {projects.map(
-                  ({ title, route }: { title: string; route: string }) => (
-                    <Link
-                      className={
-                        styles.dropdownOptionText +
-                        " " +
-                        (darkTheme && styles.light)
-                      }
-                      href={"/projects" + route}
-                      key={title}
-                    >
-                      {title}
-                    </Link>
-                  )
-                )}
-              </div>
-            )}
-          </div>
-          <Link
-            className={styles.linkText + " " + (darkTheme && styles.light)}
-            href="/about"
-          >
-            about
-          </Link>
-          <Link
-            className={styles.linkText + " " + (darkTheme && styles.light)}
-            href="/Heli_Balsara_resume.pdf"
-          >
-            resume
-          </Link>
-        </div>
+        {useDesktopMediaQuery() ? (
+          <Links darkTheme={darkTheme} />
+        ) : (
+          <HamburgerMenu />
+        )}
       </div>
     </div>
   );

@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  background: #E1E1E1;
+  background: #e1e1e1;
   padding: 96px 144px 63px 88px;
 }
 
@@ -49,9 +49,13 @@
 
 .contentContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  gap: 83px;
+  gap: 48px;
+  @media (min-width: 1000px) {
+    flex-direction: row;
+    gap: 83px;
+  }
 }
 
 .nameEmail {

@@ -8,7 +8,6 @@
   height: 100%;
   @media (max-width: 768px) {
     height: 125%;
-    padding-bottom: 50%;
   }
   display: flex;
   align-items: center;
@@ -23,6 +22,10 @@
 .introTextContainer {
   text-wrap: balance;
   margin: auto 64px;
+
+  @media (min-width: px) {
+    margin: auto;
+  }
   @media (min-width: 1000px) {
     margin: auto;
   }

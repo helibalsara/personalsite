@@ -51,7 +51,7 @@ export default function Navbar({ darkTheme }: Props) {
               setClicked(true);
             }}
           >
-            <HamburgerMenu />
+            <HamburgerMenu darkTheme={darkTheme} />
           </button>
         )}
 

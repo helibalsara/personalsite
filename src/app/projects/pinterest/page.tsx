@@ -23,8 +23,8 @@ export default function Pinterest() {
         <div className={styles.imageContainer}>
           <Image
             src="/pinterest.png"
-            width={0}
-            height={0}
+            width={536}
+            height={339}
             style={{ height: "100%", width: "auto" }}
             alt="pinterest"
             priority

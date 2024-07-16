@@ -14,8 +14,8 @@ export default function InternConnect() {
         <div className={styles.imageContainer}>
           <Image
             src="/internconnect.png"
-            width={0}
-            height={0}
+            width={536}
+            height={339}
             style={{ height: "100%", width: "auto" }}
             alt="InternConnect"
             priority

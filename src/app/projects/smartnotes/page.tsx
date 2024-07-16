@@ -13,8 +13,8 @@ export default function SmartNotes() {
         <div className={styles.imageContainer}>
           <Image
             src="/smartnotes.png"
-            width={0}
-            height={0}
+            width={536}
+            height={339}
             style={{ height: "100%", width: "auto" }}
             alt="smartnotes"
             priority

@@ -37,6 +37,9 @@ export default function MobileLinks({ onClose, open }: Props) {
         <Link className={styles.linkText} href="/Heli_Balsara_resume.pdf">
           resume
         </Link>
+        <Link className={styles.linkText} href="https://shotbyheli.mypixieset.com/">
+          photography
+        </Link>
       </div>
     </div>
   );

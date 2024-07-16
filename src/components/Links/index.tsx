@@ -78,6 +78,12 @@ export default function Links({ darkTheme }: Props) {
       >
         resume
       </Link>
+      <Link
+        className={styles.linkText + " " + (darkTheme && styles.light)}
+        href="https://shotbyheli.mypixieset.com/"
+      >
+        photography
+      </Link>
     </div>
   );
 }

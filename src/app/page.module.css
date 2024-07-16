@@ -36,7 +36,7 @@
 .projectTilesContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 118px;
   padding: 76px 48px 140px 48px;
   @media (min-width: 1000px) {

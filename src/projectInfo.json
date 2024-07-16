@@ -4,7 +4,7 @@
     "title": "Pinterest",
     "subtitle": "Ad Creation Process",
     "description": "Improving the 3-step ad creation process for new small-medium businesses promoting their products.",
-    "image": "/pinterest.svg",
+    "image": "/pinterest.png",
     "route": "/pinterest"
   },
   {
@@ -20,7 +20,7 @@
     "title": "InternConnect",
     "subtitle": "Online Community",
     "description": "InternConnect connects computer science students with targeted internship opportunities to empower their career journey.",
-    "image": "/internConnect.svg",
+    "image": "/internconnect.png",
     "route": "/internconnect"
   },
   {
@@ -36,7 +36,7 @@
     "title": "SmartNotes",
     "subtitle": "AI Pen Tool",
     "description": "Improving the learning experience for college students through an AI note-taking pen",
-    "image": "/smartnotes.svg",
+    "image": "/smartnotes.png",
     "route": "/smartnotes"
   }
 ]

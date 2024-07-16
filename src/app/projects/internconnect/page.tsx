@@ -13,7 +13,7 @@ export default function InternConnect() {
       <div className={styles.topContainer}>
         <div className={styles.imageContainer}>
           <Image
-            src="/internConnect.svg"
+            src="/internconnect.png"
             width={0}
             height={0}
             style={{ height: "100%", width: "auto" }}

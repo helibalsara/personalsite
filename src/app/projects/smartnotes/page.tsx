@@ -12,7 +12,7 @@ export default function SmartNotes() {
       <div className={styles.topContainer}>
         <div className={styles.imageContainer}>
           <Image
-            src="/smartnotes.svg"
+            src="/smartnotes.png"
             width={0}
             height={0}
             style={{ height: "100%", width: "auto" }}

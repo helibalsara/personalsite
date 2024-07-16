@@ -22,7 +22,7 @@ export default function Pinterest() {
       <div className={styles.topContainer}>
         <div className={styles.imageContainer}>
           <Image
-            src="/pinterest.svg"
+            src="/pinterest.png"
             width={0}
             height={0}
             style={{ height: "100%", width: "auto" }}

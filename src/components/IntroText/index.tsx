@@ -7,7 +7,14 @@ import { useMediaQuery } from "react-responsive";
 
 export default function IntroText() {
   const [imageSrc, setImageSrc] = useState<string>("/helicopter.svg");
-  const [imageStyle, setImageStyle] = useState({ cursor: "pointer" });
+  const [imageStyle, setImageStyle] = useState<{
+    position?: string;
+    left?: number;
+    top?: number;
+    cursor: string;
+    transform?: string;
+    zIndex: number;
+  }>({ cursor: "pointer", zIndex: 999 });
   const [isMoving, setIsMoving] = useState<boolean>(false);
   let lastMoveTime = 0; // Initialize lastMoveTime
 

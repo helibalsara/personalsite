@@ -19,14 +19,20 @@ export default function IntroText() {
     let interval: NodeJS.Timeout;
     const handleMouseMove = (event: MouseEvent) => {
       if (isMoving) {
+        setTimeout(() => {
+          setImageStyle((prev) => ({
+            ...prev,
+            position: "absolute",
+            left: event.clientX - 90,
+            top: event.clientY - 115,
+          }));
+        }, 100);
+
         setImageStyle((prev) => ({
           ...prev,
           cursor: "auto",
           transform:
             event.clientX < window.innerWidth / 2 ? "scaleX(-1)" : "scaleX(1)",
-          position: "absolute",
-          left: event.clientX - 90,
-          top: event.clientY - 115,
         }));
       }
     };

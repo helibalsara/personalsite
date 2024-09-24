@@ -32,11 +32,14 @@ const FadeInElement: React.FC<{ children: React.ReactNode }> = ({
 
   // Add a scroll event listener when the component mounts
   useEffect(() => {
+    if (isElementInViewport(elementRef.current)) {
+      setIsVisible(true);
+    }
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

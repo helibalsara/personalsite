@@ -24,7 +24,8 @@ export default function BigSection({
   return (
     <div
       className={
-        (color == "grey" ? styles.greySection : styles.whiteSection) +
+        styles.section +
+        (color == "grey" ? " " + styles.grey : "") +
         (!extendLineBottom ? " " + styles.shortenLineBottom : "") +
         (!extendLineTop ? " " + styles.shortenLineTop : "")
       }

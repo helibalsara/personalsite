@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./page.module.css";
 import Navbar from "@/components/Navbar";
 import IntroText from "@/components/IntroText";
@@ -8,11 +10,9 @@ import ContactForm from "@/components/ContactForm";
 export default function Home() {
   return (
     <>
+      <Navbar />
       <div className={styles.gradient}>
-        <Navbar />
-        <div className={styles.introTextContainer}>
-          <IntroText />
-        </div>
+        <IntroText />
       </div>
       <div className={styles.projectTilesContainer}>
         {projects.map((properties) => (

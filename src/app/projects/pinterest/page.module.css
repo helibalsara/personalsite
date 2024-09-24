@@ -1,7 +1,7 @@
 .topContainer {
   padding-top: 153px;
-  padding-left: 144px;
-  padding-right: 144px;
+  padding-left: 48px;
+  padding-right: 48px;
 }
 
 .imageContainer {
@@ -9,6 +9,9 @@
   flex-direction: row;
   width: 100%;
   gap: 64px;
+  @media (max-width:768px) {
+    flex-direction: column;
+  }
 }
 
 .textContainer {
@@ -28,6 +31,9 @@
   width: 100%;
   background-color: #000;
   margin-top: 100px;
+  @media (max-width:768px) {
+    margin-top: 48px;
+  }
   margin-bottom: 48px;
 }
 

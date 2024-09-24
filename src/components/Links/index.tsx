@@ -80,7 +80,7 @@ export default function Links({ darkTheme }: Props) {
       </Link>
       <Link
         className={styles.linkText + " " + (darkTheme && styles.light)}
-        href="https://shotbyheli.mypixieset.com/"
+        href="https://picsbyheli.com/"
       >
         photography
       </Link>

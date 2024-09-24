@@ -1,14 +1,7 @@
-.container {
+.textContainer {
   display: flex;
   flex-direction: column;
-  gap: 44px;
-  align-items: flex-start;
-}
-
-.roleContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  gap: 16px;
   align-items: flex-start;
 }
 
@@ -28,18 +21,12 @@
   line-height: normal;
 }
 
-.currently {
-  color: #000;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.role {
-  color: #000;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 144px;
+  padding-right: 172px;
+  width: 100%;
+  align-items: center;
 }

@@ -20,8 +20,16 @@ export default function IntroText() {
   }>({ cursor: "pointer", zIndex: 999 });
   const [isMoving, setIsMoving] = useState<boolean>(false);
 
-  const handleClick = () => {
+  const handleClick = (event) => {
     setIsMoving(true);
+    setTimeout(() => {
+      setImageStyle((prev) => ({
+        ...prev,
+        position: "absolute",
+        left: event.clientX - COPTER_WIDTH / 2,
+        top: event.clientY - COPTER_HEIGHT / 2 + window.scrollY,
+      }));
+    }, 100);
   };
 
   useEffect(() => {
@@ -78,14 +86,20 @@ export default function IntroText() {
           <p className={styles.role}>a product design intern @ Housecall Pro</p>
         </div>
         {useDesktopMediaQuery() && (
-          <Image
-            src={imageSrc}
-            width={COPTER_WIDTH}
-            height={COPTER_HEIGHT}
-            alt="helicopter"
-            style={imageStyle}
-            onClick={handleClick}
-          />
+          <div className={styles.clickContainer}>
+            <div className={styles.arrowStack}>
+              <Image src="/arrow.svg" width={53.4} height={27.48} alt="arrow" />
+              <p className={styles.clickText}>click to adventure with me!</p>
+            </div>
+            <Image
+              src={imageSrc}
+              width={COPTER_WIDTH}
+              height={COPTER_HEIGHT}
+              alt="helicopter"
+              style={imageStyle}
+              onClick={handleClick}
+            />
+          </div>
         )}
         {isMoving && (
           <Image

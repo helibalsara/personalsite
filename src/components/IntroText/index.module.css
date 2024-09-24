@@ -53,3 +53,23 @@
   font-weight: 500;
   line-height: normal;
 }
+
+.clickContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 32px;
+}
+
+.clickText {
+  font-size: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+}
+
+.arrowStack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}

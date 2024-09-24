@@ -24,7 +24,7 @@ export default function IntroText() {
             ...prev,
             position: "absolute",
             left: event.clientX - 90,
-            top: event.clientY - 115,
+            top: event.clientY - 115 + window.scrollY,
           }));
         }, 100);
 

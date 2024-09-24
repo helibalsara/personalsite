@@ -3,6 +3,9 @@
   flex-direction: column;
   gap: 16px;
   align-items: flex-start;
+  padding-left: 288px;
+  padding-right: 288px;
+  width: 100%;
 }
 
 .name {
@@ -21,14 +24,11 @@
   line-height: normal;
 }
 
-.container {
+.copterContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 144px;
-  padding-right: 172px;
   width: 100%;
-  align-items: center;
 }
 
 .roleContainer {

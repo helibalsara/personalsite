@@ -5,11 +5,10 @@
     rgba(251, 251, 251, 0.2) 100%
   );
   width: 100%;
-  height: calc(50% + 78px);
+  height: 100%;
   @media (max-width: 768px) {
-    height: 100%;
+    height: 125%;
   }
-  margin-top: 156px;
   display: flex;
   align-items: center;
   justify-content: center;

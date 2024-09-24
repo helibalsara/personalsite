@@ -6,6 +6,9 @@ import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 
 export default function IntroText() {
+  const COPTER_WIDTH = 94;
+  const COPTER_HEIGHT = 121;
+
   const [imageSrc, setImageSrc] = useState<string>("/helicopter.svg");
   const [imageStyle, setImageStyle] = useState<{
     position?: string;
@@ -16,7 +19,6 @@ export default function IntroText() {
     zIndex: number;
   }>({ cursor: "pointer", zIndex: 999 });
   const [isMoving, setIsMoving] = useState<boolean>(false);
-  let lastMoveTime = 0; // Initialize lastMoveTime
 
   const handleClick = () => {
     setIsMoving(true);
@@ -30,8 +32,8 @@ export default function IntroText() {
           setImageStyle((prev) => ({
             ...prev,
             position: "absolute",
-            left: event.clientX - 90,
-            top: event.clientY - 115 + window.scrollY,
+            left: event.clientX - COPTER_WIDTH / 2,
+            top: event.clientY - COPTER_HEIGHT / 2 + window.scrollY,
           }));
         }, 100);
 
@@ -64,23 +66,38 @@ export default function IntroText() {
     });
 
   return (
-    <div className={styles.container}>
-      <div className={styles.textContainer}>
-        <h2 className={styles.name}>hey there!</h2>
-        <p className={styles.description}>
-          welcome in! check out some of my old work :)
-        </p>
+    <div className={styles.textContainer}>
+      <h2 className={styles.name}>heli balsara</h2>
+      <p className={styles.description}>
+        is a product designer aiming to create simple and innovative digital
+        solutions through human-centric thinking
+      </p>
+      <div className={styles.copterContainer}>
+        <div className={styles.roleContainer}>
+          <h4 className={styles.currently}>currently</h4>
+          <p className={styles.role}>a product design intern @ Housecall Pro</p>
+        </div>
+        {useDesktopMediaQuery() && (
+          <Image
+            src={imageSrc}
+            width={COPTER_WIDTH}
+            height={COPTER_HEIGHT}
+            alt="helicopter"
+            style={imageStyle}
+            onClick={handleClick}
+          />
+        )}
+        {isMoving && (
+          <Image
+            src={imageSrc}
+            width={COPTER_WIDTH}
+            height={COPTER_HEIGHT}
+            alt="helicopter"
+            style={{ opacity: 0 }}
+            onClick={handleClick}
+          />
+        )}
       </div>
-      {useDesktopMediaQuery() && (
-        <Image
-          src={imageSrc}
-          width={177}
-          height={277}
-          alt="helicopter"
-          style={imageStyle}
-          onClick={handleClick}
-        />
-      )}
     </div>
   );
 }

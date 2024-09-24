@@ -2,7 +2,7 @@
 
 import styles from "./index.module.css";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect, CSSProperties } from "react";
 import { useMediaQuery } from "react-responsive";
 
 export default function IntroText() {
@@ -10,17 +10,13 @@ export default function IntroText() {
   const COPTER_HEIGHT = 121;
 
   const [imageSrc, setImageSrc] = useState<string>("/helicopter.svg");
-  const [imageStyle, setImageStyle] = useState<{
-    position?: string;
-    left?: number;
-    top?: number;
-    cursor: string;
-    transform?: string;
-    zIndex: number;
-  }>({ cursor: "pointer", zIndex: 999 });
+  const [imageStyle, setImageStyle] = useState<CSSProperties>({
+    cursor: "pointer",
+    zIndex: 999,
+  });
   const [isMoving, setIsMoving] = useState<boolean>(false);
 
-  const handleClick = (event) => {
+  const handleClick = (event: React.MouseEvent<HTMLImageElement>) => {
     setIsMoving(true);
     setTimeout(() => {
       setImageStyle((prev) => ({

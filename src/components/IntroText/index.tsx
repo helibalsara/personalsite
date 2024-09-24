@@ -3,6 +3,7 @@
 import styles from "./index.module.css";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
 
 export default function IntroText() {
   const [imageSrc, setImageSrc] = useState<string>("/helicopter.svg");
@@ -50,6 +51,11 @@ export default function IntroText() {
     };
   }, [isMoving]);
 
+  const useDesktopMediaQuery = () =>
+    useMediaQuery({
+      minWidth: 769,
+    });
+
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
@@ -58,14 +64,16 @@ export default function IntroText() {
           welcome in! check out some of my old work :)
         </p>
       </div>
-      <Image
-        src={imageSrc}
-        width={177}
-        height={277}
-        alt="helicopter"
-        style={imageStyle}
-        onClick={handleClick}
-      />
+      {useDesktopMediaQuery() && (
+        <Image
+          src={imageSrc}
+          width={177}
+          height={277}
+          alt="helicopter"
+          style={imageStyle}
+          onClick={handleClick}
+        />
+      )}
     </div>
   );
 }

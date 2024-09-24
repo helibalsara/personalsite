@@ -59,8 +59,8 @@ export default function IntroText() {
         setImageSrc((prev) =>
           prev === "/helicopter.svg" ? "/helicopter2.svg" : "/helicopter.svg"
         );
-        window.addEventListener("mousemove", handleMouseMove);
       }, 100);
+      window.addEventListener("mousemove", handleMouseMove);
     }
     return () => {
       clearInterval(interval);
@@ -87,10 +87,17 @@ export default function IntroText() {
         </div>
         {useDesktopMediaQuery() && (
           <div className={styles.clickContainer}>
-            <div className={styles.arrowStack}>
-              <Image src="/arrow.svg" width={53.4} height={27.48} alt="arrow" />
-              <p className={styles.clickText}>click to adventure with me!</p>
-            </div>
+            {!isMoving && (
+              <div className={styles.arrowStack}>
+                <Image
+                  src="/arrow.svg"
+                  width={53.4}
+                  height={27.48}
+                  alt="arrow"
+                />
+                <p className={styles.clickText}>click to adventure with me!</p>
+              </div>
+            )}
             <Image
               src={imageSrc}
               width={COPTER_WIDTH}
@@ -101,15 +108,28 @@ export default function IntroText() {
             />
           </div>
         )}
-        {isMoving && (
-          <Image
-            src={imageSrc}
-            width={COPTER_WIDTH}
-            height={COPTER_HEIGHT}
-            alt="helicopter"
-            style={{ opacity: 0 }}
-            onClick={handleClick}
-          />
+        {useDesktopMediaQuery() && isMoving && (
+          <div className={styles.clickContainer}>
+            <div className={styles.arrowStack}>
+              <Image
+                src="/arrow.svg"
+                width={53.4}
+                height={27.48}
+                alt="arrow"
+                style={{ opacity: 0 }}
+              />
+              <p className={styles.clickText} style={{ opacity: 0 }}>
+                click to adventure with me!
+              </p>
+            </div>
+            <Image
+              src={imageSrc}
+              width={COPTER_WIDTH}
+              height={COPTER_HEIGHT}
+              alt="helicopter"
+              style={{ opacity: 0 }}
+            />
+          </div>
         )}
       </div>
     </div>

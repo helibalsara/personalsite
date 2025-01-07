@@ -20,7 +20,7 @@ export default function Footer() {
               rel="noopener noreferrer"
             >
               <Image
-                src="/linkedin.svg"
+                src="/linkedin.png"
                 alt="LinkedIn"
                 width={50}
                 height={50}
@@ -32,7 +32,7 @@ export default function Footer() {
               rel="noopener noreferrer"
             >
               <Image
-                src="/instagram.svg"
+                src="/instagram.png"
                 alt="Instagram"
                 width={50}
                 height={50}

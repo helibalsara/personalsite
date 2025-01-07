@@ -12,7 +12,7 @@ interface SurveyGridProps {
 
 export default function SurveyGrid({ items }: SurveyGridProps) {
   return (
-    <div className="grid grid-cols-2 gap-8">
+    <div className="grid grid-cols-2 gap-8 self-center">
       {items.map((item, index) => (
         <div key={index} className="flex flex-row gap-2">
           <Image

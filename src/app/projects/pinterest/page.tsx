@@ -6,6 +6,7 @@ import WIP from "@/components/WIP";
 import PinterestFinalRecommendation from "@/components/PinterestFinalRecommendation";
 import Line from "@/components/Line";
 import SurveyGrid from "@/components/SurveyGrid";
+import PinterestCompetitorGrid from "@/components/PinterestCompetitorGrid";
 
 export default function Pinterest() {
   return (
@@ -292,9 +293,74 @@ export default function Pinterest() {
           on these platforms, as well as Tiktok. We scored and ranked these
           competitors in 6 areas.
         </p>
-        <div className="grid grid-cols-2 gap-8">
-          
-        </div>
+        <PinterestCompetitorGrid
+          items={[
+            {
+              title: "AD CREATION PROCESS",
+              description: (
+                <p>
+                  <strong>Instagram</strong> is most intuitive to use, even
+                  without prior ad creating knowledge.
+                </p>
+              ),
+              images: ["/pinterest/instagram.png"],
+            },
+            {
+              title: "KEY FEATURES",
+              description: (
+                <p>
+                  <strong>Facebook</strong> and <strong>Google</strong> Ads
+                  offers advanced features such as “Bid Strategy” and “Pixel
+                  Tracking.”
+                </p>
+              ),
+              images: ["/pinterest/fb.png", "/pinterest/gads.png"],
+            },
+            {
+              title: "CUSTOMER SUPPORT",
+              description: (
+                <p>
+                  <strong>Tiktok</strong> is the only social media platform from
+                  our list that offers 1:1 consulting with an marketing
+                  specialist to personalize ads.
+                </p>
+              ),
+              images: ["/pinterest/tiktok.png"],
+            },
+            {
+              title: "USABILITY",
+              description: (
+                <p>
+                  <strong>Pinterest</strong> and <strong>Instagram</strong> have
+                  the most user-friendly process by simplifying the process into
+                  a step-by-step process.
+                </p>
+              ),
+              images: ["/pinterest/pinterest-logo.png", "/pinterest/instagram.png"],
+            },
+            {
+              title: "DEMOGRAPHICS",
+              description: (
+                <p>
+                  <strong>Facebook</strong> targets the largest demographic with
+                  very specific targeting options.
+                </p>
+              ),
+              images: ["/pinterest/fb.png"],
+            },
+
+            {
+              title: "PRICING",
+              description: (
+                <p>
+                  <strong>All</strong> platforms are subject to personal budgets
+                  for each ad.
+                </p>
+              ),
+              images: ["/pinterest/dollar.png"],
+            },
+          ]}
+        />
       </div>
       <WIP />
       <Footer />

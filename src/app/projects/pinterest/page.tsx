@@ -7,6 +7,7 @@ import PinterestFinalRecommendation from "@/components/PinterestFinalRecommendat
 import Line from "@/components/Line";
 import SurveyGrid from "@/components/SurveyGrid";
 import PinterestCompetitorGrid from "@/components/PinterestCompetitorGrid";
+import EnhancementSection from "@/components/EnhancementSection";
 
 export default function Pinterest() {
   return (
@@ -209,7 +210,7 @@ export default function Pinterest() {
           Pinterest&apos;s current 3-step ad creation flow, asking them to
           articulate their thoughts and experiences aloud.
         </p>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-2 gap-8 px-[40.5px] self-center">
           <div className="flex flex-col gap-2">
             <p className="text-xl font-bold">GUIDANCE & EXPERIENCE</p>
             <p>
@@ -336,7 +337,10 @@ export default function Pinterest() {
                   a step-by-step process.
                 </p>
               ),
-              images: ["/pinterest/pinterest-logo.png", "/pinterest/instagram.png"],
+              images: [
+                "/pinterest/pinterest-logo.png",
+                "/pinterest/instagram.png",
+              ],
             },
             {
               title: "DEMOGRAPHICS",
@@ -361,9 +365,142 @@ export default function Pinterest() {
             },
           ]}
         />
+        <div className="flex flex-row gap-8 items-center">
+          <p className="flex-1">
+            Platforms like Facebook and Google cater towards experienced
+            marketers, focusing on optimizing ad to goal conversion through a
+            detailed, time-consuming process.
+            <br />
+            <br />
+            Pinterest focuses on being approachable to new marketers by
+            prioritizing efficiency and ease of use, condensing the creation
+            space to one page and three easy steps.
+            <br />
+            <br />
+            Here is the journey of both an experienced marketer and a newbie
+            using Pinterest.
+          </p>
+          <div className="flex-1">
+            <Image
+              src="/pinterest/journey.png"
+              width={477 * 2}
+              height={285 * 2}
+              style={{ height: "auto", width: "100%" }}
+              alt="pinterest journey"
+            />
+          </div>
+        </div>
+        <Line className="my-8" />
+        <h2 className="text-3xl font-bold">
+          HOW DID WE ENHANCE THE EXPERIENCE?
+        </h2>
+        <EnhancementSection
+          title="STEP 1: SELECT A PIN"
+          currentImage={{
+            src: "/pinterest/enhance1.png",
+            width: "40%",
+          }}
+          currentText="The existing side pop-up is unorganized because it displays all uploaded pins, making it difficult to find the pin to promote."
+          redesignImage={{
+            src: "/pinterest/enhance2.png",
+            width: "60%",
+          }}
+          redesignText="Organized views of uploaded pins by recents and boards."
+          finalImage={{
+            src: "/pinterest/enhance3.png",
+            width: "70%",
+          }}
+          finalText={{
+            title: "Simplified navigation with pin selection",
+            description:
+              "Organizing by recent pins and pins in boards eliminates endless scrolling.",
+          }}
+        />
+        <EnhancementSection
+          title="STEP 2: TARGETING DETAILS"
+          currentImage={{
+            src: "/pinterest/enhance4.png",
+            width: "40%",
+          }}
+          currentText="The existing interests list is extensive and contains many nested and hidden items that are automatically selected when the parent item is selected."
+          redesignImage={{
+            src: "/pinterest/enhance5.png",
+            width: "60%",
+          }}
+          redesignText="The dropdown opens automatically to avoid hidden options, and selected interests are displayed as tags at the top for better visibility."
+          finalImage={{
+            src: "/pinterest/enhance6.png",
+            width: "70%",
+          }}
+          finalText={{
+            title: "Specific targeting options",
+            description:
+              "Selected targeting interests helps the users be more intentional with  their target audience .",
+          }}
+        />
+        <EnhancementSection
+          title="STEP 3: SUBMIT & PROMOTE YOUR PIN"
+          currentImage={{
+            src: "/pinterest/enhance7.svg",
+            width: "40%",
+          }}
+          currentText="No confirmation page, leaving users confused about any next steps or actions."
+          redesignImage={{
+            src: "/pinterest/enhance8.png",
+            width: "60%",
+          }}
+          redesignText={
+            <>
+              A confirmation page that provides additional resources and
+              guidance on next steps.
+              <br />
+              <br />
+              Convenient place to promote another pin as well.
+            </>
+          }
+          finalImage={{
+            src: "/pinterest/enhance9.png",
+            width: "70%",
+          }}
+          finalText={{
+            title: "Refined UI & Confirmation",
+            description:
+              "Friendlier UI makes the ad-creation process more approachable for SMBs, and the confirmation reassures them with next steps!",
+          }}
+        />
+        <div className="flex flex-row justify-end w-full mt-[-80px]">
+          <Image
+            src="/pinterest/medal.png"
+            width={123}
+            height={123}
+            alt="medal"
+          />
+        </div>
+        <Line className="mt-[-32px] mb-8" />
+        <h2 className="text-3xl font-bold">REFLECTIONS</h2>
+        <div className="flex flex-row gap-8 items-center">
+          <p>
+            I was definitely intimidated to tackle this semester-long project,
+            but it was an amazing experience working with real clients. Working
+            with Pinterest taught me how to effectively leverage contextual
+            inquiries to understand user flows and drive research-backed
+            insights further into the creation phase.
+            <br />
+            <br />
+            I&apos;d like to extend a huge thank you to Judy and Wei from
+            Pinterest for guiding and supporting our team all semester, as well
+            as to the rest of my team for pulling through this exciting journey!
+          </p>
+          <Image
+            src="/pinterest/reflections.png"
+            width={253 * 2}
+            height={168.6 * 2}
+            style={{ height: "auto", maxWidth: "35%" }}
+            alt="reflections"
+          />
+        </div>
       </div>
-      <WIP />
-      <Footer />
+      <Footer className="mt-[80px]" />
     </>
   );
 }

@@ -63,7 +63,7 @@ export default function IntroText() {
   }, [isMoving]);
 
   return (
-    <div className="flex flex-col gap-4 items-start px-[288px] w-full">
+    <div className="flex flex-col gap-4 items-start lg:px-[288px] md:px-[144px] sm:px-[72px] w-full">
       <h2 className="text-black text-5xl font-normal">heli balsara</h2>
       <p className="text-black text-[28px] font-medium">
         is a product designer aiming to create simple and innovative digital

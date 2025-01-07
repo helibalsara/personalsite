@@ -164,7 +164,7 @@ export default function Pinterest() {
           contextual inquiries, and user interviews. We built on top of the
           secondary research to ask the right questions.
         </p>
-        <p className="text-xl font-bold">USER SURVEYS</p>
+        <p className="text-xl font-semibold">USER SURVEYS</p>
         <SurveyGrid
           items={[
             {
@@ -200,7 +200,7 @@ export default function Pinterest() {
             },
           ]}
         />
-        <p className="text-xl font-bold">
+        <p className="text-xl font-semibold">
           CONTEXTUAL INQUIRIES & USER INTERVIEWS
         </p>
         <p>

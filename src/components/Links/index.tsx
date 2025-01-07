@@ -21,7 +21,7 @@ export default function Links({ darkTheme }: Props) {
         >
           <div className="flex flex-row items-center gap-2">
             <p
-              className={`text-xl font-medium font-[--font-manrope] no-underline pl-3 ${
+              className={`text-xl font-medium no-underline pl-3 ${
                 darkTheme 
                   ? "text-[#fbfbfb] hover:text-[#fbfbfb]" 
                   : "text-black hover:text-black"
@@ -43,14 +43,14 @@ export default function Links({ darkTheme }: Props) {
           </div>
         </button>
         {showDropdown && (
-          <div className={`flex flex-col absolute gap-4 p-3 pb-3 ${
+          <div className={`flex flex-col absolute gap-4 p-3 pb-3 rounded-lg ${
             currentUrl.startsWith("/projects") ? "bg-[#fbfbfb]" : ""
           }`}>
             <div />
             {projects.map(
               ({ title, route }: { title: string; route: string }) => (
                 <Link
-                  className={`font-[--font-manrope] text-base font-normal leading-5 no-underline ${
+                  className={`text-base font-normal leading-5 no-underline ${
                     darkTheme 
                       ? "text-[#fbfbfb] hover:text-[#888888]" 
                       : "text-black hover:text-[#888888]"
@@ -66,7 +66,7 @@ export default function Links({ darkTheme }: Props) {
         )}
       </div>
       <Link
-        className={`text-xl font-medium font-[--font-manrope] no-underline ${
+        className={`text-xl font-medium no-underline ${
           darkTheme 
             ? "text-[#fbfbfb] hover:text-[#888888]" 
             : "text-black hover:text-[#888888]"
@@ -76,7 +76,7 @@ export default function Links({ darkTheme }: Props) {
         about
       </Link>
       <Link
-        className={`text-xl font-medium font-[--font-manrope] no-underline ${
+        className={`text-xl font-medium no-underline ${
           darkTheme 
             ? "text-[#fbfbfb] hover:text-[#888888]" 
             : "text-black hover:text-[#888888]"
@@ -86,7 +86,7 @@ export default function Links({ darkTheme }: Props) {
         resume
       </Link>
       <Link
-        className={`text-xl font-medium font-[--font-manrope] no-underline ${
+        className={`text-xl font-medium no-underline ${
           darkTheme 
             ? "text-[#fbfbfb] hover:text-[#888888]" 
             : "text-black hover:text-[#888888]"

@@ -63,20 +63,20 @@ export default function IntroText() {
   }, [isMoving]);
 
   return (
-    <div className="flex flex-col gap-4 items-start lg:px-[288px] md:px-[144px] sm:px-[72px] w-full">
-      <h2 className="text-black text-5xl font-normal">heli balsara</h2>
-      <p className="text-black text-[28px] font-medium">
+    <div className="flex flex-col gap-4 items-start lg:px-[288px] md:px-[144px] px-[72px] w-full">
+      <h2 className="text-black text-4xl md:text-5xl font-normal">heli balsara</h2>
+      <p className="text-black text-xl md:text-[28px] font-medium">
         is a product designer aiming to create simple and innovative digital
         solutions via human-centric thinking
       </p>
       <div className="flex flex-row justify-between w-full">
-        <div className="flex flex-col gap-3 items-start">
-          <h4 className="text-black text-xl font-normal">previously</h4>
+        <div className="flex flex-col gap-3 items-start pt-12 md:pt-0 max-w-[60%]">
+          <h4 className="text-black text-base md:text-xl font-normal">previously</h4>
           <p className="text-black text-base font-medium">
             a product design intern @ Housecall Pro
           </p>
         </div>
-        <div className="flex flex-row items-end gap-8">
+        <div className="hidden md:flex flex-row items-end gap-8">
           {!isMoving && (
             <div className="flex flex-col items-end gap-3">
               <Image

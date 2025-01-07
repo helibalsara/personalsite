@@ -17,7 +17,7 @@ export default function Home() {
       <div className="w-full h-full bg-gradient-to-tr from-[#aba9a9] to-[rgba(251,251,251,0.2)] flex items-center justify-center">
         <IntroText />
       </div>
-      <div className="flex flex-col items-start gap-[84px] pt-[101px] pl-[144px] pr-[67px]">
+      <div className="flex flex-col items-start gap-16 md:gap-[84px] pt-12 px-6 md:pt-[101px] md:pl-[144px] md:pr-[67px]">
         {displayedProjects.map((properties) => (
           <ProjectTile key={properties.title} {...properties} />
         ))}

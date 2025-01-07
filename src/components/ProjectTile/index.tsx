@@ -30,11 +30,11 @@ export default function ProjectTile({
             height={337}
             className="w-full h-auto shadow-[0_3.67px_3.67px_0_rgba(0,0,0,0.25)] transition-transform duration-300 ease-in-out hover:scale-102"
           />
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col gap-1 w-full">
             <p className="text-[#878686] text-xl font-normal uppercase">{roleType}</p>
-            <h1 className="text-black text-[52px] font-bold">{title}</h1>
-            <h3 className="text-black text-[35px] font-normal">{subtitle}</h3>
-            <p className="text-[#878686] text-xl font-light pt-5">{description}</p>
+            <h1 className="text-black text-4xl md:text-[52px] font-bold">{title}</h1>
+            <h3 className="text-black text-2xl md:text-[35px] font-normal">{subtitle}</h3>
+            <p className="text-[#878686] text-base md:text-xl font-light md:pt-5">{description}</p>
           </div>
         </div>
       </FadeInElement>

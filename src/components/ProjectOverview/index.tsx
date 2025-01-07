@@ -33,7 +33,7 @@ export default function ProjectOverview({
           <p className="text-sm">{team}</p>
         </div>
       </div>
-      <p className="flex-1">{description}</p>
+      <div className="flex-1">{description}</div>
     </div>
   );
 }

@@ -1,9 +1,7 @@
 "use client";
 
-import styles from "./index.module.css";
 import Image from "next/image";
 import React, { useState, useEffect, CSSProperties } from "react";
-import { useMediaQuery } from "react-responsive";
 
 export default function IntroText() {
   const COPTER_WIDTH = 94;
@@ -64,49 +62,44 @@ export default function IntroText() {
     };
   }, [isMoving]);
 
-  const useDesktopMediaQuery = () =>
-    useMediaQuery({
-      minWidth: 769,
-    });
-
   return (
-    <div className={styles.textContainer}>
-      <h2 className={styles.name}>heli balsara</h2>
-      <p className={styles.description}>
+    <div className="flex flex-col gap-4 items-start px-[288px] w-full">
+      <h2 className="text-black text-5xl font-normal">heli balsara</h2>
+      <p className="text-black text-[28px] font-medium">
         is a product designer aiming to create simple and innovative digital
-        solutions through human-centric thinking
+        solutions via human-centric thinking
       </p>
-      <div className={styles.copterContainer}>
-        <div className={styles.roleContainer}>
-          <h4 className={styles.currently}>currently</h4>
-          <p className={styles.role}>a product design intern @ Housecall Pro</p>
+      <div className="flex flex-row justify-between w-full">
+        <div className="flex flex-col gap-3 items-start">
+          <h4 className="text-black text-xl font-normal">previously</h4>
+          <p className="text-black text-base font-medium">
+            a product design intern @ Housecall Pro
+          </p>
         </div>
-        {useDesktopMediaQuery() && (
-          <div className={styles.clickContainer}>
-            {!isMoving && (
-              <div className={styles.arrowStack}>
-                <Image
-                  src="/arrow.svg"
-                  width={53.4}
-                  height={27.48}
-                  alt="arrow"
-                />
-                <p className={styles.clickText}>click to adventure with me!</p>
-              </div>
-            )}
-            <Image
-              src={imageSrc}
-              width={COPTER_WIDTH}
-              height={COPTER_HEIGHT}
-              alt="helicopter"
-              style={imageStyle}
-              onClick={handleClick}
-            />
-          </div>
-        )}
-        {useDesktopMediaQuery() && isMoving && (
-          <div className={styles.clickContainer}>
-            <div className={styles.arrowStack}>
+        <div className="flex flex-row items-end gap-8">
+          {!isMoving && (
+            <div className="flex flex-col items-end gap-3">
+              <Image
+                src="/arrow.svg"
+                width={53.4}
+                height={27.48}
+                alt="arrow"
+              />
+              <p className="text-xs pr-4 pb-3">click to adventure with me!</p>
+            </div>
+          )}
+          <Image
+            src={imageSrc}
+            width={COPTER_WIDTH}
+            height={COPTER_HEIGHT}
+            alt="helicopter"
+            style={imageStyle}
+            onClick={handleClick}
+          />
+        </div>
+        {isMoving && (
+          <div className="flex flex-row items-end gap-8">
+            <div className="flex flex-col items-end gap-3">
               <Image
                 src="/arrow.svg"
                 width={53.4}
@@ -114,7 +107,7 @@ export default function IntroText() {
                 alt="arrow"
                 style={{ opacity: 0 }}
               />
-              <p className={styles.clickText} style={{ opacity: 0 }}>
+              <p className="text-xs pr-4 pb-3" style={{ opacity: 0 }}>
                 click to adventure with me!
               </p>
             </div>

@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import "./index.css";
 
 const FadeInElement: React.FC<{ children: React.ReactNode }> = ({
   children,
@@ -9,7 +8,6 @@ const FadeInElement: React.FC<{ children: React.ReactNode }> = ({
   const elementRef = useRef<HTMLDivElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
-  // Function to check if element is in viewport
   const isElementInViewport = (element: HTMLDivElement | null) => {
     if (!element) return false;
     const rect = element.getBoundingClientRect();
@@ -22,7 +20,6 @@ const FadeInElement: React.FC<{ children: React.ReactNode }> = ({
     );
   };
 
-  // Function to handle the scroll event
   const handleScroll = () => {
     if (isElementInViewport(elementRef.current)) {
       setIsVisible(true);
@@ -30,7 +27,6 @@ const FadeInElement: React.FC<{ children: React.ReactNode }> = ({
     }
   };
 
-  // Add a scroll event listener when the component mounts
   useEffect(() => {
     if (isElementInViewport(elementRef.current)) {
       setIsVisible(true);
@@ -39,13 +35,14 @@ const FadeInElement: React.FC<{ children: React.ReactNode }> = ({
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <div
       ref={elementRef}
-      className={`fade-in-element ${isVisible ? "visible" : ""}`}
+      className={`transform transition-all duration-500 ease-in-out ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+      }`}
     >
       {children}
     </div>

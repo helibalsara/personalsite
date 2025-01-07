@@ -1,9 +1,8 @@
 "use client";
 
 import Navbar from "@/components/Navbar";
-import styles from "./page.module.css";
 import Image from "next/image";
-import ContactForm from "@/components/ContactForm";
+import Footer from "@/components/Footer";
 import FinalRecommendation from "@/components/FinalRecommendation";
 import BigSection from "@/components/BigSection";
 import LittleSection from "@/components/LittleSection";
@@ -19,8 +18,8 @@ export default function Pinterest() {
   return (
     <>
       <Navbar />
-      <div className={styles.topContainer}>
-        <div className={styles.imageContainer}>
+      <div className="pt-[153px] px-12">
+        <div className="flex flex-row w-full gap-16 md:flex-col">
           <Image
             src="/pinterest.png"
             width={536}
@@ -29,35 +28,35 @@ export default function Pinterest() {
             alt="pinterest"
             priority
           />
-          <div className={styles.textContainer}>
-            <h3 className={styles.noBold}>
+          <div className="flex flex-col gap-4">
+            <h3 className="font-normal text-xl max-w-[90%]">
               Improving the <strong>3-step ad creation process</strong> on
               Pinterest for <strong>small-medium businesses</strong> through
               Berkeley Innovation.
             </h3>
-            <div className={styles.titleAndDescription}>
+            <div className="flex flex-col gap-2">
               <h3>Role</h3>
-              <p>Product Design Consultant</p>
+              <p className="text-sm">Product Design Consultant</p>
             </div>
-            <div className={styles.titleAndDescription}>
+            <div className="flex flex-col gap-2">
               <h3>Duration</h3>
-              <p>September 2023 - December 2023</p>
+              <p className="text-sm">September 2023 - December 2023</p>
             </div>
-            <div className={styles.titleAndDescription}>
+            <div className="flex flex-col gap-2">
               <h3>Disciplines</h3>
-              <p>UI Designer, Human- Centric Design, UX Research</p>
+              <p className="text-sm">UI Designer, Human- Centric Design, UX Research</p>
             </div>
-            <div className={styles.titleAndDescription}>
+            <div className="flex flex-col gap-2">
               <h3>Team</h3>
-              <p>
+              <p className="text-sm">
                 Sarah Suen (PM), Uyen Phan, Michid Bayambajav, Joanna Ye, Angie
                 Nguyen, and me!
               </p>
             </div>
           </div>
         </div>
-        <div className={styles.horizontalLine} />
-        <div className={styles.problemSection}>
+        <div className="h-px w-full bg-black mt-[100px] mb-12 md:mt-12" />
+        <div className="flex flex-col gap-10">
           <h1>The Challenge</h1>
           <p>
             Pinterest is a social media platform dedicated to providing
@@ -72,126 +71,50 @@ export default function Pinterest() {
             <strong>With that, we were asked:</strong>
           </p>
         </div>
-        <div className={styles.questionSection}>
-          <p className={styles.bigP}>
+        <div className="py-12">
+          <p className="text-3xl font-bold">
             Design an approachable and dedicated{" "}
-            <span className={styles.red}>ad creation flow</span> to support new
+            <span className="text-[#bd081c]">ad creation flow</span> to support new
             merchants promoting their products on Pinterest for the{" "}
-            <span className={styles.red}>first time</span>.
+            <span className="text-[#bd081c]">first time</span>.
           </p>
         </div>
       </div>
-      <div className={styles.finalRecsContainer}>
-        <div className={styles.finalRecsTop}>
-          <h1>Final Recommendations</h1>
-          <h6 className={styles.italic}>Sneak Peek!! 🤫</h6>
-        </div>
-        <FinalRecommendation
-          number={1}
-          title="ORGANIZED SELECTING PINS"
-          image="/pinterest/newImage1.gif"
-        >
-          <p>
-            Currently, when businesses select a pin they have uploaded to
-            advertise, they are greeting with a{" "}
-            <strong>xpop-up side bar</strong> containing all the pins they have
-            created, sorted by recents. If a business has many pins, it can be a{" "}
-            <strong>hassle finding the one they want to promote</strong>. To
-            better organize this, we separated two views of pins - recents and
-            boards. This allows users to <strong>easily find the pin</strong>{" "}
-            and <strong>help them save some time</strong>.
-          </p>
-        </FinalRecommendation>
-        <FinalRecommendation
-          number={2}
-          title="NAVIGATING TARGETING OPTIONS"
-          image="/pinterest/newImage2.gif"
-        >
-          <p>
-            Many small businesses greatly value having specific targeting
-            options to increase the visibility of their ad. Currently,
-            Pinterest’s targeting options include narrowing by age, gender, and
-            interests. The current interests selections are already
-            comprehensive, however, <strong>difficult to navigate</strong> and
-            visualize selected options. To help users save some time, we
-            included
-            <strong>
-              pop-up tags, automatic dropdown, and visible scroll bar
-            </strong>
-            for the selected interests box.
-          </p>
-        </FinalRecommendation>
-        <FinalRecommendation
-          number={3}
-          title="UI IMPROVEMENTS"
-          image="/pinterest/newImage3.gif"
-        >
-          <p>
-            Users seemed to easily understand the simple 3-step ad flow, but
-            many thought the UI was too <strong>“white and plain”</strong> and
-            certain elements could stand out. To{" "}
-            <strong>enhance user focus and visual appeal</strong> keeping the
-            same layout, we introduced a <strong>card-like</strong> format to
-            each section that dynamically highlights the active section. We also
-            changed the “Promote” button to red to help it stand out. We also
-            included a pop-up <strong>confirmation</strong> once the pin is
-            promoted with links to resources helping new users.
-          </p>
-        </FinalRecommendation>
-        <FinalRecommendation
-          number={4}
-          title="GUIDANCE WITH TARGETING"
-          image="/pinterest/newImage4.gif"
-        >
-          <p>
-            New ad creators might feel{" "}
-            <strong>confused about the impact of audience selection</strong> and
-            overwhelmed figuring out who to target due to the numerous options.
-            We integrated a <strong>smart suggestion feature</strong> which
-            analyzes the content of an ad and automatically fills out the
-            audience section with targeted demographics, inspired by similar
-            successful campaigns. A confirmation message{" "}
-            <strong>reassures new users</strong> of the effectiveness of this
-            feature.
-          </p>
-        </FinalRecommendation>
-      </div>
-      <div className={styles.howGetHereContainer}>
-        <h1 className={styles.white}>You’re probably wondering how we ended up here...</h1>
-        <div className={styles.stepsContainer}>
-          <div className={styles.step}>
-            <p className={styles.stepText}>RESEARCH</p>
-            <div className={styles.numberAndText}>
-              <p className={styles.stepText}>1.</p>
-              <p className={styles.stepText}>
+      <div className="bg-[#353434] px-36 py-16">
+        <h1 className="text-white">You&apos;re probably wondering how we ended up here...</h1>
+        <div className="flex flex-row justify-evenly pt-12 px-12">
+          <div className="flex-1 flex flex-col gap-4 items-center">
+            <p className="text-white font-neuton text-xl italic font-normal">RESEARCH</p>
+            <div className="flex flex-row gap-2">
+              <p className="text-white font-neuton text-xl italic font-normal">1.</p>
+              <p className="text-white font-neuton text-xl italic font-normal">
                 understanding pain points & current methods
               </p>
             </div>
           </div>
-          <div className={styles.step}>
-            <p className={styles.stepText}>SYNTHESIS</p>
-            <div className={styles.numberAndText}>
-              <p className={styles.stepText}>2.</p>
-              <p className={styles.stepText}>
+          <div className="flex-1 flex flex-col gap-4 items-center">
+            <p className="text-white font-neuton text-xl italic font-normal">SYNTHESIS</p>
+            <div className="flex flex-row gap-2">
+              <p className="text-white font-neuton text-xl italic font-normal">2.</p>
+              <p className="text-white font-neuton text-xl italic font-normal">
                 identifying themes & emerging journey patterns
               </p>
             </div>
           </div>
-          <div className={styles.step}>
-            <p className={styles.stepText}>IDEATIONS</p>
-            <div className={styles.numberAndText}>
-              <p className={styles.stepText}>3.</p>
-              <p className={styles.stepText}>
+          <div className="flex-1 flex flex-col gap-4 items-center">
+            <p className="text-white font-neuton text-xl italic font-normal">IDEATIONS</p>
+            <div className="flex flex-row gap-2">
+              <p className="text-white font-neuton text-xl italic font-normal">3.</p>
+              <p className="text-white font-neuton text-xl italic font-normal">
                 competitive analysis & brain-storming
-                {/* had to add hyphen to shorten */}
               </p>
             </div>
           </div>
-          <div className={styles.step}>
-            <p className={styles.stepText}>DESIGN</p>
-            <div className={styles.numberAndText}>
-              <p className={styles.stepText}>4.</p>
-              <p className={styles.stepText}>
+          <div className="flex-1 flex flex-col gap-4 items-center">
+            <p className="text-white font-neuton text-xl italic font-normal">DESIGN</p>
+            <div className="flex flex-row gap-2">
+              <p className="text-white font-neuton text-xl italic font-normal">4.</p>
+              <p className="text-white font-neuton text-xl italic font-normal">
                 user testing & iterating on screens
               </p>
             </div>
@@ -204,7 +127,7 @@ export default function Pinterest() {
         extendLineBottom
         noBorderBottom
       >
-        <div className={styles.researchTop}>
+        <div className="flex justify-between gap-[76px] pt-12 pl-24">
           <p>
             We needed a better understanding of the problem space, specifically
             about the nuances of ad creation and advertising on social media
@@ -214,12 +137,12 @@ export default function Pinterest() {
             contextual inquiries, as well as seeing the need to break down how
             other social media platforms do ad creation.
           </p>
-          <div>
+          <div className="flex flex-col gap-4">
             <FlowChart style={{ flexShrink: 0 }} />
-            <h6>click to jump to section!</h6>
+            <h6 className="text-black text-xs font-normal">click to jump to section!</h6>
           </div>
         </div>
-        <div className={styles.littleSectionContainer}>
+        <div className="flex flex-col pt-[108px] gap-[52px]">
           <div id="secondary-research">
             <LittleSection title="Secondary Research">
               <p>
@@ -229,9 +152,9 @@ export default function Pinterest() {
                 struggles, common new business practices, and pros of different
                 platforms. Some of the main insights are:
               </p>
-              <div className={styles.pinsAndImage}>
-                <div className={styles.pinsContainer}>
-                  <div className={styles.pinRectangle}>
+              <div className="flex items-center gap-12 justify-between pt-7 pb-12">
+                <div className="flex flex-col gap-8 justify-evenly">
+                  <div className="flex p-2 items-center gap-2 bg-[#ededed] rounded-lg">
                     <Image
                       src="/pinterest/pin.png"
                       alt="articles"
@@ -243,7 +166,7 @@ export default function Pinterest() {
                       <strong>time to grow</strong> on social media
                     </p>
                   </div>
-                  <div className={styles.pinRectangle}>
+                  <div className="flex p-2 items-center gap-2 bg-[#ededed] rounded-lg">
                     <Image
                       src="/pinterest/pin.png"
                       alt="articles"
@@ -255,7 +178,7 @@ export default function Pinterest() {
                       <strong>enough funds</strong> to grow is essential
                     </p>
                   </div>
-                  <div className={styles.pinRectangle}>
+                  <div className="flex p-2 items-center gap-2 bg-[#ededed] rounded-lg">
                     <Image
                       src="/pinterest/pin.png"
                       alt="articles"
@@ -285,15 +208,15 @@ export default function Pinterest() {
         </div>
       </BigSection>
       <BigSection color="grey" extendLineBottom extendLineTop noBorderBottom>
-        <div className={styles.surveyContainer}>
+        <div className="flex flex-col gap-[52px] py-5">
           <div id="survey">
             <LittleSection title="Survey">
               <p>
                 While we were only able to collect <strong>20 responses</strong>{" "}
                 on our user survey, we still pulled some important insights.
               </p>
-              <div className={styles.responses}>
-                <div>
+              <div className="flex gap-4 justify-around pt-8">
+                <div className="flex-1 flex flex-col gap-1">
                   <Image
                     onMouseOver={() => setIsHovered1(true)}
                     onMouseOut={() => setIsHovered1(false)}
@@ -315,10 +238,10 @@ export default function Pinterest() {
                     <p>
                       <strong>Preferred advertising platform</strong>
                     </p>
-                    <p>Instagram & Google Ads</p>
+                    <p className="text-sm">Instagram & Google Ads</p>
                   </div>
                 </div>
-                <div>
+                <div className="flex-1 flex flex-col gap-1">
                   <Image
                     onMouseOver={() => setIsHovered2(true)}
                     onMouseOut={() => setIsHovered2(false)}
@@ -340,10 +263,10 @@ export default function Pinterest() {
                     <p>
                       <strong>SMB dedication towards ads</strong>
                     </p>
-                    <p>Time-consuming solo work</p>
+                    <p className="text-sm">Time-consuming solo work</p>
                   </div>
                 </div>
-                <div>
+                <div className="flex-1 flex flex-col gap-1">
                   <Image
                     onMouseOver={() => setIsHovered3(true)}
                     onMouseOut={() => setIsHovered3(false)}
@@ -365,7 +288,7 @@ export default function Pinterest() {
                     <p>
                       <strong>Ranked ad goals</strong>
                     </p>
-                    <p>Rated “extremely important” in order</p>
+                    <p className="text-sm">Rated &quot;extremely important&quot; in order</p>
                   </div>
                 </div>
               </div>
@@ -374,7 +297,7 @@ export default function Pinterest() {
         </div>
       </BigSection>
       <BigSection color="white" extendLineTop>
-        <div className={styles.surveyContainer}>
+        <div className="flex flex-col gap-[52px] py-5">
           <div id="contextual-inquiries">
             <LittleSection title="Contextual Inquiries">
               <p>
@@ -386,8 +309,8 @@ export default function Pinterest() {
                 a pin already uploaded, and asked them to promote the pin using
                 the 3-step ad creation process. We collect 3 important insights:
               </p>
-              <div className={styles.contextPins}>
-                <div className={styles.pinRectangle}>
+              <div className="grid grid-cols-2 gap-6 pt-8 items-center">
+                <div className="flex p-2 items-center gap-2 bg-[#ededed] rounded-lg">
                   <Image
                     src="/pinterest/pin.png"
                     alt="articles"
@@ -404,7 +327,7 @@ export default function Pinterest() {
                     </p>
                   </div>
                 </div>
-                <div className={styles.pinRectangle}>
+                <div className="flex p-2 items-center gap-2 bg-[#ededed] rounded-lg">
                   <Image
                     src="/pinterest/pin.png"
                     alt="articles"
@@ -421,7 +344,7 @@ export default function Pinterest() {
                     </p>
                   </div>
                 </div>
-                <div className={styles.pinRectangle}>
+                <div className="flex p-2 items-center gap-2 bg-[#ededed] rounded-lg">
                   <Image
                     src="/pinterest/pin.png"
                     alt="articles"
@@ -433,12 +356,12 @@ export default function Pinterest() {
                       <strong>CONFUSING USER FLOW**</strong>
                     </p>
                     <p>
-                      New users have difficulties navigating to the “Promote
-                      pin” feature and confuse it with “Create campaign.”
+                      New users have difficulties navigating to the &quot;Promote
+                      pin&quot; feature and confuse it with &quot;Create campaign.&quot;
                     </p>
                   </div>
                 </div>
-                <div className={styles.createAndAsterisk}>
+                <div className="flex pl-12">
                   <p>
                     <strong>**</strong>
                   </p>
@@ -455,7 +378,7 @@ export default function Pinterest() {
           </div>
           <div id="competitive-analysis">
             <LittleSection title="Competitive Analysis">
-              <div className={styles.competitorAnalysis}>
+              <div className="flex flex-col gap-6">
                 <p>
                   As one of our deliverables, we created a competitive analysis
                   chart looking at 5 other social media/advertisement platforms
@@ -487,9 +410,9 @@ export default function Pinterest() {
         </div>
       </BigSection>
       <BigSection color="white" title="Synthesis">
-        <div className={styles.littleSectionContainer}>
+        <div className="flex flex-col pt-[108px] gap-[52px]">
           <LittleSection title="Affinity Mapping">
-            <div className={styles.competitorAnalysis}>
+            <div className="flex flex-col gap-6">
               <p>
                 We began to pool all of our research insights together and
                 organized them into common clusters. Our top voted ones were
@@ -505,7 +428,7 @@ export default function Pinterest() {
             </div>
           </LittleSection>
           <LittleSection title="Personas">
-            <div className={styles.competitorAnalysis}>
+            <div className="flex flex-col gap-6">
               <p>
                 We created two personas: the <strong>advertising newbie</strong>{" "}
                 and the <strong>marketing veteran</strong>. The newbie is a
@@ -533,9 +456,9 @@ export default function Pinterest() {
         </div>
       </BigSection>
       <BigSection title="Ideation" color="white">
-        <div className={styles.littleSectionContainer}>
+        <div className="flex flex-col pt-[108px] gap-[52px]">
           <LittleSection title="Crazy Eights">
-            <div className={styles.competitorAnalysis}>
+            <div className="flex flex-col gap-6">
               <p>
                 With these problem spaces in mind, we each did a round of crazy
                 eights ideation and arranged them on an effort/impact matrix,
@@ -562,14 +485,14 @@ export default function Pinterest() {
             />
           </LittleSection>
           <LittleSection title="Concept Selection">
-            <div className={styles.conceptSelection}>
-              <div className={styles.conceptSelectionTextAndPins}>
+            <div className="flex gap-12 justify-between [&>*]:flex-1">
+              <div className="flex flex-col gap-7">
                 <p>
                   Filtering through our high impact and high feasibility ideas,
                   we decided to work on <strong>4 concepts</strong>:
                 </p>
-                <div className={styles.conceptSelectionPins}>
-                  <div className={styles.pinRectangle}>
+                <div className="flex flex-col gap-6">
+                  <div className="flex p-2 items-center gap-2 bg-[#ededed] rounded-lg">
                     <Image
                       src="/pinterest/pin.png"
                       alt="articles"
@@ -581,7 +504,7 @@ export default function Pinterest() {
                       <strong>select the pin</strong> they want to promote.
                     </p>
                   </div>
-                  <div className={styles.pinRectangle}>
+                  <div className="flex p-2 items-center gap-2 bg-[#ededed] rounded-lg">
                     <Image
                       src="/pinterest/pin.png"
                       alt="articles"
@@ -593,7 +516,7 @@ export default function Pinterest() {
                       picking specific interests <strong>dropdown</strong>.
                     </p>
                   </div>
-                  <div className={styles.pinRectangle}>
+                  <div className="flex p-2 items-center gap-2 bg-[#ededed] rounded-lg">
                     <Image
                       src="/pinterest/pin.png"
                       alt="articles"
@@ -606,7 +529,7 @@ export default function Pinterest() {
                       <strong>confirmation page</strong>.
                     </p>
                   </div>
-                  <div className={styles.pinRectangle}>
+                  <div className="flex p-2 items-center gap-2 bg-[#ededed] rounded-lg">
                     <Image
                       src="/pinterest/pin.png"
                       alt="articles"
@@ -632,9 +555,9 @@ export default function Pinterest() {
           </LittleSection>
         </div>
       </BigSection>
-      <div className={styles.compare}>
-        <BigSection noLine color="#353434" title="Let’s compare and contrast">
-          <div className={styles.compareContainer}>
+      <div className="text-white">
+        <BigSection noLine color="#353434" title="Let&apos;s compare and contrast">
+          <div className="flex gap-14 flex-col py-12">
             <Compare
               number={1}
               title="ORGANIZED SELECTING PINS"
@@ -647,7 +570,7 @@ export default function Pinterest() {
               number={2}
               title="NAVIGATING TARGETING OPTIONS"
               currentImage="/pinterest/currentImage2.png"
-              currentText="All options under “Beauty” are automatically selected, difficult to keep track of."
+              currentText="All options under &quot;Beauty&quot; are automatically selected, difficult to keep track of."
               newImage="/pinterest/newImage2.gif"
               newText="Users can (de)select precise interests faster with tags."
             />
@@ -655,7 +578,7 @@ export default function Pinterest() {
               number={3}
               title="UI IMPROVEMENTS"
               currentImage="/pinterest/currentImage3.png"
-              currentText="“Plain and white” screen."
+              currentText="&quot;Plain and white&quot; screen."
               newImage="/pinterest/newImage3.gif"
               newText="Dynamic card coloring with highlighted CTA and confirmation pop-up. "
             />
@@ -671,7 +594,7 @@ export default function Pinterest() {
         </BigSection>
       </div>
       <BigSection title="Reflection" color="white">
-        <div className={styles.reflectionContainer}>
+        <div className="pl-20 pr-36 flex justify-between items-center gap-[120px] pt-6">
           <p>
             I was definitely intimidated to tackle this semester-long project,
             but it was an amazing experience working with real clients. Working
@@ -679,7 +602,7 @@ export default function Pinterest() {
             inquiries to understand user flows and drive research-backed
             insights further into the creation phase. <br />
             <br />
-            I’d like to extend a huge thank you to Judy and Wei from Pinterest
+            I&apos;d like to extend a huge thank you to Judy and Wei from Pinterest
             for guiding and supporting our team all semester, as well as to the
             rest of my team for pulling through this exciting journey!
           </p>
@@ -692,7 +615,7 @@ export default function Pinterest() {
           />
         </div>
       </BigSection>
-      <ContactForm />
+      <Footer />
     </>
   );
 }

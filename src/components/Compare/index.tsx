@@ -1,4 +1,3 @@
-import styles from "./index.module.css";
 import Image from "next/image";
 
 interface Props {
@@ -19,17 +18,17 @@ export default function FinalRecommendation({
   newText,
 }: Props) {
   return (
-    <div className={styles.container}>
-      <h2>
+    <div className="flex flex-col gap-12">
+      <h2 className="font-manrope text-2xl font-bold">
         {number}/ {title}
       </h2>
-      <div className={styles.row}>
-        <div className={styles.column}>
-          <div className={styles.text}>
-            <p>
+      <div className="flex justify-between gap-[76px]">
+        <div className="flex-1 flex flex-col gap-6">
+          <div className="flex flex-col gap-5">
+            <p className="text-xs">
               <strong>current</strong>
             </p>
-            <p>{currentText}</p>
+            <p className="text-xs">{currentText}</p>
           </div>
           <Image
             src={currentImage}
@@ -39,12 +38,12 @@ export default function FinalRecommendation({
             style={{ width: "100%", height: "auto" }}
           />
         </div>
-        <div className={styles.column}>
-          <div className={styles.text}>
-            <p>
+        <div className="flex-1 flex flex-col gap-6">
+          <div className="flex flex-col gap-5">
+            <p className="text-xs">
               <strong>new</strong>
             </p>
-            <p>{newText}</p>
+            <p className="text-xs">{newText}</p>
           </div>
           <Image
             src={newImage}

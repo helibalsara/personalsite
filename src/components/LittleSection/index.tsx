@@ -7,11 +7,11 @@ interface Props {
 
 export default function LittleSection({ title, children }: Props) {
   return (
-    <div className={styles.container}>
-      <div className={styles.titleContainer}>
-        <h3 className={styles.title}>{title}</h3>
+    <div className="flex flex-row gap-24 w-full">
+      <div className="flex flex-row justify-end text-right min-w-32">
+        <h3 className="text-black text-xl italic font-normal max-w-20">{title}</h3>
       </div>
-      <div className={styles.childrenContainer}>{children}</div>
+      <div className="pt-1 w-full">{children}</div>
     </div>
   );
 }

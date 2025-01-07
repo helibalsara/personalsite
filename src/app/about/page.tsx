@@ -1,5 +1,4 @@
-import ContactForm from "@/components/ContactForm";
-import styles from "./page.module.css";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Hearts from "./hearts.svg";
@@ -8,8 +7,8 @@ export default function About() {
   return (
     <>
       <Navbar darkTheme />
-      <div className={styles.container}>
-        <div className={styles.topContainer}>
+      <div className="px-[164px] pt-60 pb-100 text-[#ededed] bg-[#3b3b3b]">
+        <div className="flex gap-[148px] items-center justify-between pr-20 pb-[140px] [&>*]:flex-1">
           <div>
             <Image
               alt="profile"
@@ -18,23 +17,22 @@ export default function About() {
               height={442.77}
             />
           </div>
-          <div className={styles.textContainer}>
-            <div className={styles.heli}>
-              <h1>hi, i&apos;m heli...</h1>
+          <div className="flex flex-col gap-10">
+            <div className="flex flex-row items-end gap-12">
+              <h1 className="text-[48px] font-normal pb-8">hi, i&apos;m heli...</h1>
               <Image
                 alt="helicopter"
                 src="/about/helicopter.svg"
                 width={200}
                 height={200}
-                // style={{ height: "auto", width: "auto" }}
               />
             </div>
-            <p>
-              Like helicopter! I’m a senior at UC Berkeley majoring in Cognitive
-              Science & minoring in Data Science with a certificate in Design
-              Innovation.
+            <p className="max-w-[80%]">
+              Like helicopter! I&apos;m a senior at UC Berkeley majoring in
+              Cognitive Science & minoring in Data Science with a certificate
+              in Design Innovation.
             </p>
-            <p>
+            <p className="max-w-[80%]">
               You can catch me fostering a design community at Design @
               Berkeley, consulting on some cool projects at Berkeley Innovation,
               shooting golds with Cal Archery, and building up my photography
@@ -42,8 +40,8 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className={styles.images}>
-          <div className={styles.imageColumn}>
+        <div className="flex gap-5 justify-between flex-1">
+          <div className="flex gap-5 flex-col flex-1">
             <Image
               alt="image1"
               src="/about/image1.png"
@@ -66,9 +64,9 @@ export default function About() {
               style={{ width: "100%", height: "auto" }}
             />
           </div>
-          <div className={styles.rightImages}>
-            <div className={styles.images}>
-              <div className={styles.imageColumn}>
+          <div className="flex-[2]">
+            <div className="flex gap-5 justify-between flex-1">
+              <div className="flex gap-5 flex-col flex-1">
                 <Image
                   alt="image2"
                   src="/about/image2.png"
@@ -98,7 +96,7 @@ export default function About() {
                   style={{ width: "100%", height: "auto" }}
                 />
               </div>
-              <div className={styles.imageColumn}>
+              <div className="flex gap-5 flex-col flex-1">
                 <Image
                   alt="image3"
                   src="/about/image3.png"
@@ -122,14 +120,14 @@ export default function About() {
                 />
               </div>
             </div>
-            <div className={styles.heartsAndText}>
+            <div className="flex items-end justify-between">
               <Hearts />
-              <p>message for any photography inquiries, thanks!</p>
+              <p className="text-[#ededed] text-right text-2xl font-normal font-neuton">message for any photography inquiries, thanks!</p>
             </div>
           </div>
         </div>
       </div>
-      <ContactForm />
+      <Footer />
     </>
   );
 }

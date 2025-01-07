@@ -1,19 +1,19 @@
 [
   {
+    "roleType": "UX / COMPONENT DESIGN / INTERNSHIP",
+    "title": "Housecall Pro",
+    "subtitle": "E-Signature Flow Addition",
+    "description": "Developed a legally-binding e-signature component for small-medium home service businesses.",
+    "image": "/housecall.png",
+    "route": "/housecall-pro"
+  },
+  {
     "roleType": "UX RESEARCH/ UI DESIGN",
     "title": "Pinterest",
     "subtitle": "Ad Creation Process",
     "description": "Improving the 3-step ad creation process for new small-medium businesses promoting their products.",
     "image": "/pinterest.png",
     "route": "/pinterest"
-  },
-  {
-    "roleType": "UX RESEARCH/ PHYSICAL PRODUCT DESIGN",
-    "title": "Whisper",
-    "subtitle": "Card Reader",
-    "description": "Creating a party card reader for the visually impaired to foster social inclusivity.",
-    "image": "/whisper.png",
-    "route": "/whisper"
   },
   {
     "roleType": "Mobile/Desktop UI Design",
@@ -30,6 +30,22 @@
     "description": "TT makes searching for your dream home simple and time-efficient by providing easy access to tours of the property so you don’t have to.",
     "image": "/tt.svg",
     "route": "/tours-by-tenants"
+  },
+  {
+    "roleType": "BRAND IDENTITY / ILLUSTRATIONS",
+    "title": "Staramics",
+    "subtitle": "Mini Ceramics Studio",
+    "description": "Staramics creates handcrafted mini ceramic animals that are both whimsical and collectable!",
+    "image": "/staramics.png",
+    "route": "/staramics"
+  },
+  {
+    "roleType": "UX RESEARCH/ PHYSICAL PRODUCT DESIGN",
+    "title": "Whisper",
+    "subtitle": "Card Reader",
+    "description": "Creating a party card reader for the visually impaired to foster social inclusivity.",
+    "image": "/whisper.png",
+    "route": "/whisper"
   },
   {
     "roleType": "UX Research/Product Design",

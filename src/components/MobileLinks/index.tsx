@@ -1,4 +1,3 @@
-import styles from "./index.module.css";
 import Link from "next/link";
 import projects from "../../projectInfo.json";
 import Image from "next/image";
@@ -11,18 +10,25 @@ interface Props {
 export default function MobileLinks({ onClose, open }: Props) {
   return (
     <div
-      className={styles.container + " " + (open ? styles.open : styles.closed)}
+      className={`fixed top-0 left-0 bg-[#a0a0a0] h-screen w-screen flex justify-center items-center ${
+        open 
+          ? "animate-[slideInFromRight_0.5s_forwards]" 
+          : "animate-[slideOutToRight_0.5s_forwards]"
+      }`}
     >
-      <button className={styles.x} onClick={onClose}>
+      <button 
+        className="fixed top-[54px] right-12 bg-transparent border-0 p-0 m-0" 
+        onClick={onClose}
+      >
         <Image src="/x.svg" alt="Close Menu" width={32} height={32} />
       </button>
-      <div className={styles.innerContainer}>
-        <p className={styles.linkText}>projects</p>
-        <div className={styles.projectsContainer}>
+      <div className="flex flex-col gap-5">
+        <p className="text-black text-xl font-medium font-[--font-manrope] no-underline">projects</p>
+        <div className="flex flex-col gap-3 pl-3">
           {projects.map(
             ({ title, route }: { title: string; route: string }) => (
               <Link
-                className={styles.dropdownOptionText}
+                className="text-black font-[--font-manrope] text-base font-normal leading-5 no-underline"
                 href={"/projects" + route}
                 key={title}
               >
@@ -31,13 +37,13 @@ export default function MobileLinks({ onClose, open }: Props) {
             )
           )}
         </div>
-        <Link className={styles.linkText} href="/about">
+        <Link className="text-black text-xl font-medium font-[--font-manrope] no-underline" href="/about">
           about
         </Link>
-        <Link className={styles.linkText} href="/Heli_Balsara_resume.pdf">
+        <Link className="text-black text-xl font-medium font-[--font-manrope] no-underline" href="/Heli_Balsara_resume.pdf">
           resume
         </Link>
-        <Link className={styles.linkText} href="https://shotbyheli.mypixieset.com/">
+        <Link className="text-black text-xl font-medium font-[--font-manrope] no-underline" href="https://shotbyheli.mypixieset.com/">
           photography
         </Link>
       </div>

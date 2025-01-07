@@ -9,7 +9,7 @@ interface Props {
 
 export default function RadioButton({ value, text, onChange, checked }: Props) {
   return (
-    <div className={styles.container}>
+    <div className="font-manrope cursor-pointer [&>*]:cursor-pointer">
       <input
         type="radio"
         id={value.toString()}

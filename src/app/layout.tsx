@@ -1,7 +1,6 @@
 import "./globals.css";
 import { Manrope, Neuton } from "next/font/google";
 import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "Heli Balsara",
@@ -44,7 +43,6 @@ export default function RootLayout({
     <html lang="en" className={`${manrope.variable} ${neuton.variable}`}>
       <body>{children}</body>
       <Analytics />
-      <SpeedInsights />
     </html>
   );
 }

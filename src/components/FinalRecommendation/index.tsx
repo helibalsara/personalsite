@@ -1,4 +1,3 @@
-import styles from "./index.module.css";
 import Image from "next/image";
 
 interface Props {
@@ -15,9 +14,9 @@ export default function FinalRecommendation({
   children,
 }: Props) {
   return (
-    <div className={styles.container}>
-      <div className={styles.column}>
-        <h2>
+    <div className="flex gap-10 justify-between [&>*]:flex-1">
+      <div className="flex flex-col gap-2">
+        <h2 className="text-black font-manrope text-2xl font-bold">
           {number}/ {title}
         </h2>
         {children}

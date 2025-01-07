@@ -23,16 +23,20 @@ export default function BigSection({
 }: Props) {
   return (
     <div
-      className={
-        styles.section +
-        (color == "grey" ? " " + styles.grey : "") +
-        (!extendLineBottom ? " " + styles.shortenLineBottom : "") +
-        (!extendLineTop ? " " + styles.shortenLineTop : "")
-      }
+      className={`
+        flex flex-row w-full pl-36 md:pl-12 md:pr-12 border-b border-black gap-4
+        ${color === "grey" ? "bg-[#ededed]" : ""}
+        ${!extendLineBottom ? "pb-12" : ""}
+        ${!extendLineTop ? "pt-12" : ""}
+        ${topBorder ? "border-t border-black" : ""}
+        ${noBorderBottom ? "border-b-0" : ""}
+      `}
       style={color !== "grey" && color !== "white" ? { background: color } : {}}
-      id={topBorder ? styles.top : noBorderBottom ? styles.noBorderBottom : ""}
     >
-      <div className={styles.insideSection} id={noLine ? styles.noLine : ""}>
+      <div className={`
+        h-full w-full
+        ${noLine ? "" : "lg:pl-4 lg:pr-72 lg:border-l-2 lg:border-black"}
+      `}>
         {title && <h1>{title}</h1>}
         {children}
       </div>

@@ -16,7 +16,7 @@ export default function PinterestFinalRecommendation ({
   imageHeight = 372.9,
 }: PinterestFinalRecommendationProps) {
   return (
-    <div className="flex flex-col md:flex-row gap-8">
+    <div className="flex flex-row gap-16">
       <div className="w-1/3 flex-col gap-2">
         <p className="text-2xl font-bold">{title}</p>
         {description}

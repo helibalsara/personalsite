@@ -103,7 +103,7 @@ export default function Whisper() {
         </div>
       </div>
       <div className="bg-[#353434] px-36 py-16">
-        <h1 className="text-white">Let's rewind. How did we get here?</h1>
+        <h1 className="text-white">Let&apos;s rewind. How did we get here?</h1>
         <div className="flex flex-row justify-evenly pt-12 px-12">
           <div className="flex-1 flex flex-col gap-4 items-center">
             <p className="text-white font-neuton text-xl italic font-normal">RESEARCH</p>

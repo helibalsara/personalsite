@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 
 const FadeInElement: React.FC<{ children: React.ReactNode }> = ({
   children,
@@ -20,12 +20,12 @@ const FadeInElement: React.FC<{ children: React.ReactNode }> = ({
     );
   };
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     if (isElementInViewport(elementRef.current)) {
       setIsVisible(true);
       window.removeEventListener("scroll", handleScroll);
     }
-  };
+  }, [elementRef]);
 
   useEffect(() => {
     if (isElementInViewport(elementRef.current)) {
@@ -35,7 +35,7 @@ const FadeInElement: React.FC<{ children: React.ReactNode }> = ({
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
 
   return (
     <div

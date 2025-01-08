@@ -32,10 +32,10 @@ export default function ExpandableImage({
       />
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 animate-fadeIn"
           onClick={() => setIsOpen(false)}
         >
-          <div className="relative max-w-[90vw] max-h-[90vh]">
+          <div className="relative max-w-[85vw] max-h-[85vh] animate-scaleIn">
             <Image
               src={src}
               width={width * 2}
@@ -45,12 +45,12 @@ export default function ExpandableImage({
                 height: "auto",
                 width: "auto",
                 maxWidth: "100%",
-                maxHeight: "90vh",
+                maxHeight: "85vh",
                 objectFit: "contain",
               }}
             />
             <button
-              className="absolute top-4 right-4 text-white text-2xl bg-black bg-opacity-50 w-8 h-8 rounded-full flex items-center justify-center"
+              className="absolute -right-12 -top-12 text-white text-3xl hover:text-gray-300 transition-colors"
               onClick={(e) => {
                 e.stopPropagation();
                 setIsOpen(false);

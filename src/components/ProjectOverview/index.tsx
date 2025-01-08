@@ -18,22 +18,24 @@ export default function ProjectOverview({
       <div className="flex flex-col gap-4 flex-1">
         <div className="flex flex-col gap-1">
           <h3 className="font-bold">Role</h3>
-          <p className="text-sm">{role}</p>
+          <p className="text-base">{role}</p>
         </div>
         <div className="flex flex-col gap-1">
           <h3 className="font-bold">Duration</h3>
-          <p className="text-sm">{duration}</p>
+          <p className="text-base">{duration}</p>
         </div>
         <div className="flex flex-col gap-1">
           <h3 className="font-bold">Disciplines</h3>
-          <p className="text-sm">{disciplines}</p>
+          <p className="text-base">{disciplines}</p>
         </div>
         <div className="flex flex-col gap-1">
           <h3 className="font-bold">Team</h3>
-          <p className="text-sm">{team}</p>
+          <p className="text-base">{team}</p>
         </div>
       </div>
-      <div className="flex-1">{description}</div>
+      <div className="flex-1">
+        <h2 className="text-xl">{description}</h2>
+      </div>
     </div>
   );
 }

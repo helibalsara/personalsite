@@ -2,12 +2,13 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import ProjectOverview from "@/components/ProjectOverview";
-import WIP from "@/components/WIP";
 import PinterestFinalRecommendation from "@/components/PinterestFinalRecommendation";
 import Line from "@/components/Line";
 import SurveyGrid from "@/components/SurveyGrid";
 import PinterestCompetitorGrid from "@/components/PinterestCompetitorGrid";
 import EnhancementSection from "@/components/EnhancementSection";
+import ImagePopup from "@/components/ExpandableImage";
+import ExpandableImage from "@/components/ExpandableImage";
 
 export default function Pinterest() {
   return (
@@ -29,7 +30,7 @@ export default function Pinterest() {
         disciplines="UI, Human-Centric Design, UX Research"
         team="Sarah Suen (PM), Uyen Phan, Michid Bayambajav, Joanna Ye, Angie Nguyen, and me!"
         description={
-          <p>
+          <>
             Pinterest is a social media platform dedicated to providing
             motivation and inspiration to all,{" "}
             <strong>
@@ -46,7 +47,7 @@ export default function Pinterest() {
             As the Synthesis lead for this project, I guided the team to
             finalize contextual inquiries and unify research insights through
             affinity and journey mapping.
-          </p>
+          </>
         }
       />
       <div className="py-16 px-36 bg-[#EDEDED]">
@@ -381,7 +382,7 @@ export default function Pinterest() {
             using Pinterest.
           </p>
           <div className="flex-1">
-            <Image
+            <ExpandableImage
               src="/pinterest/journey.png"
               width={477 * 2}
               height={285 * 2}

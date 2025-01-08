@@ -28,6 +28,7 @@ export default function PinterestFinalRecommendation ({
           height={imageHeight}
           style={{ height: "auto", width: "100%" }}
           alt="project section"
+          unoptimized
           priority
         />
       </div>

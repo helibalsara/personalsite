@@ -16,7 +16,7 @@ export default function Pinterest() {
       <Navbar />
       <div className="pt-[153px]">
         <Image
-          src="/pinterest/hero.png"
+          src="/pinterest/hero.svg"
           width={1280}
           height={540.5}
           style={{ height: "auto", width: "100%" }}
@@ -154,7 +154,7 @@ export default function Pinterest() {
           WHAT&apos;S THE CURRENT AD CREATION FLOW?
         </h2>
         <Image
-          src="/pinterest/ad-creation.png"
+          src="/pinterest/ad-creation.svg"
           width={916}
           height={593}
           style={{ height: "auto", width: "100%" }}
@@ -384,8 +384,8 @@ export default function Pinterest() {
           <div className="flex-1">
             <ExpandableImage
               src="/pinterest/journey.png"
-              width={477 * 2}
-              height={285 * 2}
+              width={1398}
+              height={836}
               style={{ height: "auto", width: "100%" }}
               alt="pinterest journey"
             />
@@ -479,8 +479,8 @@ export default function Pinterest() {
         </div>
         <Line className="mt-[-32px] mb-8" />
         <h2 className="text-3xl font-bold">REFLECTIONS</h2>
-        <div className="flex flex-row gap-8 items-center">
-          <p>
+        <div className="flex flex-row gap-8 justify-between">
+          <p className="max-w-[40vw]">
             I was definitely intimidated to tackle this semester-long project,
             but it was an amazing experience working with real clients. Working
             with Pinterest taught me how to effectively leverage contextual
@@ -494,8 +494,8 @@ export default function Pinterest() {
           </p>
           <Image
             src="/pinterest/reflections.png"
-            width={253 * 2}
-            height={168.6 * 2}
+            width={253 * 8}
+            height={168.6 * 8}
             style={{ height: "auto", maxWidth: "35%" }}
             alt="reflections"
           />

@@ -7,7 +7,7 @@ export default function WIP() {
         Work in progress... Come back soon!
       </h6>
       <Image
-        src="/whisper/panda.svg"
+        src="/panda.svg"
         alt="WIP Panda"
         width={200}
         height={0}

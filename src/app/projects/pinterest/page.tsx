@@ -2,14 +2,13 @@ import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import ProjectOverview from "@/components/ProjectOverview";
-import FinalDesign from "@/components/FinalDesign";
 import Line from "@/components/Line";
 import SurveyGrid from "@/components/SurveyGrid";
 import PinterestCompetitorGrid from "@/components/PinterestCompetitorGrid";
 import EnhancementSection from "@/components/EnhancementSection";
-import ImagePopup from "@/components/ExpandableImage";
 import ExpandableImage from "@/components/ExpandableImage";
 import WaitHow from "@/components/WaitHow";
+import FinalDesignsSection from "@/components/FinalDesignsSection";
 
 export default function Pinterest() {
   return (
@@ -51,13 +50,14 @@ export default function Pinterest() {
           </>
         }
       />
-      <div className="py-16 px-36 bg-[#EDEDED]">
-        <h2 className="text-4xl font-bold mb-4">Final Recommendations</h2>
-        <h4 className="text-xl italic mb-4">Sneak Peak!! 🤫</h4>
-        <div className="flex flex-col gap-16">
-          <FinalDesign
-            title="1/ ORGANIZED PIN SELECT"
-            description={
+      <FinalDesignsSection
+        backgroundColor="#EDEDED"
+        title="Final Recommendations"
+        subtitle={<>Sneak Peak!! <span className="not-italic">🤫</span></>}
+        items={[
+          {
+            title: "1/ ORGANIZED PIN SELECT",
+            description: (
               <>
                 With the current design, if a business has many pins, it can be
                 a <strong>hassle finding the one they want to promote.</strong>{" "}
@@ -65,12 +65,12 @@ export default function Pinterest() {
                 recents and boards. This allows users to{" "}
                 <strong>easily find the pin and help them save time.</strong>
               </>
-            }
-            imageSrc="/pinterest/pinselect1.gif"
-          />
-          <FinalDesign
-            title="2/ TARGETING OPTIONS"
-            description={
+            ),
+            imageSrc: "/pinterest/pinselect1.gif"
+          },
+          {
+            title: "2/ TARGETING OPTIONS",
+            description: (
               <>
                 The current interests selections are already comprehensive,
                 however, they are <strong>difficult to navigate</strong> and
@@ -81,26 +81,26 @@ export default function Pinterest() {
                 </strong>
                 for the selected interests box.
               </>
-            }
-            imageSrc="/pinterest/targetselect1.gif"
-          />
-          <FinalDesign
-            title="3/ UI IMPROVEMENTS"
-            description={
+            ),
+            imageSrc: "/pinterest/targetselect1.gif"
+          },
+          {
+            title: "3/ UI IMPROVEMENTS",
+            description: (
               <>
-                Many users thought the UI was too “
-                <strong>white and plain</strong>” and certain elements could
+                Many users thought the UI was too "
+                <strong>white and plain</strong>" and certain elements could
                 stand out. We enhanced the card format so active section is
-                dynamically highlighted. We also changed the “Promote” button to
+                dynamically highlighted. We also changed the "Promote" button to
                 red to help it stand out. We included a pop-up{" "}
                 <strong>confirmation</strong> once the pin is promoted with
                 links to resources helping new users.
               </>
-            }
-            imageSrc="/pinterest/uiimprovements1.gif"
-          />
-        </div>
-      </div>
+            ),
+            imageSrc: "/pinterest/uiimprovements1.gif"
+          }
+        ]}
+      />
       <WaitHow />
       <div className="flex flex-col py-16 px-36 gap-8">
         <h2 className="text-3xl font-bold mb-4">
@@ -226,8 +226,8 @@ export default function Pinterest() {
           <div className="flex flex-col gap-2">
             <p className="text-xl font-bold">CONFUSING USER FLOW</p>
             <p>
-              New users have difficulties navigating to the “Promote pin”
-              feature and confuse it with “Create campaign.” **
+              New users have difficulties navigating to the "Promote pin"
+              feature and confuse it with "Create campaign." **
             </p>
           </div>
           <div className="flex flex-row">
@@ -309,8 +309,8 @@ export default function Pinterest() {
               description: (
                 <p>
                   <strong>Facebook</strong> and <strong>Google</strong> Ads
-                  offers advanced features such as “Bid Strategy” and “Pixel
-                  Tracking.”
+                  offers advanced features such as "Bid Strategy" and "Pixel
+                  Tracking."
                 </p>
               ),
               images: ["/pinterest/fb.png", "/pinterest/gads.png"],

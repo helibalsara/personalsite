@@ -394,6 +394,8 @@ export default function Pinterest() {
         </h2>
         <EnhancementSection
           title="STEP 1: SELECT A PIN"
+          titleColor="#B72C3B"
+          gradient={{ from: "#B72C3B", to: "#EE6817" }}
           currentImage={{
             src: "/pinterest/enhance1.png",
             width: "40%",
@@ -416,6 +418,8 @@ export default function Pinterest() {
         />
         <EnhancementSection
           title="STEP 2: TARGETING DETAILS"
+          titleColor="#B72C3B"
+          gradient={{ from: "#EE6817", to: "#FFB800" }}
           currentImage={{
             src: "/pinterest/enhance4.png",
             width: "40%",
@@ -433,11 +437,13 @@ export default function Pinterest() {
           finalText={{
             title: "Specific targeting options",
             description:
-              "Selected targeting interests helps the users be more intentional with  their target audience .",
+              "Selected targeting interests helps the users be more intentional with their target audience.",
           }}
         />
         <EnhancementSection
           title="STEP 3: SUBMIT & PROMOTE YOUR PIN"
+          titleColor="#B72C3B"
+          gradient={{ from: "#FFB800", to: "#B72C3B" }}
           currentImage={{
             src: "/pinterest/enhance7.svg",
             width: "40%",

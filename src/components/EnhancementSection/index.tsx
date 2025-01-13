@@ -21,6 +21,11 @@ interface EnhancementSectionProps {
     description: ReactNode;
   };
   title: string;
+  titleColor: string;
+  gradient: {
+    from: string;
+    to: string;
+  };
 }
 
 export default function EnhancementSection({
@@ -31,10 +36,14 @@ export default function EnhancementSection({
   finalImage,
   finalText,
   title,
+  titleColor,
+  gradient,
 }: EnhancementSectionProps) {
   return (
     <>
-      <p className="text-2xl font-bold text-[#B72C3B]">{title}</p>
+      <p className="text-2xl font-bold" style={{ color: titleColor }}>
+        {title}
+      </p>
       <div className="flex flex-col gap-0">
         <div className="flex flex-col gap-8 bg-[#EDEDED] rounded-t-3xl px-4 py-8">
           <p className="text-sm">CURRENTLY</p>
@@ -60,7 +69,10 @@ export default function EnhancementSection({
             <p>{redesignText}</p>
           </div>
         </div>
-        <div className="flex flex-row items-center gap-4 rounded-b-3xl px-4 py-8 bg-gradient-to-r from-[#C4001F] to-[#EE6817]">
+        <div 
+          className="flex flex-row items-center gap-4 rounded-b-3xl px-4 py-8"
+          style={{ background: `linear-gradient(to right, ${gradient.from}, ${gradient.to})` }}
+        >
           <p className="text-sm text-white">
             <strong>{finalText.title}</strong>
             <br />

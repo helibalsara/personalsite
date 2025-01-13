@@ -6,6 +6,8 @@ import WaitHow from "@/components/WaitHow";
 import WIP from "@/components/WIP";
 import Image from "next/image";
 import BindingElement from "@/components/BindingElement";
+import EnhancementSection from "@/components/EnhancementSection";
+import Footer from "@/components/Footer";
 
 export default function HousecallPro() {
   return (
@@ -84,7 +86,6 @@ export default function HousecallPro() {
             height={540.5}
             style={{ height: "auto", width: "100%" }}
             alt="pros"
-            priority
           />
         </div>
       </div>
@@ -105,7 +106,6 @@ export default function HousecallPro() {
             height={609 * 4}
             style={{ height: "auto", width: "100%", maxWidth: "915px" }}
             alt="estimates"
-            priority
           />
         </div>
         <Line className="my-8" />
@@ -153,7 +153,6 @@ export default function HousecallPro() {
             height={609 * 4}
             style={{ height: "auto", width: "100%" }}
             alt="mobile-flow"
-            priority
           />
           <div className="grid grid-cols-4 gap-9 w-full">
             <Image
@@ -161,28 +160,24 @@ export default function HousecallPro() {
               width={1170}
               height={2532}
               alt="mobile-flow"
-              priority
             />
             <Image
               src="/housecall-pro/mobile3.png"
               width={1170}
               height={2532}
               alt="mobile-flow"
-              priority
             />
             <Image
               src="/housecall-pro/mobile4.png"
               width={1170}
               height={2532}
               alt="mobile-flow"
-              priority
             />
             <Image
               src="/housecall-pro/mobile5.png"
               width={1170}
               height={2532}
               alt="mobile-flow"
-              priority
             />
           </div>
         </div>
@@ -240,7 +235,6 @@ export default function HousecallPro() {
               borderRadius: "10px",
             }}
             alt="flow"
-            priority
           />
           <p className="flex-1 text-base">
             To keep the MVP simple to roll out quickly, we chose to focus only
@@ -263,7 +257,6 @@ export default function HousecallPro() {
               width={577 * 4}
               height={354 * 4}
               alt="design1"
-              priority
               className="object-contain"
             />
           </div>
@@ -273,7 +266,6 @@ export default function HousecallPro() {
               width={303 * 4}
               height={354 * 4}
               alt="design2"
-              priority
               className="object-contain"
             />
           </div>
@@ -287,8 +279,127 @@ export default function HousecallPro() {
           After several iterations and check-ins with our design system team, we
           had our final components!
         </p>
+        <Image
+          src="/housecall-pro/design.svg"
+          width={954 * 2}
+          height={2014 * 2}
+          style={{ height: "auto", width: "100%" }}
+          alt="design3"
+          className="object-contain"
+        />
+        <h1 className="text-[32px] font-bold">❗️SCOPE EXPANSION❗️</h1>
+        <p className="text-base">
+          Another issue HCP was facing was that Pros would edit the estimate
+          after it had already been approved by the homeowner, effectively
+          changing the price and agreed upon services. However, the estimate
+          would still show as “Approved.” This was a major issue, especially as
+          we were focusing on the legality of the estimate.
+        </p>
+        <p className="text-base">
+          <strong>
+            We needed to inform Pros that if they changed the estimate, it would
+            void the signature and require a new one.
+          </strong>{" "}
+          But where would this live? I mapped out the flow and noted different
+          opportunities to implement this.
+        </p>
+        <div className="flex flex-row gap-8 items-center">
+          <div className="flex-1">
+            <Image
+              src="/housecall-pro/scope.png"
+              width={441 * 2}
+              height={304 * 2}
+              style={{ height: "auto", width: "100%" }}
+              alt="scope"
+            />
+          </div>
+          <div className="flex-1">
+            <p className="text-base">
+              We went with opportunity 7 — a new locked estimates view!
+            </p>
+          </div>
+        </div>
+        <Line className="my-8" />
+        <h1 className="text-[32px] font-bold">PRO-FACING EDITING ESTIMATE</h1>
+        <p className="text-base">
+          Let&apos;s say a Pro wanted to go back and edit an estimate. They
+          would first have to unlock the sent estimate, be made aware that once
+          changes were made a new signature would be required, then sent to the
+          Pro-facing estimate view.
+        </p>
+        <Image
+          src="/housecall-pro/estimate.svg"
+          width={916 * 2}
+          height={560 * 2}
+          style={{ height: "auto", width: "100%" }}
+          alt="estimate"
+        />
+        <Line className="my-8" />
+        <h1 className="text-[32px] font-bold">
+          HOW THESE NEW FLOWS BRINGS VALUE: FINAL DESIGNS
+        </h1>
+        <EnhancementSection
+          title="E-SIGNATURE MODAL"
+          titleColor="#0F6FBE"
+          gradient={{ from: "#0F6FBE", to: "#DEF0FF" }}
+          currentImage={{
+            src: "/housecall-pro/esig1.png",
+            width: "40%",
+          }}
+          currentText="No method of collecting a legal signature from the Homeowners."
+          redesignImage={{
+            src: "/housecall-pro/esig2.png",
+            width: "40%",
+          }}
+          redesignText="Complete modal integrated within Homeowner flow that collects a signature, informs them of the terms and conditions, and helps them confirm their agreement to do business."
+          finalImage={{
+            src: "/housecall-pro/esig3.gif",
+            width: "65%",
+          }}
+          finalText={{
+            title: "Credibility",
+            description:
+              "Adding a legally binding signature assures both homeowner and Pros on the scope of the work and establishes trust!",
+          }}
+        />
+        <EnhancementSection
+          title="LOCKED ESTIMATES VIEW"
+          titleColor="#0F6FBE"
+          gradient={{ from: "#0F6FBE", to: "#DEF0FF" }}
+          currentImage={{
+            src: "/housecall-pro/estimate1.png",
+            width: "30%",
+          }}
+          currentText="Estimates could be edited at anytime by the Pro with no warning or notification to the Homeowner."
+          redesignImage={{
+            src: "/housecall-pro/estimate2.png",
+            width: "50%",
+          }}
+          redesignText="Editing line items is locked and informs the Pro that a new signature will be needed once any changes are made."
+          finalImage={{
+            src: "/housecall-pro/estimate3.gif",
+            width: "65%",
+          }}
+          finalText={{
+            title: "Security",
+            description:
+              "A locked view keeps Pros accountabile for any changes and assures the homeowner they are getting exactly what they approved.",
+          }}
+        />
+        <Line className="my-8" />
+        <h1 className="text-[32px] font-bold">REFLECTIONS</h1>
+        <p className="text-base">
+          I&apos;d like to extend a huge thank you to my manager Stumpy and the
+          Design Systems team from Housecall Pro for guiding and supporting me
+          through this complex software teaching me how to work with different
+          components and states! Another shout out to Kellie for letting me sit
+          in on her usability testing sessions and analysing the research on a
+          completely different area of the product! I learned so much about how
+          to properly use design systems, work with project managers, and really
+          defining and polishing an MVP through this internship!
+        </p>
       </div>
-      <WIP />
+      <Footer className="mt-[160px]" />
     </>
   );
 }

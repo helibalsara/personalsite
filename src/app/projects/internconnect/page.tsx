@@ -75,9 +75,9 @@ export default function InternConnect() {
         <div className="flex flex-row gap-16">
           <div className="flex flex-col gap-8 flex-1">
             <p className="text-base">
-              We audited our site's main pages using Google Chrome's Lighthouse
-              tool. Notably, our <strong>landing page</strong> achieved a
-              perfect score of 100/100 for accessibility.
+              We audited our site&apos;s main pages using Google Chrome&apos;s
+              Lighthouse tool. Notably, our <strong>landing page</strong>{" "}
+              achieved a perfect score of 100/100 for accessibility.
             </p>
             <Image
               src="/internconnect/accessibility.png"
@@ -141,7 +141,7 @@ export default function InternConnect() {
       <div className="flex flex-col gap-8 pt-[72px] pb-[76px] px-36">
         <h1 className="text-[40px] font-bold">Next Steps & Reflection</h1>
         <p className="text-xl">
-          Owing to time limitations, we couldn't fully realize the product's
+          Owing to time limitations, we couldn&apos;t fully realize the product&apos;s
           potential. There remain promising ideas that can be explored in future
           iterations.
         </p>

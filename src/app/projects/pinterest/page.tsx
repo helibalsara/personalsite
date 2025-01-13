@@ -53,7 +53,11 @@ export default function Pinterest() {
       <FinalDesignsSection
         backgroundColor="#EDEDED"
         title="Final Recommendations"
-        subtitle={<>Sneak Peak!! <span className="not-italic">🤫</span></>}
+        subtitle={
+          <>
+            Sneak Peak!! <span className="not-italic">🤫</span>
+          </>
+        }
         items={[
           {
             title: "1/ ORGANIZED PIN SELECT",
@@ -66,7 +70,7 @@ export default function Pinterest() {
                 <strong>easily find the pin and help them save time.</strong>
               </>
             ),
-            imageSrc: "/pinterest/pinselect1.gif"
+            imageSrc: "/pinterest/pinselect1.gif",
           },
           {
             title: "2/ TARGETING OPTIONS",
@@ -82,23 +86,23 @@ export default function Pinterest() {
                 for the selected interests box.
               </>
             ),
-            imageSrc: "/pinterest/targetselect1.gif"
+            imageSrc: "/pinterest/targetselect1.gif",
           },
           {
             title: "3/ UI IMPROVEMENTS",
             description: (
               <>
-                Many users thought the UI was too "
-                <strong>white and plain</strong>" and certain elements could
+                Many users thought the UI was too &ldquo;
+                <strong>white and plain</strong>&rdquo; and certain elements could
                 stand out. We enhanced the card format so active section is
-                dynamically highlighted. We also changed the "Promote" button to
+                dynamically highlighted. We also changed the &ldquo;Promote&rdquo; button to
                 red to help it stand out. We included a pop-up{" "}
                 <strong>confirmation</strong> once the pin is promoted with
                 links to resources helping new users.
               </>
             ),
-            imageSrc: "/pinterest/uiimprovements1.gif"
-          }
+            imageSrc: "/pinterest/uiimprovements1.gif",
+          },
         ]}
       />
       <WaitHow />
@@ -226,8 +230,8 @@ export default function Pinterest() {
           <div className="flex flex-col gap-2">
             <p className="text-xl font-bold">CONFUSING USER FLOW</p>
             <p>
-              New users have difficulties navigating to the "Promote pin"
-              feature and confuse it with "Create campaign." **
+              New users have difficulties navigating to the &ldquo;Promote pin&rdquo;
+              feature and confuse it with &ldquo;Create campaign.&rdquo; **
             </p>
           </div>
           <div className="flex flex-row">
@@ -309,8 +313,8 @@ export default function Pinterest() {
               description: (
                 <p>
                   <strong>Facebook</strong> and <strong>Google</strong> Ads
-                  offers advanced features such as "Bid Strategy" and "Pixel
-                  Tracking."
+                  offers advanced features such as &ldquo;Bid Strategy&rdquo; and &ldquo;Pixel
+                  Tracking.&rdquo;
                 </p>
               ),
               images: ["/pinterest/fb.png", "/pinterest/gads.png"],

@@ -296,7 +296,7 @@ export default function HousecallPro() {
           Another issue HCP was facing was that Pros would edit the estimate
           after it had already been approved by the homeowner, effectively
           changing the price and agreed upon services. However, the estimate
-          would still show as "Approved." This was a major issue, especially as
+          would still show as &ldquo;Approved.&rdquo; This was a major issue, especially as
           we were focusing on the legality of the estimate.
         </p>
         <p className="text-base font-['SF_Pro_Rounded']">

@@ -6,6 +6,7 @@ import WaitHow from "@/components/WaitHow";
 import WIP from "@/components/WIP";
 import Image from "next/image";
 import ExpandableImage from "@/components/ExpandableImage";
+import PageSection from "@/components/PageSection";
 
 export default function SmartNotes() {
   return (
@@ -201,6 +202,74 @@ export default function SmartNotes() {
           a full redesign of the 3 main components of this app: the home page,
           the listing page, and filtering screens.
         </p>
+        <div className="px-[112px] flex flex-col gap-[100px] items-center">
+          <PageSection
+            title="Home Page Before"
+            before="/tt/before1.png"
+            after="/tt/after1.gif"
+            features={[
+              {
+                heading: "SEARCH",
+                content:
+                  "Users can search by location, price range, number of bedrooms, and other filters.",
+              },
+              {
+                heading: "MAP VIEW",
+                content:
+                  "Users can view available properties on a map and click on them to view more details.",
+              },
+              {
+                heading: "SAVED",
+                content:
+                  "Users can save properties they're interested in and view them later.",
+              },
+            ]}
+          />
+          <PageSection
+            title="Property Details"
+            before="/tt/before2.png"
+            after="/tt/after2.gif"
+            features={[
+              {
+                heading: "PHOTOS & VIDEOS",
+                content:
+                  "Users can view photos and videos of the property taken by current or previous tenants.",
+              },
+              {
+                heading: "REVIEWS",
+                content:
+                  "Users can read reviews from current or previous tenants about their experience living at the property.",
+              },
+              {
+                heading: "MESSAGING",
+                content:
+                  "Users can message current or previous tenants to ask questions about the property.",
+              },
+            ]}
+          />
+          <PageSection
+            title="Tenant Profile"
+            before="/tt/before3.png"
+            after="/tt/after3.gif"
+            features={[
+              {
+                heading: "PROFILE",
+                content:
+                  "Users can view their profile and edit their preferences.",
+              },
+              {
+                heading: "SAVED PROPERTIES",
+                content:
+                  "Users can view all their saved properties in one place.",
+              },
+              {
+                heading: "MESSAGES",
+                content:
+                  "Users can view and respond to messages from other users.",
+              },
+            ]}
+          />
+        </div>
       </div>
       <Image
         src="/tt/final.svg"

@@ -93,7 +93,7 @@ export default function HousecallPro() {
           />
         </div>
       </div>
-      <div className="flex flex-col py-8 px-36 gap-8">
+      <div className="flex flex-col py-8 px-[182px] gap-8">
         <h1 className="text-[32px] font-bold font-['SF_Pro_Rounded']">CONTEXT: WHAT ARE ESTIMATES?</h1>
         <div className="flex flex-col items-center gap-4 bg-[#EDEDED] py-8 px-11">
           <p className="text-center text-base px-8 font-['SF_Pro_Rounded']">

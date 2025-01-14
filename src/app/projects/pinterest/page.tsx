@@ -106,7 +106,7 @@ export default function Pinterest() {
         ]}
       />
       <WaitHow />
-      <div className="flex flex-col py-16 px-36 gap-8">
+      <div className="flex flex-col py-16 px-[182px] gap-8">
         <h2 className="text-3xl font-bold mb-4">
           WHY FOCUS ON NEW SMALL-MEDIUM BUSINESSES?
         </h2>

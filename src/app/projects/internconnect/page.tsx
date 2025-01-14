@@ -70,7 +70,7 @@ export default function InternConnect() {
           },
         ]}
       />
-      <div className="flex flex-col gap-8 pt-[72px] pb-[108px] px-36">
+      <div className="flex flex-col gap-8 pt-[72px] pb-[108px] px-[182px]">
         <h1 className="text-[40px] font-bold">Accessibility Audits</h1>
         <div className="flex flex-row gap-16">
           <div className="flex flex-col gap-8 flex-1">
@@ -88,7 +88,7 @@ export default function InternConnect() {
             />
           </div>
           <div className="flex flex-col gap-[52px] flex-1">
-            <div className="flex flex-row gap-4 items-center">
+            <div className="flex flex-row gap-4 items-start">
               <div className="flex flex-col items-center">
                 <Image
                   src="/internconnect/number1.png"
@@ -96,7 +96,12 @@ export default function InternConnect() {
                   height={108 * 4}
                   alt="100"
                 />
-                <p className="text-xl font-bold font-sfpro">Accessibility</p>
+                <p className="text-xl font-bold font-sfpro text-center">
+                  Accessibility
+                </p>
+                <p className="text-sm text-center">
+                  &ldquo;Project Collaboration&rdquo; Page
+                </p>
               </div>
               <div className="flex flex-col items-center">
                 <Image
@@ -106,6 +111,9 @@ export default function InternConnect() {
                   alt="92"
                 />
                 <p className="text-xl font-bold font-sfpro">Accessibility</p>
+                <p className="text-sm text-center">
+                  &ldquo;Resume Builder&rdquo; Page
+                </p>
               </div>
               <div className="flex flex-col items-center">
                 <Image
@@ -115,6 +123,9 @@ export default function InternConnect() {
                   alt="92"
                 />
                 <p className="text-xl font-bold font-sfpro">Accessibility</p>
+                <p className="text-sm text-center">
+                  &ldquo;Resources&rdquo; Page
+                </p>
               </div>
             </div>
             <p className="text-base">
@@ -138,12 +149,12 @@ export default function InternConnect() {
         style={{ height: "auto", width: "100%" }}
         alt="screens"
       />
-      <div className="flex flex-col gap-8 pt-[72px] pb-[76px] px-36">
+      <div className="flex flex-col gap-8 pt-[72px] pb-[76px] px-[182px]">
         <h1 className="text-[40px] font-bold">Next Steps & Reflection</h1>
         <p className="text-xl">
-          Owing to time limitations, we couldn&apos;t fully realize the product&apos;s
-          potential. There remain promising ideas that can be explored in future
-          iterations.
+          Owing to time limitations, we couldn&apos;t fully realize the
+          product&apos;s potential. There remain promising ideas that can be
+          explored in future iterations.
         </p>
         <div className="flex flex-col gap-6">
           {[

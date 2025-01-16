@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import WIP from "@/components/WIP";
 import ProjectOverview from "@/components/ProjectOverview";
 import WaitHow from "@/components/WaitHow";
 import Line from "@/components/Line";

@@ -8,6 +8,7 @@ import ProjectOverview from "@/components/ProjectOverview";
 import WaitHow from "@/components/WaitHow";
 import Line from "@/components/Line";
 import Xarrow from "react-xarrows";
+import ExpandableImage from "@/components/ExpandableImage";
 
 export default function SmartNotes() {
   return (
@@ -148,7 +149,7 @@ export default function SmartNotes() {
           spent into learning and understanding content. 66.7% students selected
           that they strongly/disagree with the statement that they engage with
           content inside the classroom. Most students engage with class content
-          outside of class
+          outside of class.
         </p>
         <Image
           src="/smartnotes/survey.svg"
@@ -205,9 +206,284 @@ export default function SmartNotes() {
           </div>
         </div>
         <Line className="my-8" />
+        <p className="text-xl font-semibold">PUTTING THINGS TOGETHER</p>
+        <p className="text-base">
+          To pull all of the research findings together, I created an affinity
+          map to narrow down the focus for this project. I only had a few days,
+          so it was essential to break down to project scope. I focused on these
+          3 affinity clusters:
+        </p>
+        <div className="flex flex-row gap-16 self-center justify-center h-[30vh] w-full">
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-2">
+              <p className="text-base font-bold">Focus</p>
+              <p className="text-base">
+                Lack of engagement and focus during class
+              </p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="text-base font-bold">
+                Understanding Course Content
+              </p>
+              <p className="text-base">
+                Difficulty absorbing and understanding content
+              </p>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="text-base font-bold">Lack of Time</p>
+              <p className="text-base">
+                Not enough time to dedicate to learning content
+              </p>
+            </div>
+          </div>
+          <div className="h-full">
+            <ExpandableImage
+              src="/smartnotes/stickies.jpeg"
+              width={3979}
+              height={3723}
+              style={{
+                height: "100%",
+                width: "100%",
+                borderRadius: "13.762px",
+                boxShadow: "0px 3.67px 3.67px 0px rgba(0, 0, 0, 0.25)",
+                objectFit: "cover",
+              }}
+              alt="affinity"
+            />
+          </div>
+        </div>
+        <p className="text-base">
+          By creating a persona and a journey map for an adventurous, but
+          unfocused, college student, I was able to hone in on the problem
+          scope. I wanted to focus on how to help students focus and get a
+          better understanding of their content to alleviate last-minute
+          pre-exam cramming.
+        </p>
+        <div className="flex flex-row gap-8 h-[24vw] self-center">
+          <ExpandableImage
+            src="/smartnotes/faith.png"
+            width={1514}
+            height={846}
+            style={{
+              height: "100%",
+              width: "auto",
+            }}
+            alt="persona"
+          />
+          <ExpandableImage
+            src="/smartnotes/graph.png"
+            width={1360}
+            height={1088}
+            style={{
+              height: "100%",
+              width: "auto",
+            }}
+            alt="journey map"
+          />
+        </div>
+        <Line className="my-8" />
+        <h1 className="text-[32px] font-bold mb-4">REDEFINING THE HMW.</h1>
+        <div className="flex flex-row justify-between">
+          <div id="text" className="h-fit pr-1">
+            <p className="text-base">
+              HMW improve a college student&apos;s learning experience?
+            </p>
+          </div>
+          <div className="p-2 bg-[#BFD3DF] rounded-[10px] w-1/3" id="box">
+            <p className="text-base text-center">
+              HMW improve a college student’s focus in class to aid
+              understanding course content?
+            </p>
+          </div>
+          <Xarrow
+            start="text"
+            end="box"
+            color="#000"
+            strokeWidth={1}
+            headSize={6}
+            curveness={0.5}
+          />
+        </div>
+        <div className="flex flex-row flex-1 gap-8 justify-between">
+          <div className="flex flex-col gap-2">
+            <p className="text-lg font-bold text-[#28536B]">
+              Why aid understanding?
+            </p>
+            <p className="text-lg">
+              Struggling to comprehend course material often causes students to
+              feel anxious about their exams. This lack of understanding leads
+              to a <strong>decrease in focus</strong>, creating a{" "}
+              <strong>detrimental cycle</strong> where the inability to
+              concentrate further impedes their understanding of the content.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="text-lg font-bold text-[#28536B]">
+              Why focus in classrooms?
+            </p>
+            <p className="text-lg">
+              Many students struggle with maintaining concentration during
+              lectures and preparing for exams. This often results in a sense of
+              being pressed for time while understanding course content
+              effectively. According to my survey, a significant{" "}
+              <strong>66.7%</strong> of respondents said they{" "}
+              <strong>disagreed to staying engaged during class.</strong>
+            </p>
+          </div>
+        </div>
+        <Line className="my-8" />
+        <h1 className="text-[32px] font-bold mb-4">HOW SHALL WE SOLVE THIS?</h1>
+        <p className="text-base">
+          After a round of Crazy 8&apos;s, I mapped possible solutions that
+          would boost focus within the classroom on an effort/impact matrix. The
+          effort refers to the effort required to implement the solution in
+          terms of resources of time, money, and technological feasibility. The
+          impact is the ability of the product to meet all user needs outlined
+          through research and synthesis.{" "}
+        </p>
+        <div className="flex flex-row gap-8 h-[24vw] self-center">
+          <ExpandableImage
+            src="/smartnotes/crazy8.png"
+            width={1116}
+            height={914}
+            style={{ height: "100%", width: "auto" }}
+            alt="crazy8"
+          />
+          <ExpandableImage
+            src="/smartnotes/table.png"
+            width={1400}
+            height={818}
+            style={{ height: "100%", width: "auto" }}
+            alt="table"
+          />
+        </div>
+        <p className="text-base">
+          After mapping the pros and cons, I chose to go with SmartNotes!
+        </p>
+        <Line className="my-8" />
+        <h1 className="text-[32px] font-bold mb-4">
+          HOW DOES SMART NOTES WORK?
+        </h1>
+        <div className="flex flex-row gap-8">
+          <p className="text-base">
+            SmartNotes is an AI-powered pen concept designed to help college
+            students review for exams more efficiently. It features a microphone
+            and speaker to record lectures and relay synthesized notes. The tool
+            can distill information into either a broad overview or a detailed
+            explanation, tailored to the user&apos;s needs. Additionally, a hand
+            grip sensor vibrates when it detects students losing focus in class.
+            SmartNotes can function as both a traditional pen or pencil, as well
+            as a digital pen compatible with devices.
+          </p>
+          <ExpandableImage
+            src="/smartnotes/drawing.jpeg"
+            width={3620}
+            height={2480}
+            style={{
+              height: "auto",
+              width: "35%",
+              borderRadius: "15px",
+              boxShadow: "0px 3px 3px 0px rgba(0, 0, 0, 0.25)",
+            }}
+            alt="drawing"
+          />
+        </div>
+        <p className="text-xl font-semibold">
+          HOW DOES IT ADDRESS USER PAIN POINTS?
+        </p>
+
+        <div className="flex-col self-center max-w-[65%] items-center">
+          <div className="flex flex-row gap-[42px] justify-between items-center">
+            <div className="flex flex-col gap-2">
+              <h4 className="text-2xl font-bold text-[#28536B]">
+                Lack of focus during class time
+              </h4>
+              <p className="text-xl">
+                SmartNotes gently vibrates when it detects the user has lost
+                focus,{" "}
+                <strong>
+                  shift their attention and focus back into the class.
+                </strong>
+              </p>
+            </div>
+            <Image
+              src="/smartnotes/pain1.png"
+              width={608}
+              height={456}
+              style={{ height: "auto", width: "100%" }}
+              alt="pain1"
+            />
+          </div>
+          <div className="flex flex-row gap-[42px] justify-between items-center">
+            <Image
+              src="/smartnotes/pain2.png"
+              width={456}
+              height={456}
+              style={{ height: "auto", width: "100%" }}
+              alt="pain1"
+            />
+            <div className="flex flex-col gap-2">
+              <h4 className="text-2xl font-bold text-[#28536B]">
+                Difficulty understanding course content
+              </h4>
+              <p className="text-xl">
+                SmartNotes provides{" "}
+                <strong>supplemental digestible summaries</strong> of the
+                lecture which can be as <strong>broad or as detailed</strong> as
+                needed. This can be personalised to the students&apos; needs.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-row gap-[42px] justify-between items-center">
+            <div className="flex flex-col gap-2">
+              <h4 className="text-2xl font-bold text-[#28536B]">
+                Time pressure to understand content
+              </h4>
+              <p className="text-xl">
+                With the reminders and summaries, students can{" "}
+                <strong>spend less time</strong> going back to rewatch lecture
+                and refer back to readings.
+              </p>
+            </div>
+            <Image
+              src="/smartnotes/pain3.png"
+              width={456}
+              height={456}
+              style={{ height: "auto", width: "100%" }}
+              alt="pain1"
+            />
+          </div>
+        </div>
+        <Line className="my-8" />
+        <h1 className="text-[32px] font-bold mb-4">
+          CONCEPT TEST & REFLECTIONS
+        </h1>
+        <div className="flex flex-row gap-8 justify-between items-center">
+          <p className="text-base">
+            Users enjoyed how it was a compact and usable everyday solution.
+            They thought the summaries would be usefulness in supplementing
+            lecture content. The varying levels of synthesis could help
+            “pinpoint what I need to hear while studying.” One user expressed
+            that they were a visual learner and hearing the summary would be
+            difficult to understand, which is something I would explore further
+            with this project.
+            <br />
+            <br />
+            Having such a broad HMW statement was daunting at first, but I
+            realized the importance of strong user research to narrow the scope.
+            I wish I had established goals for my user research before diving
+            deep into it and had spent more time developing a cleaner design.
+          </p>
+          <Image
+            src="/smartnotes/reflections.svg"
+            width={348 * 4}
+            height={261 * 4}
+            style={{ height: "auto", width: "100%" }}
+            alt="reflection"
+          />
+        </div>
       </div>
-      <WIP />
-      <Footer />
+      <Footer className="mt-[117.5px]" />
     </>
   );
 }

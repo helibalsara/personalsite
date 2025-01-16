@@ -1,7 +1,8 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
-import Hearts from "./hearts.svg";
+import HeartsNoLink from "./hearts-no-link.svg";
+// import Hearts from "./hearts.svg";
 
 export default function About() {
   return (
@@ -121,7 +122,7 @@ export default function About() {
               </div>
             </div>
             <div className="flex items-end justify-between">
-              <Hearts />
+              <HeartsNoLink />
               <p className="text-[#ededed] text-right text-2xl font-normal font-neuton">message for any photography inquiries, thanks!</p>
             </div>
           </div>

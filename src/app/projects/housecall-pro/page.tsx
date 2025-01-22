@@ -1,9 +1,7 @@
-import FinalDesign from "@/components/FinalDesign";
 import Line from "@/components/Line";
 import Navbar from "@/components/Navbar";
 import ProjectOverview from "@/components/ProjectOverview";
 import WaitHow from "@/components/WaitHow";
-import WIP from "@/components/WIP";
 import Image from "next/image";
 import BindingElement from "@/components/BindingElement";
 import EnhancementSection from "@/components/EnhancementSection";
@@ -27,8 +25,7 @@ export default function HousecallPro() {
       <ProjectOverview
         role="Product Design Intern"
         duration="June 2024 - August 2024"
-        disciplines="June 2024 - August 2024"
-        team="Sarah Suen (PM), Uyen Phan, Michid Bayambajav, Joanna Ye, Angie Nguyen, and me!"
+        disciplines="Product Strategy, Design Systems"
         description={
           <>
             In the summer of 2024, I interned at Housecall Pro, a B2B SaaS
@@ -94,9 +91,9 @@ export default function HousecallPro() {
         </div>
       </div>
       <div className="flex flex-col py-8 px-[182px] gap-8">
-        <h1 className="text-[32px] font-bold font-['SF_Pro_Rounded']">CONTEXT: WHAT ARE ESTIMATES?</h1>
+        <h1 className="text-[32px] font-bold">CONTEXT: WHAT ARE ESTIMATES?</h1>
         <div className="flex flex-col items-center gap-4 bg-[#EDEDED] py-8 px-11">
-          <p className="text-center text-base px-8 font-['SF_Pro_Rounded']">
+          <p className="text-center text-base px-8">
             Estimates are detailed, customizable cost proposals that enable home
             services businesses (Pros) to provide accurate pricing, enhance
             professionalism, and increase the likelihood of securing jobs.
@@ -113,38 +110,38 @@ export default function HousecallPro() {
           />
         </div>
         <Line className="my-8" />
-        <h1 className="text-[32px] font-bold font-['SF_Pro_Rounded']">
+        <h1 className="text-[32px] font-bold">
           PROBLEM: WHY DO WE NEED A LEGAL SIGNATURE?
         </h1>
-        <p className="text-base font-['SF_Pro_Rounded']">
+        <p className="text-base">
           Pros cannot collect homeowners signature and gain approval for work
           when sending an estimate remotely. This lack of clear, legally binding
           signatures on estimates and other critical documents means Pros have
           poorer evidence of the approval when facing legal disputes or having
           other types of misunderstandings with their customers.
         </p>
-        <p className="text-base font-['SF_Pro_Rounded']">How it impacts Pros:</p>
+        <p className="text-base">How it impacts Pros:</p>
         <div className="flex flex-row gap-8 justify-center items-stretch">
           <div className="flex justify-center items-center p-3 bg-[#DEF0FF] rounded-lg max-w-[240px]">
-            <p className="text-base text-center font-['SF_Pro_Rounded']">
+            <p className="text-base text-center">
               Impaired ability to <strong>prove</strong> the agreed scope of
               work during legal disputes.
             </p>
           </div>
           <div className="flex justify-center items-center p-3 bg-[#DEF0FF] rounded-lg max-w-[240px]">
-            <p className="text-base text-center font-['SF_Pro_Rounded']">
+            <p className="text-base text-center">
               Lack of signed confirmation can result in customers{" "}
               <strong>backing out</strong> of services.
             </p>
           </div>
           <div className="flex justify-center items-center p-3 bg-[#DEF0FF] rounded-lg max-w-[240px]">
-            <p className="text-base text-center font-['SF_Pro_Rounded']">
+            <p className="text-base text-center">
               Lack of <strong>remote</strong> options <strong>delays</strong>{" "}
               service as customers print and sign estimates.
             </p>
           </div>
         </div>
-        <p className="text-base font-['SF_Pro_Rounded']">
+        <p className="text-base">
           The mobile flow has a way to capture a signature already in person.
           However, we needed a complete <strong>remote</strong> method to
           approve, collect, and store homeowner signatures which can be pulled
@@ -185,10 +182,10 @@ export default function HousecallPro() {
             />
           </div>
         </div>
-        <p className="text-xl font-semibold font-['SF_Pro_Rounded']">
+        <p className="text-xl font-semibold">
           WAIT...WHAT MAKES A SIGNATURE LEGALLY BINDING?
         </p>
-        <p className="text-base font-['SF_Pro_Rounded']">
+        <p className="text-base">
           A legally binding e-signature consists of 5 components and our design
           must address all 5:
         </p>
@@ -222,8 +219,8 @@ export default function HousecallPro() {
           />
         </div>
         <Line className="my-8" />
-        <h1 className="text-[32px] font-bold font-['SF_Pro_Rounded']">DISSECTING THE FLOW</h1>
-        <p className="text-base font-['SF_Pro_Rounded']">
+        <h1 className="text-[32px] font-bold">DISSECTING THE FLOW</h1>
+        <p className="text-base">
           Since this a brand new feature on web, where should we place it in the
           flow?
         </p>
@@ -240,7 +237,7 @@ export default function HousecallPro() {
             }}
             alt="flow"
           />
-          <p className="flex-1 text-base font-['SF_Pro_Rounded']">
+          <p className="flex-1 text-base">
             To keep the MVP simple to roll out quickly, we chose to focus only
             one collecting a homeowner signature. This meant there was only one
             place this new feature could be — the <strong>homebase view</strong>{" "}
@@ -248,8 +245,8 @@ export default function HousecallPro() {
           </p>
         </div>
         <Line className="my-8" />
-        <h1 className="text-[32px] font-bold font-['SF_Pro_Rounded']">DESIGN THE COMPONENT</h1>
-        <p className="text-base font-['SF_Pro_Rounded']">
+        <h1 className="text-[32px] font-bold">DESIGN THE COMPONENT</h1>
+        <p className="text-base">
           So we know our designs need to be legally binding and that we must
           collect homeowner&apos;s signatures through the homebase. How will it
           look like? Let&apos;s look at other e-signature components elsewhere.
@@ -274,7 +271,7 @@ export default function HousecallPro() {
             />
           </div>
         </div>
-        <p className="text-base font-['SF_Pro_Rounded']">
+        <p className="text-base">
           I analyzed what most of these had in common, as those features clearly
           worked. It was important to have a type and draw function, as well as
           important legal copy to ensure intent and consent.
@@ -291,15 +288,15 @@ export default function HousecallPro() {
           alt="design3"
           className="object-contain"
         />
-        <h1 className="text-[32px] font-bold font-['SF_Pro_Rounded']">❗️SCOPE EXPANSION❗️</h1>
-        <p className="text-base font-['SF_Pro_Rounded']">
+        <h1 className="text-[32px] font-bold">❗️SCOPE EXPANSION❗️</h1>
+        <p className="text-base">
           Another issue HCP was facing was that Pros would edit the estimate
           after it had already been approved by the homeowner, effectively
           changing the price and agreed upon services. However, the estimate
           would still show as &ldquo;Approved.&rdquo; This was a major issue, especially as
           we were focusing on the legality of the estimate.
         </p>
-        <p className="text-base font-['SF_Pro_Rounded']">
+        <p className="text-base">
           <strong>
             We needed to inform Pros that if they changed the estimate, it would
             void the signature and require a new one.
@@ -318,14 +315,14 @@ export default function HousecallPro() {
             />
           </div>
           <div className="flex-1">
-            <p className="text-base font-['SF_Pro_Rounded']">
+            <p className="text-base">
               We went with opportunity 7 — a new locked estimates view!
             </p>
           </div>
         </div>
         <Line className="my-8" />
-        <h1 className="text-[32px] font-bold font-['SF_Pro_Rounded']">PRO-FACING EDITING ESTIMATE</h1>
-        <p className="text-base font-['SF_Pro_Rounded']">
+        <h1 className="text-[32px] font-bold">PRO-FACING EDITING ESTIMATE</h1>
+        <p className="text-base">
           Let&apos;s say a Pro wanted to go back and edit an estimate. They
           would first have to unlock the sent estimate, be made aware that once
           changes were made a new signature would be required, then sent to the
@@ -339,7 +336,7 @@ export default function HousecallPro() {
           alt="estimate"
         />
         <Line className="my-8" />
-        <h1 className="text-[32px] font-bold font-['SF_Pro_Rounded']">
+        <h1 className="text-[32px] font-bold">
           HOW THESE NEW FLOWS BRINGS VALUE: FINAL DESIGNS
         </h1>
         <EnhancementSection
@@ -391,8 +388,8 @@ export default function HousecallPro() {
           }}
         />
         <Line className="my-8" />
-        <h1 className="text-[32px] font-bold font-['SF_Pro_Rounded']">REFLECTIONS</h1>
-        <p className="text-base font-['SF_Pro_Rounded']">
+        <h1 className="text-[32px] font-bold">REFLECTIONS</h1>
+        <p className="text-base">
           I&apos;d like to extend a huge thank you to my manager Stumpy and the
           Design Systems team from Housecall Pro for guiding and supporting me
           through this complex software teaching me how to work with different

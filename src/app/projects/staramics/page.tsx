@@ -12,7 +12,6 @@ export default function Staramics() {
       <Navbar />
       <div className="pt-[153px]">
         <Image
-    quality={100}    
           src="/staramics/hero.svg"
           width={1280}
           height={540.5}
@@ -42,11 +41,10 @@ export default function Staramics() {
           </>
         }
       />
-      <div className="flex flex-col gap-8 px-[182px]">
-        <h1 className="text-[32px] font-bold">Logo & Color Palette</h1>
-        <div className="flex flex-row gap-8">
+      <div className="flex flex-col gap-8 px-4 md:px-[182px]">
+        <h1 className="text-2xl md:text-[32px] font-bold">Logo & Color Palette</h1>
+        <div className="flex flex-col md:flex-row gap-8">
           <Image
-    quality={100}    
             src="/staramics/logocolor.svg"
             width={576}
             height={336.75}
@@ -56,18 +54,17 @@ export default function Staramics() {
           <p className="text-base">
             I chose warm and earthy colors to bring a warm, fuzzy feeling to the
             brand. I went with a fun font to showcase the playful nature of the
-            studio’s products. Editing the font slightly to extend the “r” to
-            hug the “a” further highlights the fun! I chose a cat hugging a star
+            studio's products. Editing the font slightly to extend the "r" to
+            hug the "a" further highlights the fun! I chose a cat hugging a star
             for the main mascot of this brand since it brought the playfulness
             to another level.
           </p>
         </div>
         <Line className="my-8" />
-        <h1 className="text-[32px] font-bold">Additional Assets</h1>
-        <div className="flex flex-row gap-2">
+        <h1 className="text-2xl md:text-[32px] font-bold">Additional Assets</h1>
+        <div className="flex flex-col md:flex-row gap-2">
           <div>
             <Image
-    quality={100}    
               src="/staramics/assets1.png"
               width={504 * 4}
               height={289 * 4}
@@ -77,7 +74,6 @@ export default function Staramics() {
           </div>
           <div>
             <Image
-    quality={100}    
               src="/staramics/assets2.png"
               width={404 * 4}
               height={289 * 4}
@@ -86,10 +82,9 @@ export default function Staramics() {
             />
           </div>
         </div>
-        <div className="flex flex-row gap-2 -mt-6">
+        <div className="flex flex-col md:flex-row gap-2 -mt-6">
           <div>
             <Image
-    quality={100}    
               src="/staramics/assets3.png"
               width={403 * 4}
               height={289 * 4}
@@ -99,7 +94,6 @@ export default function Staramics() {
           </div>
           <div>
             <Image
-    quality={100}    
               src="/staramics/assets4.png"
               width={505 * 4}
               height={289 * 4}
@@ -109,7 +103,7 @@ export default function Staramics() {
           </div>
         </div>
         <Line className="my-8" />
-        <h1 className="text-[32px] font-bold">Reflection</h1>
+        <h1 className="text-2xl md:text-[32px] font-bold">Reflection</h1>
         <p className="text-base">
           Staramics helped spark a sense of playful creativity for me. It was
           fulfilling to create a whole brand from scratch, without any pressure
@@ -119,7 +113,7 @@ export default function Staramics() {
           form.
         </p>
       </div>
-      <Footer className="mt-[177px]" />
+      <Footer className="mt-[80px] md:mt-[177px]" />
     </>
   );
 }

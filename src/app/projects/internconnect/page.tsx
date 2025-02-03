@@ -11,7 +11,6 @@ export default function InternConnect() {
       <Navbar />
       <div className="pt-[153px]">
         <Image
-    quality={100}    
           src="/internconnect/hero.svg"
           width={1280}
           height={540.5}
@@ -71,17 +70,15 @@ export default function InternConnect() {
           },
         ]}
       />
-      <div className="flex flex-col gap-8 pt-[72px] pb-[108px] px-[182px]">
-        <h1 className="text-[40px] font-bold">Accessibility Audits</h1>
-        <div className="flex flex-row gap-16">
+      <div className="flex flex-col gap-8 px-4 md:px-[182px]">
+        <div className="flex flex-col md:flex-row gap-8">
           <div className="flex flex-col gap-8 flex-1">
-            <p className="text-base">
+            <p className="text-sm md:text-base">
               We audited our site&apos;s main pages using Google Chrome&apos;s
               Lighthouse tool. Notably, our <strong>landing page</strong>{" "}
               achieved a perfect score of 100/100 for accessibility.
             </p>
             <Image
-    quality={100}    
               src="/internconnect/accessibility.png"
               width={4096}
               height={2662}
@@ -90,54 +87,51 @@ export default function InternConnect() {
             />
           </div>
           <div className="flex flex-col gap-[52px] flex-1">
-            <div className="flex flex-row gap-4 items-start">
+            <div className="flex flex-col md:flex-row gap-4 items-start">
               <div className="flex flex-col items-center">
                 <Image
-    quality={100}    
                   src="/internconnect/number1.png"
                   width={127 * 4}
                   height={108 * 4}
                   alt="100"
                 />
-                <p className="text-xl font-bold font-sfpro text-center">
+                <p className="text-lg md:text-xl font-bold font-sfpro text-center">
                   Accessibility
                 </p>
-                <p className="text-sm text-center">
+                <p className="text-xs md:text-sm text-center">
                   &ldquo;Project Collaboration&rdquo; Page
                 </p>
               </div>
               <div className="flex flex-col items-center">
                 <Image
-    quality={100}    
                   src="/internconnect/number2.png"
                   width={127 * 4}
                   height={108 * 4}
                   alt="92"
                 />
-                <p className="text-xl font-bold font-sfpro">Accessibility</p>
-                <p className="text-sm text-center">
+                <p className="text-lg md:text-xl font-bold font-sfpro">Accessibility</p>
+                <p className="text-xs md:text-sm text-center">
                   &ldquo;Resume Builder&rdquo; Page
                 </p>
               </div>
               <div className="flex flex-col items-center">
                 <Image
-    quality={100}    
                   src="/internconnect/number2.png"
                   width={127 * 4}
                   height={108 * 4}
                   alt="92"
                 />
-                <p className="text-xl font-bold font-sfpro">Accessibility</p>
-                <p className="text-sm text-center">
+                <p className="text-lg md:text-xl font-bold font-sfpro">Accessibility</p>
+                <p className="text-xs md:text-sm text-center">
                   &ldquo;Resources&rdquo; Page
                 </p>
               </div>
             </div>
-            <p className="text-base">
+            <p className="text-sm md:text-base">
               We conducted audits on our Communities, Resume Builder, and
               Resources pages which initially received scores of 84, 61, and 77
               respectively. We then integrated alt text and utilized
-              “aria-labels” to provide accessible names for buttons and links.
+              "aria-labels" to provide accessible names for buttons and links.
               We also changed some low contrast color selections. Subsequent
               evaluations showcased improved scores, with the Project
               Collaboration, Resume Builder, and Resources tabs registering{" "}
@@ -148,16 +142,15 @@ export default function InternConnect() {
         </div>
       </div>
       <Image
-    quality={100}    
         src="/internconnect/screens.svg"
         width={1286}
         height={1525}
         style={{ height: "auto", width: "100%" }}
         alt="screens"
       />
-      <div className="flex flex-col gap-8 pt-[72px] pb-[76px] px-[182px]">
-        <h1 className="text-[40px] font-bold">Next Steps & Reflection</h1>
-        <p className="text-xl">
+      <div className="flex flex-col gap-8 pt-8 md:pt-[72px] pb-8 md:pb-[76px] px-4 md:px-[182px]">
+        <h1 className="text-2xl md:text-[40px] font-bold">Next Steps & Reflection</h1>
+        <p className="text-lg md:text-xl">
           Owing to time limitations, we couldn&apos;t fully realize the
           product&apos;s potential. There remain promising ideas that can be
           explored in future iterations.
@@ -172,13 +165,12 @@ export default function InternConnect() {
           ].map((text, index) => (
             <div className="flex flex-row gap-2 items-center" key={index}>
               <Image
-    quality={100}    
                 src="/internconnect/star.svg"
                 width={25}
                 height={25}
                 alt="star"
               />
-              <p className="text-xl font-bold text-[#4E5F99]">{text}</p>
+              <p className="text-lg md:text-xl font-bold text-[#4E5F99]">{text}</p>
             </div>
           ))}
         </div>
@@ -192,7 +184,7 @@ export default function InternConnect() {
           system to streamline the implementation process!
         </p>
       </div>
-      <Footer />
+      <Footer className="mt-20 md:mt-[160px]" />
     </>
   );
 }

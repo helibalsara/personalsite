@@ -106,8 +106,8 @@ export default function Pinterest() {
         ]}
       />
       <WaitHow />
-      <div className="flex flex-col gap-8 px-4 md:px-[182px]">
-        <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
+      <div className="flex flex-col gap-8 px-4 md:px-[182px] pt-4">
+        <div className="flex flex-col md:flex-row gap-8 justify-center items-center md:items-stretch">
           <div className="flex-1 bg-[#EDEDED] rounded-lg p-3 max-w-80 flex items-center">
             <p className="text-xs md:text-sm text-center">
               New SMBs struggle with investing enough time to grow on social
@@ -192,7 +192,7 @@ export default function Pinterest() {
             />
           </div>
         </div>
-        <div className="flex flex-row justify-center items-center mt-[-32px]">
+        <div className="hidden md:flex flex-row justify-center items-center mt-[-32px]">
           <Image
             src="/pinterest/arrow.png"
             width={49.6 * 2}
@@ -314,7 +314,7 @@ export default function Pinterest() {
             },
           ]}
         />
-        <div className="flex flex-row gap-8 items-center">
+        <div className="flex flex-col md:flex-row gap-8 items-center">
           <p className="flex-1">
             Platforms like Facebook and Google cater towards experienced
             marketers, focusing on optimizing ad to goal conversion through a
@@ -433,8 +433,8 @@ export default function Pinterest() {
         </div>
         <Line className="mt-[-32px] mb-8" />
         <h2 className="text-3xl font-bold">REFLECTIONS</h2>
-        <div className="flex flex-row gap-8 justify-between">
-          <p className="max-w-[40vw]">
+        <div className="flex flex-col md:flex-row gap-8 justify-between">
+          <p className="md:max-w-[40vw]">
             I was definitely intimidated to tackle this semester-long project,
             but it was an amazing experience working with real clients. Working
             with Pinterest taught me how to effectively leverage contextual
@@ -450,7 +450,7 @@ export default function Pinterest() {
             src="/pinterest/reflections.png"
             width={253 * 8}
             height={168.6 * 8}
-            style={{ height: "auto", maxWidth: "35%" }}
+            className="h-auto w-full md:max-w-[35%]"
             alt="reflections"
           />
         </div>

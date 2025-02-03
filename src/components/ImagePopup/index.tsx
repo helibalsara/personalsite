@@ -15,6 +15,7 @@ export default function ImagePopup({ src, width, height, alt, style }: ImagePopu
   return (
     <>
       <Image
+    quality={100}    
         src={src}
         width={width}
         height={height}
@@ -29,6 +30,7 @@ export default function ImagePopup({ src, width, height, alt, style }: ImagePopu
         >
           <div className="relative max-w-[85vw] max-h-[85vh] animate-scaleIn">
             <Image
+    quality={100}    
               src={src}
               width={width * 2}
               height={height * 2}

@@ -15,6 +15,7 @@ export default function SmartNotes() {
       <Navbar />
       <div className="pt-[153px]">
         <Image
+    quality={100}    
           src="/smartnotes/hero.svg"
           width={1280}
           height={540.5}
@@ -81,6 +82,7 @@ export default function SmartNotes() {
                 }}
               />
               <Image
+    quality={100}    
                 src="/smartnotes/pen.svg"
                 width={432}
                 height={462}
@@ -151,6 +153,7 @@ export default function SmartNotes() {
           outside of class.
         </p>
         <Image
+    quality={100}    
           src="/smartnotes/survey.svg"
           width={745.36}
           height={178.47}
@@ -166,6 +169,7 @@ export default function SmartNotes() {
         <div className="flex flex-row gap-8 max-w-[] justify-around self-center">
           <div className="flex flex-1 flex-col gap-2 p-[10px] bg-[#BFD3DF] rounded-[15px]">
             <Image
+    quality={100}    
               src="/smartnotes/expired.png"
               width={30 * 4}
               height={30 * 4}
@@ -179,6 +183,7 @@ export default function SmartNotes() {
           </div>
           <div className="flex flex-1 flex-col gap-2 p-[10px] bg-[#BFD3DF] rounded-[15px]">
             <Image
+    quality={100}    
               src="/smartnotes/todo.png"
               width={30 * 4}
               height={30 * 4}
@@ -192,6 +197,7 @@ export default function SmartNotes() {
           </div>
           <div className="flex flex-1 flex-col gap-2 p-[10px] bg-[#BFD3DF] rounded-[15px]">
             <Image
+    quality={100}    
               src="/smartnotes/puzzled.png"
               width={30 * 4}
               height={30 * 4}
@@ -406,6 +412,7 @@ export default function SmartNotes() {
               </p>
             </div>
             <Image
+    quality={100}    
               src="/smartnotes/pain1.png"
               width={608}
               height={456}
@@ -415,6 +422,7 @@ export default function SmartNotes() {
           </div>
           <div className="flex flex-row gap-[42px] justify-between items-center">
             <Image
+    quality={100}    
               src="/smartnotes/pain2.png"
               width={456}
               height={456}
@@ -445,6 +453,7 @@ export default function SmartNotes() {
               </p>
             </div>
             <Image
+    quality={100}    
               src="/smartnotes/pain3.png"
               width={456}
               height={456}
@@ -474,6 +483,7 @@ export default function SmartNotes() {
             deep into it and had spent more time developing a cleaner design.
           </p>
           <Image
+    quality={100}    
             src="/smartnotes/reflections.svg"
             width={348 * 4}
             height={261 * 4}

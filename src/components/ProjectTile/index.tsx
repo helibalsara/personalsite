@@ -24,6 +24,7 @@ export default function ProjectTile({
       <FadeInElement>
         <div className="flex gap-8 flex-1 w-full lg:flex-row flex-col">
           <Image
+    quality={100}    
             src={image}
             alt={title}
             width={576}

@@ -49,6 +49,7 @@ export default function EnhancementSection({
           <p className="text-sm">CURRENTLY</p>
           <div className="flex flex-row gap-8 items-center">
             <Image
+    quality={100}    
               src={currentImage.src}
               width={340 * 2}
               height={212 * 2}
@@ -60,6 +61,7 @@ export default function EnhancementSection({
           <p className="text-sm">REDESIGN</p>
           <div className="flex flex-row gap-8 items-center">
             <Image
+    quality={100}    
               src={redesignImage.src}
               width={475 * 2}
               height={308 * 2}
@@ -80,6 +82,7 @@ export default function EnhancementSection({
             {finalText.description}
           </p>
           <Image
+    quality={100}    
             src={finalImage.src}
             width={600 * 2}
             height={372.94 * 2}

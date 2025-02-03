@@ -11,6 +11,7 @@ export default function InternConnect() {
       <Navbar />
       <div className="pt-[153px]">
         <Image
+    quality={100}    
           src="/internconnect/hero.svg"
           width={1280}
           height={540.5}
@@ -80,6 +81,7 @@ export default function InternConnect() {
               achieved a perfect score of 100/100 for accessibility.
             </p>
             <Image
+    quality={100}    
               src="/internconnect/accessibility.png"
               width={4096}
               height={2662}
@@ -91,6 +93,7 @@ export default function InternConnect() {
             <div className="flex flex-row gap-4 items-start">
               <div className="flex flex-col items-center">
                 <Image
+    quality={100}    
                   src="/internconnect/number1.png"
                   width={127 * 4}
                   height={108 * 4}
@@ -105,6 +108,7 @@ export default function InternConnect() {
               </div>
               <div className="flex flex-col items-center">
                 <Image
+    quality={100}    
                   src="/internconnect/number2.png"
                   width={127 * 4}
                   height={108 * 4}
@@ -117,6 +121,7 @@ export default function InternConnect() {
               </div>
               <div className="flex flex-col items-center">
                 <Image
+    quality={100}    
                   src="/internconnect/number2.png"
                   width={127 * 4}
                   height={108 * 4}
@@ -143,6 +148,7 @@ export default function InternConnect() {
         </div>
       </div>
       <Image
+    quality={100}    
         src="/internconnect/screens.svg"
         width={1286}
         height={1525}
@@ -166,6 +172,7 @@ export default function InternConnect() {
           ].map((text, index) => (
             <div className="flex flex-row gap-2 items-center" key={index}>
               <Image
+    quality={100}    
                 src="/internconnect/star.svg"
                 width={25}
                 height={25}

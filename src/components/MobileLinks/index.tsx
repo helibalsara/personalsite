@@ -20,7 +20,8 @@ export default function MobileLinks({ onClose, open }: Props) {
         className="fixed top-[54px] right-12 bg-transparent border-0 p-0 m-0" 
         onClick={onClose}
       >
-        <Image src="/x.svg" alt="Close Menu" width={32} height={32} />
+        <Image
+    quality={100}     src="/x.svg" alt="Close Menu" width={32} height={32} />
       </button>
       <div className="flex flex-col gap-5">
         <p className="text-black text-xl font-medium font-[--font-manrope] no-underline">projects</p>

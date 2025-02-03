@@ -16,6 +16,7 @@ export default function Pinterest() {
       <Navbar />
       <div className="pt-[153px]">
         <Image
+    quality={100}    
           src="/pinterest/hero.svg"
           width={1280}
           height={540.5}
@@ -138,6 +139,7 @@ export default function Pinterest() {
         </div>
         <div className="flex flex-row gap-2 justify-center items-center px-8">
           <Image
+    quality={100}    
             src="/pinterest/megaphone.png"
             width={100}
             height={100}
@@ -155,6 +157,7 @@ export default function Pinterest() {
           WHAT&apos;S THE CURRENT AD CREATION FLOW?
         </h2>
         <Image
+    quality={100}    
           src="/pinterest/ad-creation.svg"
           width={916}
           height={593}
@@ -237,6 +240,7 @@ export default function Pinterest() {
           <div className="flex flex-row">
             <p>**</p>
             <Image
+    quality={100}    
               src="/pinterest/create.png"
               width={140}
               height={106}
@@ -247,6 +251,7 @@ export default function Pinterest() {
         </div>
         <div className="flex flex-row justify-center items-center mt-[-32px]">
           <Image
+    quality={100}    
             src="/pinterest/arrow.png"
             width={49.6 * 2}
             height={79.7 * 2}
@@ -478,6 +483,7 @@ export default function Pinterest() {
         />
         <div className="flex flex-row justify-end w-full mt-[-80px]">
           <Image
+    quality={100}    
             src="/pinterest/medal.png"
             width={123}
             height={123}
@@ -500,6 +506,7 @@ export default function Pinterest() {
             as to the rest of my team for pulling through this exciting journey!
           </p>
           <Image
+    quality={100}    
             src="/pinterest/reflections.png"
             width={253 * 8}
             height={168.6 * 8}

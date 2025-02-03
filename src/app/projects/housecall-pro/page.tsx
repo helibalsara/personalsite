@@ -13,6 +13,7 @@ export default function HousecallPro() {
       <Navbar />
       <div className="pt-[153px] md:pt-[153px]">
         <Image
+          quality={100}
           src="/housecall-pro/hero.svg"
           width={1280}
           height={540.5}
@@ -81,6 +82,7 @@ export default function HousecallPro() {
         </div>
         <div className="flex-1">
           <Image
+            quality={100}
             src="/housecall-pro/pros.svg"
             width={1280}
             height={540.5}
@@ -90,7 +92,9 @@ export default function HousecallPro() {
         </div>
       </div>
       <div className="flex flex-col py-8 px-4 md:px-[182px] gap-8">
-        <h1 className="text-[28px] md:text-[32px] font-bold">CONTEXT: WHAT ARE ESTIMATES?</h1>
+        <h1 className="text-[28px] md:text-[32px] font-bold">
+          CONTEXT: WHAT ARE ESTIMATES?
+        </h1>
         <div className="flex flex-col items-center gap-4 bg-[#EDEDED] py-4 md:py-8 px-4 md:px-11">
           <p className="text-center text-base px-2 md:px-8">
             Estimates are detailed, customizable cost proposals that enable home
@@ -101,6 +105,7 @@ export default function HousecallPro() {
             <strong>once an estimate has been sent.</strong>
           </p>
           <Image
+            quality={100}
             src="/housecall-pro/estimates.svg"
             width={915 * 4}
             height={609 * 4}
@@ -109,13 +114,16 @@ export default function HousecallPro() {
           />
         </div>
         <Line className="my-4 md:my-8" />
-        <h1 className="text-[28px] md:text-[32px] font-bold">DISSECTING THE FLOW</h1>
+        <h1 className="text-[28px] md:text-[32px] font-bold">
+          DISSECTING THE FLOW
+        </h1>
         <p className="text-base">
           Since this a brand new feature on web, where should we place it in the
           flow?
         </p>
         <div className="flex flex-col md:flex-row gap-8 items-center justify-between">
           <Image
+            quality={100}
             src="/housecall-pro/flow.png"
             width={379 * 4}
             height={323 * 4}
@@ -130,7 +138,9 @@ export default function HousecallPro() {
           </p>
         </div>
         <Line className="my-4 md:my-8" />
-        <h1 className="text-[28px] md:text-[32px] font-bold">DESIGN THE COMPONENT</h1>
+        <h1 className="text-[28px] md:text-[32px] font-bold">
+          DESIGN THE COMPONENT
+        </h1>
         <p className="text-base">
           So we know our designs need to be legally binding and that we must
           collect homeowner&apos;s signatures through the homebase. How will it
@@ -139,6 +149,7 @@ export default function HousecallPro() {
         <div className="flex flex-col md:flex-row gap-4 md:gap-8">
           <div className="w-full md:w-auto">
             <Image
+              quality={100}
               src="/housecall-pro/design1.png"
               width={577 * 4}
               height={354 * 4}
@@ -148,6 +159,7 @@ export default function HousecallPro() {
           </div>
           <div className="w-full md:w-auto">
             <Image
+              quality={100}
               src="/housecall-pro/design2.png"
               width={303 * 4}
               height={354 * 4}
@@ -166,6 +178,7 @@ export default function HousecallPro() {
           had our final components!
         </p>
         <Image
+          quality={100}
           src="/housecall-pro/design.svg"
           width={954 * 2}
           height={2014 * 2}
@@ -173,13 +186,15 @@ export default function HousecallPro() {
           alt="design3"
           className="object-contain"
         />
-        <h1 className="text-[28px] md:text-[32px] font-bold">❗️SCOPE EXPANSION❗️</h1>
+        <h1 className="text-[28px] md:text-[32px] font-bold">
+          ❗️SCOPE EXPANSION❗️
+        </h1>
         <p className="text-base">
           Another issue HCP was facing was that Pros would edit the estimate
           after it had already been approved by the homeowner, effectively
           changing the price and agreed upon services. However, the estimate
-          would still show as &ldquo;Approved.&rdquo; This was a major issue, especially as
-          we were focusing on the legality of the estimate.
+          would still show as &ldquo;Approved.&rdquo; This was a major issue,
+          especially as we were focusing on the legality of the estimate.
         </p>
         <p className="text-base">
           <strong>
@@ -192,6 +207,7 @@ export default function HousecallPro() {
         <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center">
           <div className="flex-1 w-full">
             <Image
+              quality={100}
               src="/housecall-pro/scope.png"
               width={441 * 2}
               height={304 * 2}
@@ -206,7 +222,9 @@ export default function HousecallPro() {
           </div>
         </div>
         <Line className="my-4 md:my-8" />
-        <h1 className="text-[28px] md:text-[32px] font-bold">PRO-FACING EDITING ESTIMATE</h1>
+        <h1 className="text-[28px] md:text-[32px] font-bold">
+          PRO-FACING EDITING ESTIMATE
+        </h1>
         <p className="text-base">
           Let&apos;s say a Pro wanted to go back and edit an estimate. They
           would first have to unlock the sent estimate, be made aware that once
@@ -214,6 +232,7 @@ export default function HousecallPro() {
           Pro-facing estimate view.
         </p>
         <Image
+          quality={100}
           src="/housecall-pro/estimate.svg"
           width={916 * 2}
           height={560 * 2}

@@ -24,6 +24,7 @@ export default function Footer({ className }: { className?: string }) {
               rel="noopener noreferrer"
             >
               <Image
+    quality={100}    
                 src="/linkedin.png"
                 alt="LinkedIn"
                 width={50}
@@ -36,6 +37,7 @@ export default function Footer({ className }: { className?: string }) {
               rel="noopener noreferrer"
             >
               <Image
+    quality={100}    
                 src="/instagram.png"
                 alt="Instagram"
                 width={50}

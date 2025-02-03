@@ -23,6 +23,7 @@ export default function FinalDesign({
       </div>
       <div className="w-full md:w-2/3">
         <Image
+    quality={100}    
           src={imageSrc}
           width={imageWidth}
           height={imageHeight}

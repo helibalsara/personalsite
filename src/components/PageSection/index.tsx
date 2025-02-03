@@ -18,6 +18,7 @@ export default function PageSection({ title, before, after, features }: Props) {
       <div className="flex flex-col gap-2 items-center w-1/5">
         <p className="text-base font-normal text-center">{title}</p>
         <Image
+    quality={100}    
           src={before}
           alt={before}
           width={550}
@@ -28,6 +29,7 @@ export default function PageSection({ title, before, after, features }: Props) {
       <div className="flex flex-row gap-4 w-4/5">
         <div className="flex-1">
           <Image
+    quality={100}    
             src={after}
             alt={after}
             width={904}

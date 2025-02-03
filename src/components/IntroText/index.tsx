@@ -80,6 +80,7 @@ export default function IntroText() {
           {!isMoving && (
             <div className="flex flex-col items-end gap-3">
               <Image
+    quality={100}    
                 src="/arrow.svg"
                 width={53.4}
                 height={27.48}
@@ -89,6 +90,7 @@ export default function IntroText() {
             </div>
           )}
           <Image
+    quality={100}    
             src={imageSrc}
             width={COPTER_WIDTH}
             height={COPTER_HEIGHT}
@@ -101,6 +103,7 @@ export default function IntroText() {
           <div className="flex flex-row items-end gap-8">
             <div className="flex flex-col items-end gap-3">
               <Image
+    quality={100}    
                 src="/arrow.svg"
                 width={53.4}
                 height={27.48}
@@ -112,6 +115,7 @@ export default function IntroText() {
               </p>
             </div>
             <Image
+    quality={100}    
               src={imageSrc}
               width={COPTER_WIDTH}
               height={COPTER_HEIGHT}

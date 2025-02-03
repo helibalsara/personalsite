@@ -30,6 +30,7 @@ export default function Links({ darkTheme }: Props) {
               projects
             </p>
             <Image
+    quality={100}    
               src={darkTheme ? "/dropdownIconLight.svg" : "/dropdownIcon.svg"}
               alt=""
               width={0}

@@ -13,6 +13,7 @@ export default function Whisper() {
       <Navbar />
       <div className="pt-[153px]">
         <Image
+    quality={100}    
           src="/whisper/hero.svg"
           width={1280}
           height={540.5}
@@ -67,6 +68,7 @@ export default function Whisper() {
           <div className="w-3/5 flex flex-row gap-2">
             <div>
               <Image
+    quality={100}    
                 src="/whisper/final1.jpeg"
                 width={1815}
                 height={4032}
@@ -76,6 +78,7 @@ export default function Whisper() {
             </div>
             <div>
               <Image
+    quality={100}    
                 src="/whisper/final2.jpeg"
                 width={1815}
                 height={4032}
@@ -85,6 +88,7 @@ export default function Whisper() {
             </div>
             <div>
               <Image
+    quality={100}    
                 src="/whisper/final3.jpeg"
                 width={1815}
                 height={4032}
@@ -112,6 +116,7 @@ export default function Whisper() {
         <div className="flex flex-row gap-8 self-center w-[80%]">
           <div className="flex flex-1 flex-col gap-2 p-3 bg-[#EDEDED] rounded-lg justify-center items-center">
             <Image
+    quality={100}    
               src="/whisper/comp1.png"
               width={92}
               height={96}
@@ -126,6 +131,7 @@ export default function Whisper() {
           </div>
           <div className="flex flex-1 flex-col gap-2 p-3 bg-[#EDEDED] rounded-lg justify-center items-center">
             <Image
+    quality={100}    
               src="/whisper/comp2.png"
               width={202}
               height={98}
@@ -138,6 +144,7 @@ export default function Whisper() {
           </div>
           <div className="flex flex-1 flex-col gap-2 p-3 bg-[#EDEDED] rounded-lg justify-center items-center">
             <Image
+    quality={100}    
               src="/whisper/comp3.png"
               width={148}
               height={104}
@@ -160,6 +167,7 @@ export default function Whisper() {
         <div className="grid grid-cols-2 gap-8 w-[80%] self-center">
           <div className="flex flex-row gap-2 items-center">
             <Image
+    quality={100}    
               src="/whisper/survey1.svg"
               width={80}
               height={80}
@@ -171,6 +179,7 @@ export default function Whisper() {
           </div>
           <div className="flex flex-row gap-2 items-center">
             <Image
+    quality={100}    
               src="/whisper/survey2.svg"
               width={80}
               height={80}
@@ -182,6 +191,7 @@ export default function Whisper() {
           </div>
           <div className="flex flex-row gap-2 items-center">
             <Image
+    quality={100}    
               src="/whisper/survey3.svg"
               width={80}
               height={80}
@@ -193,6 +203,7 @@ export default function Whisper() {
           </div>
           <div className="flex flex-row gap-2 items-center">
             <Image
+    quality={100}    
               src="/whisper/survey4.svg"
               width={80}
               height={80}
@@ -216,6 +227,7 @@ export default function Whisper() {
           </p>
           <div className="w-1/4">
             <Image
+    quality={100}    
               src="/whisper/research.png"
               width={1000}
               height={514}
@@ -316,6 +328,7 @@ export default function Whisper() {
           <div className="flex flex-row gap-8 items-end">
             <div className="flex-1">
               <Image
+    quality={100}    
                 src="/whisper/brainstorm1.png"
                 width={335 * 4}
                 height={265 * 4}
@@ -325,6 +338,7 @@ export default function Whisper() {
             </div>
             <div className="flex-1">
               <Image
+    quality={100}    
                 src="/whisper/brainstorm2.png"
                 width={362.703 * 4}
                 height={265.331 * 4}
@@ -376,6 +390,7 @@ export default function Whisper() {
           </div>
           <div className="w-1/4">
             <Image
+    quality={100}    
               src="/whisper/prototype1.png"
               width={177}
               height={339}
@@ -412,6 +427,7 @@ export default function Whisper() {
           </div>
           <div className="w-2/5">
             <Image
+    quality={100}    
               src="/whisper/prototype2.gif"
               width={177}
               height={339}
@@ -440,6 +456,7 @@ export default function Whisper() {
           </div>
           <div className="w-1/3">
             <Image
+    quality={100}    
               src="/whisper/prototype3.png"
               width={177}
               height={339}
@@ -469,6 +486,7 @@ export default function Whisper() {
           </p>
           <div className="w-1/4">
             <Image
+    quality={100}    
               src="/whisper/reflection.jpeg"
               width={1440}
               height={1080}

@@ -33,6 +33,7 @@ export default function ExpandableImage({
   return (
     <>
       <Image
+    quality={100}    
         src={src}
         width={width}
         height={height}
@@ -51,6 +52,7 @@ export default function ExpandableImage({
             isClosing ? "animate-scaleOut" : "animate-scaleIn"
           }`}>
             <Image
+    quality={100}    
               src={src}
               width={width * 2}
               height={height * 2}

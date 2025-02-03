@@ -18,6 +18,7 @@ export default function PinterestCompetitorGrid({
           <div className="flex shrink-0 flex-col gap-4">
             {item.images.map((image) => (
               <Image
+    quality={100}    
                 key={image}
                 src={image}
                 alt={item.title}

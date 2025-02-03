@@ -14,6 +14,7 @@ export default function SmartNotes() {
       <Navbar />
       <div className="pt-[153px]">
         <Image
+    quality={100}    
           src="/tt/hero.svg"
           width={1280}
           height={540.5}
@@ -74,6 +75,7 @@ export default function SmartNotes() {
           </div>
           <div className="w-1/4">
             <Image
+    quality={100}    
               src="/tt/final1.gif"
               width={600}
               height={372.9}
@@ -106,6 +108,7 @@ export default function SmartNotes() {
         </p>
         <div className="px-16 justify-center items-center">
           <Image
+    quality={100}    
             src="/tt/problemspace.svg"
             width={793.608}
             height={389.665}
@@ -145,6 +148,7 @@ export default function SmartNotes() {
           competitor - Apartments.com.
         </p>
         <Image
+    quality={100}    
           src="/tt/competitor.svg"
           width={915.97}
           height={171.08}
@@ -158,6 +162,7 @@ export default function SmartNotes() {
         </p>
         <div className="mx-[97.5px]">
           <Image
+    quality={100}    
             src="/tt/callout.svg"
             width={721}
             height={110}
@@ -272,6 +277,7 @@ export default function SmartNotes() {
         </div>
       </div>
       <Image
+    quality={100}    
         src="/tt/final.svg"
         width={1278}
         height={1072.43}
@@ -290,6 +296,7 @@ export default function SmartNotes() {
             paper cranes!
           </p>
           <Image
+    quality={100}    
             src="/tt/reflections.png"
             width={192 * 8}
             height={246 * 8}

@@ -31,6 +31,7 @@ export default function Navbar({ darkTheme }: Props) {
           href="/"
         >
           <Image
+    quality={100}    
             src={darkTheme ? "/logoLight.svg" : "/logo.svg"}
             alt="HB Logo"
             className="h-full w-auto"

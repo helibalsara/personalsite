@@ -10,6 +10,7 @@ export default function BindingElement({ imageSrc, title, description }: Binding
   return (
     <div className="flex flex-row gap-2">
       <Image
+    quality={100}    
         src={imageSrc}
         width={50}
         height={50}

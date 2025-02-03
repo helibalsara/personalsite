@@ -12,7 +12,7 @@ export default function HousecallPro() {
   return (
     <>
       <Navbar />
-      <div className="pt-[153px]">
+      <div className="pt-[153px] md:pt-[153px]">
         <Image
           src="/housecall-pro/hero.svg"
           width={1280}
@@ -69,7 +69,7 @@ export default function HousecallPro() {
         ]}
       />
       <WaitHow />
-      <div className="flex flex-row gap-8 items-center p-16 bg-[#DEF0FF]">
+      <div className="flex flex-col md:flex-row gap-8 items-center p-4 md:p-16 bg-[#DEF0FF]">
         <div className="flex-1 flex-col gap-4">
           <p>
             Housecall Pro is a software company aimed towards{" "}
@@ -90,10 +90,10 @@ export default function HousecallPro() {
           />
         </div>
       </div>
-      <div className="flex flex-col py-8 px-[182px] gap-8">
-        <h1 className="text-[32px] font-bold">CONTEXT: WHAT ARE ESTIMATES?</h1>
-        <div className="flex flex-col items-center gap-4 bg-[#EDEDED] py-8 px-11">
-          <p className="text-center text-base px-8">
+      <div className="flex flex-col py-8 px-4 md:px-[182px] gap-8">
+        <h1 className="text-[28px] md:text-[32px] font-bold">CONTEXT: WHAT ARE ESTIMATES?</h1>
+        <div className="flex flex-col items-center gap-4 bg-[#EDEDED] py-4 md:py-8 px-4 md:px-11">
+          <p className="text-center text-base px-2 md:px-8">
             Estimates are detailed, customizable cost proposals that enable home
             services businesses (Pros) to provide accurate pricing, enhance
             professionalism, and increase the likelihood of securing jobs.
@@ -109,132 +109,18 @@ export default function HousecallPro() {
             alt="estimates"
           />
         </div>
-        <Line className="my-8" />
-        <h1 className="text-[32px] font-bold">
-          PROBLEM: WHY DO WE NEED A LEGAL SIGNATURE?
-        </h1>
-        <p className="text-base">
-          Pros cannot collect homeowners signature and gain approval for work
-          when sending an estimate remotely. This lack of clear, legally binding
-          signatures on estimates and other critical documents means Pros have
-          poorer evidence of the approval when facing legal disputes or having
-          other types of misunderstandings with their customers.
-        </p>
-        <p className="text-base">How it impacts Pros:</p>
-        <div className="flex flex-row gap-8 justify-center items-stretch">
-          <div className="flex justify-center items-center p-3 bg-[#DEF0FF] rounded-lg max-w-[240px]">
-            <p className="text-base text-center">
-              Impaired ability to <strong>prove</strong> the agreed scope of
-              work during legal disputes.
-            </p>
-          </div>
-          <div className="flex justify-center items-center p-3 bg-[#DEF0FF] rounded-lg max-w-[240px]">
-            <p className="text-base text-center">
-              Lack of signed confirmation can result in customers{" "}
-              <strong>backing out</strong> of services.
-            </p>
-          </div>
-          <div className="flex justify-center items-center p-3 bg-[#DEF0FF] rounded-lg max-w-[240px]">
-            <p className="text-base text-center">
-              Lack of <strong>remote</strong> options <strong>delays</strong>{" "}
-              service as customers print and sign estimates.
-            </p>
-          </div>
-        </div>
-        <p className="text-base">
-          The mobile flow has a way to capture a signature already in person.
-          However, we needed a complete <strong>remote</strong> method to
-          approve, collect, and store homeowner signatures which can be pulled
-          up for future reference.
-        </p>
-        <div className="flex flex-col bg-[#EDEDED] py-8 px-11 gap-4">
-          <Image
-            src="/housecall-pro/mobile1.svg"
-            width={915 * 4}
-            height={609 * 4}
-            style={{ height: "auto", width: "100%" }}
-            alt="mobile-flow"
-          />
-          <div className="grid grid-cols-4 gap-9 w-full">
-            <Image
-              src="/housecall-pro/mobile2.png"
-              width={1170}
-              height={2532}
-              alt="mobile-flow"
-            />
-            <Image
-              src="/housecall-pro/mobile3.png"
-              width={1170}
-              height={2532}
-              alt="mobile-flow"
-            />
-            <Image
-              src="/housecall-pro/mobile4.png"
-              width={1170}
-              height={2532}
-              alt="mobile-flow"
-            />
-            <Image
-              src="/housecall-pro/mobile5.png"
-              width={1170}
-              height={2532}
-              alt="mobile-flow"
-            />
-          </div>
-        </div>
-        <p className="text-xl font-semibold">
-          WAIT...WHAT MAKES A SIGNATURE LEGALLY BINDING?
-        </p>
-        <p className="text-base">
-          A legally binding e-signature consists of 5 components and our design
-          must address all 5:
-        </p>
-        <div className="grid grid-cols-2 gap-8 mx-auto">
-          <BindingElement
-            imageSrc="/housecall-pro/bind1.png"
-            title="Intent"
-            description="Ability to decline instead of sign"
-          />
-          <BindingElement
-            imageSrc="/housecall-pro/bind2.png"
-            title="Consent"
-            description="Understand that this is a signature"
-          />
-          <BindingElement
-            imageSrc="/housecall-pro/bind3.png"
-            title="Associations"
-            description="Save the signature to the agreement"
-          />
-          <BindingElement
-            imageSrc="/housecall-pro/bind4.png"
-            title="Attribution"
-            description="Identify and prove who signed it"
-          />
-        </div>
-        <div className="flex flex-row justify-center">
-          <BindingElement
-            imageSrc="/housecall-pro/bind5.png"
-            title="Retention"
-            description="Share and store the signed agreement"
-          />
-        </div>
-        <Line className="my-8" />
-        <h1 className="text-[32px] font-bold">DISSECTING THE FLOW</h1>
+        <Line className="my-4 md:my-8" />
+        <h1 className="text-[28px] md:text-[32px] font-bold">DISSECTING THE FLOW</h1>
         <p className="text-base">
           Since this a brand new feature on web, where should we place it in the
           flow?
         </p>
-        <div className="flex flex-row gap-8 items-center justify-between">
+        <div className="flex flex-col md:flex-row gap-8 items-center justify-between">
           <Image
             src="/housecall-pro/flow.png"
             width={379 * 4}
             height={323 * 4}
-            style={{
-              height: "100%",
-              width: "auto",
-              maxWidth: "40%",
-              borderRadius: "10px",
-            }}
+            className="w-full md:w-2/5 h-auto rounded-lg"
             alt="flow"
           />
           <p className="flex-1 text-base">
@@ -244,30 +130,30 @@ export default function HousecallPro() {
             where homeowners receive the estimate to approve the services.
           </p>
         </div>
-        <Line className="my-8" />
-        <h1 className="text-[32px] font-bold">DESIGN THE COMPONENT</h1>
+        <Line className="my-4 md:my-8" />
+        <h1 className="text-[28px] md:text-[32px] font-bold">DESIGN THE COMPONENT</h1>
         <p className="text-base">
           So we know our designs need to be legally binding and that we must
           collect homeowner&apos;s signatures through the homebase. How will it
           look like? Let&apos;s look at other e-signature components elsewhere.
         </p>
-        <div className="flex flex-row gap-8">
-          <div>
+        <div className="flex flex-col md:flex-row gap-4 md:gap-8">
+          <div className="w-full md:w-auto">
             <Image
               src="/housecall-pro/design1.png"
               width={577 * 4}
               height={354 * 4}
               alt="design1"
-              className="object-contain"
+              className="object-contain w-full"
             />
           </div>
-          <div>
+          <div className="w-full md:w-auto">
             <Image
               src="/housecall-pro/design2.png"
               width={303 * 4}
               height={354 * 4}
               alt="design2"
-              className="object-contain"
+              className="object-contain w-full"
             />
           </div>
         </div>
@@ -288,7 +174,7 @@ export default function HousecallPro() {
           alt="design3"
           className="object-contain"
         />
-        <h1 className="text-[32px] font-bold">❗️SCOPE EXPANSION❗️</h1>
+        <h1 className="text-[28px] md:text-[32px] font-bold">❗️SCOPE EXPANSION❗️</h1>
         <p className="text-base">
           Another issue HCP was facing was that Pros would edit the estimate
           after it had already been approved by the homeowner, effectively
@@ -304,8 +190,8 @@ export default function HousecallPro() {
           But where would this live? I mapped out the flow and noted different
           opportunities to implement this.
         </p>
-        <div className="flex flex-row gap-8 items-center">
-          <div className="flex-1">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center">
+          <div className="flex-1 w-full">
             <Image
               src="/housecall-pro/scope.png"
               width={441 * 2}
@@ -320,8 +206,8 @@ export default function HousecallPro() {
             </p>
           </div>
         </div>
-        <Line className="my-8" />
-        <h1 className="text-[32px] font-bold">PRO-FACING EDITING ESTIMATE</h1>
+        <Line className="my-4 md:my-8" />
+        <h1 className="text-[28px] md:text-[32px] font-bold">PRO-FACING EDITING ESTIMATE</h1>
         <p className="text-base">
           Let&apos;s say a Pro wanted to go back and edit an estimate. They
           would first have to unlock the sent estimate, be made aware that once
@@ -335,8 +221,8 @@ export default function HousecallPro() {
           style={{ height: "auto", width: "100%" }}
           alt="estimate"
         />
-        <Line className="my-8" />
-        <h1 className="text-[32px] font-bold">
+        <Line className="my-4 md:my-8" />
+        <h1 className="text-[28px] md:text-[32px] font-bold">
           HOW THESE NEW FLOWS BRINGS VALUE: FINAL DESIGNS
         </h1>
         <EnhancementSection
@@ -345,17 +231,17 @@ export default function HousecallPro() {
           gradient={{ from: "#0F6FBE", to: "#DEF0FF" }}
           currentImage={{
             src: "/housecall-pro/esig1.png",
-            width: "40%",
+            width: "100%",
           }}
           currentText="No method of collecting a legal signature from the Homeowners."
           redesignImage={{
             src: "/housecall-pro/esig2.png",
-            width: "40%",
+            width: "100%",
           }}
           redesignText="Complete modal integrated within Homeowner flow that collects a signature, informs them of the terms and conditions, and helps them confirm their agreement to do business."
           finalImage={{
             src: "/housecall-pro/esig3.gif",
-            width: "65%",
+            width: "100%",
           }}
           finalText={{
             title: "Credibility",
@@ -369,17 +255,17 @@ export default function HousecallPro() {
           gradient={{ from: "#0F6FBE", to: "#DEF0FF" }}
           currentImage={{
             src: "/housecall-pro/estimate1.png",
-            width: "30%",
+            width: "100%",
           }}
           currentText="Estimates could be edited at anytime by the Pro with no warning or notification to the Homeowner."
           redesignImage={{
             src: "/housecall-pro/estimate2.png",
-            width: "50%",
+            width: "100%",
           }}
           redesignText="Editing line items is locked and informs the Pro that a new signature will be needed once any changes are made."
           finalImage={{
             src: "/housecall-pro/estimate3.gif",
-            width: "65%",
+            width: "100%",
           }}
           finalText={{
             title: "Security",
@@ -387,8 +273,8 @@ export default function HousecallPro() {
               "A locked view keeps Pros accountabile for any changes and assures the homeowner they are getting exactly what they approved.",
           }}
         />
-        <Line className="my-8" />
-        <h1 className="text-[32px] font-bold">REFLECTIONS</h1>
+        <Line className="my-4 md:my-8" />
+        <h1 className="text-[28px] md:text-[32px] font-bold">REFLECTIONS</h1>
         <p className="text-base">
           I&apos;d like to extend a huge thank you to my manager Stumpy and the
           Design Systems team from Housecall Pro for guiding and supporting me
@@ -400,7 +286,7 @@ export default function HousecallPro() {
           defining and polishing an MVP through this internship!
         </p>
       </div>
-      <Footer className="mt-[160px]" />
+      <Footer className="mt-20 md:mt-[160px]" />
     </>
   );
 }

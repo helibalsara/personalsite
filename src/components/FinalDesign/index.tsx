@@ -16,12 +16,12 @@ export default function FinalDesign({
   imageHeight = 372.9,
 }: FinalDesignProps) {
   return (
-    <div className="flex flex-row gap-16 justify-between">
-      <div className="w-1/3 flex flex-col gap-2">
+    <div className="flex flex-col md:flex-row gap-8 md:gap-16 md:justify-between">
+      <div className="w-full md:w-1/3 flex flex-col gap-2">
         <p className="text-2xl font-bold">{title}</p>
         <p className="text-xl">{description}</p>
       </div>
-      <div className="w-2/3">
+      <div className="w-full md:w-2/3">
         <Image
           src={imageSrc}
           width={imageWidth}

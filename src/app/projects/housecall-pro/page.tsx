@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import ProjectOverview from "@/components/ProjectOverview";
 import WaitHow from "@/components/WaitHow";
 import Image from "next/image";
-import BindingElement from "@/components/BindingElement";
 import EnhancementSection from "@/components/EnhancementSection";
 import Footer from "@/components/Footer";
 import FinalDesignsSection from "@/components/FinalDesignsSection";

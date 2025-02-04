@@ -8,6 +8,12 @@ import Image from "next/image";
 import ExpandableImage from "@/components/ExpandableImage";
 import PageSection from "@/components/PageSection";
 
+export const metadata = {
+  title: "Tours by Tenants | Heli Balsara",
+  description:
+    "An innovative housing search app that simplifies the process, helping users efficiently discover and secure their next home.",
+};
+
 export default function SmartNotes() {
   return (
     <>
@@ -81,6 +87,7 @@ export default function SmartNotes() {
               height={372.9}
               style={{ height: "auto", width: "100%" }}
               alt="project section"
+              unoptimized
             />
           </div>
         </div>

@@ -10,6 +10,12 @@ import ExpandableImage from "@/components/ExpandableImage";
 import WaitHow from "@/components/WaitHow";
 import FinalDesignsSection from "@/components/FinalDesignsSection";
 
+export const metadata = {
+  title: "Pinterest | Heli Balsara",
+  description:
+    "A redesign of Pinterest's ad creation flow to help small and medium-sized businesses promote their content more effectively.",
+};
+
 export default function Pinterest() {
   return (
     <>

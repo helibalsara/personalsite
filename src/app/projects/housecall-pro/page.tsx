@@ -7,6 +7,12 @@ import EnhancementSection from "@/components/EnhancementSection";
 import Footer from "@/components/Footer";
 import FinalDesignsSection from "@/components/FinalDesignsSection";
 
+export const metadata = {
+  title: "Housecall Pro | Heli Balsara",
+  description:
+    "A redesign of Housecall Pro's mobile app to improve the user experience for home service professionals.",
+};
+
 export default function HousecallPro() {
   return (
     <>

@@ -5,6 +5,11 @@ import Link from "next/link";
 import HeartsNoLink from "./hearts-no-link.svg";
 // import Hearts from "./hearts.svg";
 
+export const metadata = {
+  title: "About | Heli Balsara",
+  description: "About Heli Balsara",
+};
+
 export default function About() {
   return (
     <>

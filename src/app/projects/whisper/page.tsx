@@ -6,6 +6,12 @@ import WaitHow from "@/components/WaitHow";
 import Line from "@/components/Line";
 import ExpandableImage from "@/components/ExpandableImage";
 
+export const metadata = {
+  title: "Whisper | Heli Balsara",
+  description:
+    "A smart card reader that makes party card games accessible to those with visual impairments, promoting inclusivity and independence.",
+};
+
 export default function Whisper() {
   return (
     <>
@@ -433,6 +439,7 @@ export default function Whisper() {
               height={339}
               style={{ height: "auto", width: "100%" }}
               alt="whisper"
+              unoptimized
             />
           </div>
         </div>

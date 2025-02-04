@@ -6,6 +6,12 @@ import Footer from "@/components/Footer";
 import ProjectOverview from "@/components/ProjectOverview";
 import Line from "@/components/Line";
 
+export const metadata = {
+  title: "Staramics | Heli Balsara",
+  description:
+    "A ceramics studio that creates long-lasting decorative mini ceramic animals that are both whimsical and collectable.",
+};
+
 export default function Staramics() {
   return (
     <>

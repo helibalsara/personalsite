@@ -4,6 +4,12 @@ import Footer from "@/components/Footer";
 import ProjectOverview from "@/components/ProjectOverview";
 import FinalDesignsSection from "@/components/FinalDesignsSection";
 
+export const metadata = {
+  title: "InternConnect | Heli Balsara",
+  description:
+    "A centralized, forum-styled platform that simplifies internship preparation by connecting students with opportunities, mentors, and resources.",
+};
+
 export default function InternConnect() {
   return (
     <>

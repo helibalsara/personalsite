@@ -9,6 +9,12 @@ import Line from "@/components/Line";
 import Xarrow from "react-xarrows";
 import ExpandableImage from "@/components/ExpandableImage";
 
+export const metadata = {
+  title: "SmartNotes | Heli Balsara",
+  description:
+    "An AI pen tool concept that aims to make reviewing for exams more time efficient for college students.",
+};
+
 export default function SmartNotes() {
   return (
     <>

@@ -23,7 +23,7 @@ export default function FinalDesignsSection({
   items,
 }: FinalDesignsSectionProps) {
   return (
-    <div 
+    <div
       className="py-8 md:py-16 px-4 md:px-36"
       style={{ backgroundColor, color: textColor }}
     >
@@ -41,4 +41,4 @@ export default function FinalDesignsSection({
       </div>
     </div>
   );
-} 
+}

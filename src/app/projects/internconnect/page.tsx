@@ -70,9 +70,12 @@ export default function InternConnect() {
           },
         ]}
       />
-      <div className="flex flex-col gap-8 px-4 md:px-[182px]">
+      <div className="flex flex-col gap-8 px-4 md:px-[182px] py-[72px]">
         <div className="flex flex-col md:flex-row gap-8">
           <div className="flex flex-col gap-8 flex-1">
+            <h1 className="text-2xl md:text-[40px] font-bold">
+              Accessibility Audits
+            </h1>
             <p className="text-sm md:text-base">
               We audited our site&apos;s main pages using Google Chrome&apos;s
               Lighthouse tool. Notably, our <strong>landing page</strong>{" "}
@@ -87,12 +90,13 @@ export default function InternConnect() {
             />
           </div>
           <div className="flex flex-col gap-[52px] flex-1">
-            <div className="flex flex-col md:flex-row gap-4 items-start">
-              <div className="flex flex-col items-center">
+            <div className="flex flex-row gap-4 items-start overflow-x-auto pb-2">
+              <div className="flex flex-col items-center flex-shrink-0">
                 <Image
                   src="/internconnect/number1.png"
-                  width={127 * 4}
-                  height={108 * 4}
+                  width={127 * 2}
+                  height={108 * 2}
+                  className="w-[100px] md:w-[127px] h-auto"
                   alt="100"
                 />
                 <p className="text-lg md:text-xl font-bold font-sfpro text-center">
@@ -102,26 +106,32 @@ export default function InternConnect() {
                   &ldquo;Project Collaboration&rdquo; Page
                 </p>
               </div>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center flex-shrink-0">
                 <Image
                   src="/internconnect/number2.png"
-                  width={127 * 4}
-                  height={108 * 4}
+                  width={127 * 2}
+                  height={108 * 2}
+                  className="w-[100px] md:w-[127px] h-auto"
                   alt="92"
                 />
-                <p className="text-lg md:text-xl font-bold font-sfpro">Accessibility</p>
+                <p className="text-lg md:text-xl font-bold font-sfpro text-center">
+                  Accessibility
+                </p>
                 <p className="text-xs md:text-sm text-center">
                   &ldquo;Resume Builder&rdquo; Page
                 </p>
               </div>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center flex-shrink-0">
                 <Image
                   src="/internconnect/number2.png"
-                  width={127 * 4}
-                  height={108 * 4}
+                  width={127 * 2}
+                  height={108 * 2}
+                  className="w-[100px] md:w-[127px] h-auto"
                   alt="92"
                 />
-                <p className="text-lg md:text-xl font-bold font-sfpro">Accessibility</p>
+                <p className="text-lg md:text-xl font-bold font-sfpro text-center">
+                  Accessibility
+                </p>
                 <p className="text-xs md:text-sm text-center">
                   &ldquo;Resources&rdquo; Page
                 </p>
@@ -149,7 +159,9 @@ export default function InternConnect() {
         alt="screens"
       />
       <div className="flex flex-col gap-8 pt-8 md:pt-[72px] pb-8 md:pb-[76px] px-4 md:px-[182px]">
-        <h1 className="text-2xl md:text-[40px] font-bold">Next Steps & Reflection</h1>
+        <h1 className="text-2xl md:text-[40px] font-bold">
+          Next Steps & Reflection
+        </h1>
         <p className="text-lg md:text-xl">
           Owing to time limitations, we couldn&apos;t fully realize the
           product&apos;s potential. There remain promising ideas that can be
@@ -170,7 +182,9 @@ export default function InternConnect() {
                 height={25}
                 alt="star"
               />
-              <p className="text-lg md:text-xl font-bold text-[#4E5F99]">{text}</p>
+              <p className="text-lg md:text-xl font-bold text-[#4E5F99]">
+                {text}
+              </p>
             </div>
           ))}
         </div>

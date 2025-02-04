@@ -7,7 +7,6 @@ export default function WIP() {
         Work in progress... Come back soon!
       </h6>
       <Image
-    quality={100}    
         src="/panda.svg"
         alt="WIP Panda"
         width={200}

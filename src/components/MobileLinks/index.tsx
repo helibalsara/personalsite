@@ -20,29 +20,21 @@ export default function MobileLinks({ onClose, open }: Props) {
         className="fixed top-[54px] right-12 bg-transparent border-0 p-0 m-0"
         onClick={onClose}
       >
-        <Image
-          quality={100}
-          src="/x.svg"
-          alt="Close Menu"
-          width={32}
-          height={32}
-        />
+        <Image src="/x.svg" alt="Close Menu" width={32} height={32} />
       </button>
       <div className="flex flex-col gap-5">
-        <p className="text-black text-xl font-medium font-[--font-manrope] no-underline">
-          projects
-        </p>
+        <p className="text-black text-xl font-medium no-underline">projects</p>
         <div className="flex flex-col gap-3 pl-3">
           {projects.map(
             ({ title, route }: { title: string; route: string }) => (
               <Link
-                className="text-black font-[--font-manrope] text-base font-normal leading-5 no-underline"
+                className="text-black text-base font-normal leading-5 no-underline"
                 href={"/projects" + route}
                 key={title}
               >
                 {title}
               </Link>
-            )
+            ),
           )}
         </div>
         <Link

@@ -42,7 +42,9 @@ export default function Staramics() {
         }
       />
       <div className="flex flex-col gap-8 px-4 md:px-[182px]">
-        <h1 className="text-2xl md:text-[32px] font-bold">Logo & Color Palette</h1>
+        <h1 className="text-2xl md:text-[32px] font-bold">
+          Logo & Color Palette
+        </h1>
         <div className="flex flex-col md:flex-row gap-8">
           <Image
             src="/staramics/logocolor.svg"

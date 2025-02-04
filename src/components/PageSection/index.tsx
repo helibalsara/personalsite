@@ -14,11 +14,10 @@ interface Props {
 
 export default function PageSection({ title, before, after, features }: Props) {
   return (
-    <div className="flex flex-row gap-20">
+    <div className="flex flex-row gap-6 md:gap-20">
       <div className="flex flex-col gap-2 items-center w-1/5">
         <p className="text-base font-normal text-center">{title}</p>
         <Image
-    quality={100}    
           src={before}
           alt={before}
           width={550}
@@ -29,12 +28,11 @@ export default function PageSection({ title, before, after, features }: Props) {
       <div className="flex flex-row gap-4 w-4/5">
         <div className="flex-1">
           <Image
-    quality={100}    
             src={after}
             alt={after}
             width={904}
             height={1782}
-            style={{ height: "auto", width: "100%", borderRadius: "49px" }}
+            className="w-full md:w-auto h-auto max-w-[200px] md:max-w-[25%]"
           />
         </div>
         <div className="flex flex-1 flex-col gap-10 justify-center">

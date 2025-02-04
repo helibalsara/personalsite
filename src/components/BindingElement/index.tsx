@@ -6,11 +6,14 @@ interface BindingElementProps {
   description: string;
 }
 
-export default function BindingElement({ imageSrc, title, description }: BindingElementProps) {
+export default function BindingElement({
+  imageSrc,
+  title,
+  description,
+}: BindingElementProps) {
   return (
     <div className="flex flex-row gap-2">
       <Image
-    quality={100}    
         src={imageSrc}
         width={50}
         height={50}
@@ -23,4 +26,4 @@ export default function BindingElement({ imageSrc, title, description }: Binding
       </div>
     </div>
   );
-} 
+}

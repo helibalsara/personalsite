@@ -28,7 +28,9 @@ export default function PinterestCompetitorGrid({
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex flex-row w-fit bg-[#B72C3B] rounded-full px-4 md:px-6 py-1">
-              <p className="text-white font-bold text-base md:text-lg">{item.title}</p>
+              <p className="text-white font-bold text-base md:text-lg">
+                {item.title}
+              </p>
             </div>
             <div className="text-sm md:text-base">{item.description}</div>
           </div>

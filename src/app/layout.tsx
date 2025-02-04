@@ -1,22 +1,22 @@
 import "./globals.css";
 import { Manrope, Neuton } from "next/font/google";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Heli Balsara",
   description: "Heli's portfolio",
   icons: [
     {
-      rel: 'icon',
-      type: 'image/x-icon',
-      url: '/favicon-light.ico',
-      media: '(prefers-color-scheme: light)',
+      rel: "icon",
+      type: "image/x-icon",
+      url: "/favicon-light.ico",
+      media: "(prefers-color-scheme: light)",
     },
     {
-      rel: 'icon',
-      type: 'image/x-icon',
-      url: '/favicon-dark.ico',
-      media: '(prefers-color-scheme: dark)',
+      rel: "icon",
+      type: "image/x-icon",
+      url: "/favicon-dark.ico",
+      media: "(prefers-color-scheme: dark)",
     },
   ],
 };

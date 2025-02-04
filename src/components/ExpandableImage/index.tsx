@@ -33,7 +33,6 @@ export default function ExpandableImage({
   return (
     <>
       <Image
-    quality={100}    
         src={src}
         width={width}
         height={height}
@@ -44,15 +43,18 @@ export default function ExpandableImage({
       {(isOpen || isClosing) && (
         <div
           className={`fixed inset-0 bg-black flex items-center justify-center z-50 p-4 ${
-            isClosing ? "animate-fadeOut bg-opacity-0" : "animate-fadeIn bg-opacity-75"
+            isClosing
+              ? "animate-fadeOut bg-opacity-0"
+              : "animate-fadeIn bg-opacity-75"
           }`}
           onClick={handleClose}
         >
-          <div className={`relative max-w-[85vw] max-h-[85vh] ${
-            isClosing ? "animate-scaleOut" : "animate-scaleIn"
-          }`}>
+          <div
+            className={`relative max-w-[85vw] max-h-[85vh] ${
+              isClosing ? "animate-scaleOut" : "animate-scaleIn"
+            }`}
+          >
             <Image
-    quality={100}    
               src={src}
               width={width * 2}
               height={height * 2}

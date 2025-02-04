@@ -16,7 +16,6 @@ export default function SurveyGrid({ items }: SurveyGridProps) {
       {items.map((item, index) => (
         <div key={index} className="flex flex-row gap-2">
           <Image
-    quality={100}    
             src={item.imageSrc}
             width={400}
             height={200}
@@ -37,4 +36,4 @@ export default function SurveyGrid({ items }: SurveyGridProps) {
       ))}
     </div>
   );
-} 
+}

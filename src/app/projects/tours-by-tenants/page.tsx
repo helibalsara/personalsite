@@ -14,7 +14,6 @@ export default function SmartNotes() {
       <Navbar />
       <div className="pt-[153px]">
         <Image
-    quality={100}    
           src="/tt/hero.svg"
           width={1280}
           height={540.5}
@@ -43,14 +42,16 @@ export default function SmartNotes() {
           </>
         }
       />
-      <div className="py-16 px-36 bg-[#EDEDED]">
-        <div className="flex flex-row justify-between">
-          <div className="w-1/2">
-            <h1 className="text-4xl font-bold mb-4">Final Designs</h1>
-            <h4 className="text-xl italic mb-4">
+      <div className="py-8 md:py-16 px-4 md:px-36 bg-[#EDEDED]">
+        <div className="flex flex-col md:flex-row justify-between gap-8">
+          <div className="w-full md:w-1/2">
+            <h1 className="text-2xl md:text-4xl font-bold mb-4">
+              Final Designs
+            </h1>
+            <h4 className="text-lg md:text-xl italic mb-4">
               Sneak Peak!! <span className="not-italic">🤫</span>
             </h4>
-            <p className="text-xl">
+            <p className="text-base md:text-xl">
               <strong>Tours by Tenants (TT)</strong> allows users to view tours
               of housing units provided by other current or previous residents.
               This reduces the need for students to tour every housing option by
@@ -73,9 +74,8 @@ export default function SmartNotes() {
               <strong>centralized platform.</strong>
             </p>
           </div>
-          <div className="w-1/4">
+          <div className="w-full md:w-1/4">
             <Image
-    quality={100}    
               src="/tt/final1.gif"
               width={600}
               height={372.9}
@@ -86,18 +86,18 @@ export default function SmartNotes() {
         </div>
       </div>
       <WaitHow />
-      <div className="flex flex-col gap-8 py-16 px-[182px]">
-        <h1 className="text-[32px] font-bold mb-4">
+      <div className="flex flex-col gap-8 py-8 md:py-16 px-4 md:px-[182px]">
+        <h1 className="text-2xl md:text-[32px] font-bold mb-4">
           PROBLEM SPACE VALIDATION...
         </h1>
-        <p className="text-base">
+        <p className="text-sm md:text-base">
           From speaking with 11 students through user interviews, we confirmed
           that finding off-campus housing was a commen struggle. From a user
           survey we conducted with 16 participants, 43.8% of them began
           searching for housing 6+ months in advance and 36.6% toured at least 4
           different potential spots.
         </p>
-        <p className="text-base">
+        <p className="text-sm md:text-base">
           Through affinity our research insights, we focused on these three
           common pain point clusters. Students found the housing search process{" "}
           <strong>
@@ -106,9 +106,8 @@ export default function SmartNotes() {
             roommates.
           </strong>
         </p>
-        <div className="px-16 justify-center items-center">
+        <div className="px-4 md:px-16 justify-center items-center">
           <Image
-    quality={100}    
             src="/tt/problemspace.svg"
             width={793.608}
             height={389.665}
@@ -116,14 +115,14 @@ export default function SmartNotes() {
             alt="problem space"
           />
         </div>
-        <div className="flex flex-row gap-8 items-center">
-          <p className="text-lg max-w-[40%]">
+        <div className="flex flex-col md:flex-row gap-8 items-center">
+          <p className="text-base md:text-lg w-full md:max-w-[40%]">
             From our affinity and journey map, we validated that students found
             the search process <strong>overwhelming</strong>. It is especially
             challenging to keep yourself organized and narrowing options, along
             with aligning with your roommates on your preferences.
           </p>
-          <div className="max-w-[60%]">
+          <div className="w-full md:max-w-[60%]">
             <ExpandableImage
               src="/tt/overwhelming.png"
               width={2238}
@@ -133,11 +132,11 @@ export default function SmartNotes() {
             />
           </div>
         </div>
-        <Line className="my-8" />
-        <h1 className="text-[32px] font-bold mb-4">
-          LET’S LOOK INTO THE MAIN COMPETITOR
+        <Line className="my-4 md:my-8" />
+        <h1 className="text-2xl md:text-[32px] font-bold mb-4">
+          LET'S LOOK INTO THE MAIN COMPETITOR
         </h1>
-        <p className="text-base">
+        <p className="text-sm md:text-base">
           At this stage, we broke off from our teams and began our individual
           solution ideation!
           <br />
@@ -148,21 +147,19 @@ export default function SmartNotes() {
           competitor - Apartments.com.
         </p>
         <Image
-    quality={100}    
           src="/tt/competitor.svg"
           width={915.97}
           height={171.08}
           style={{ height: "auto", width: "100%" }}
           alt="competitor"
         />
-        <p className="text-base">
+        <p className="text-sm md:text-base">
           From walking through the process of finding listings here using the
           filters and map view, and looking through some of the listings, I
           realized an issue that sites like these had:
         </p>
-        <div className="mx-[97.5px]">
+        <div className="mx-4 md:mx-[97.5px]">
           <Image
-    quality={100}    
             src="/tt/callout.svg"
             width={721}
             height={110}
@@ -170,11 +167,11 @@ export default function SmartNotes() {
             alt="callout"
           />
         </div>
-        <Line className="my-8" />
-        <h1 className="text-[32px] font-bold mb-4">
+        <Line className="my-4 md:my-8" />
+        <h1 className="text-2xl md:text-[32px] font-bold mb-4">
           TIME TO ITERATE, ITERATE, ITERATE
         </h1>
-        <div className="flex flex-row gap-8 items-center px-[137px]">
+        <div className="flex flex-col md:flex-row gap-8 items-center px-4 md:px-[137px]">
           <ExpandableImage
             src="/tt/iterate1.png"
             width={1392}
@@ -182,12 +179,12 @@ export default function SmartNotes() {
             style={{ height: "auto", width: "100%", maxWidth: "70%" }}
             alt="iterate1"
           />
-          <p className="text-base">
+          <p className="text-sm md:text-base">
             Initial onboarding, home page, and listing screens
           </p>
         </div>
-        <div className="flex flex-row gap-8 items-center px-[137px]">
-          <p className="text-base">
+        <div className="flex flex-col-reverse md:flex-row gap-8 items-center px-4 md:px-[137px]">
+          <p className="text-sm md:text-base">
             Adding filtering by location and proximity radius and housing
             manager messaging post user-testing
           </p>
@@ -199,7 +196,7 @@ export default function SmartNotes() {
             alt="iterate2"
           />
         </div>
-        <p className="text-base">
+        <p className="text-sm md:text-base">
           After running <strong>5 more user tests</strong> with my lowfis , I
           found that users had difficulties navigating through the flows
           seamlessly. There was some confusion on the home page and users
@@ -207,7 +204,7 @@ export default function SmartNotes() {
           a full redesign of the 3 main components of this app: the home page,
           the listing page, and filtering screens.
         </p>
-        <div className="px-[112px] flex flex-col gap-[100px] items-center">
+        <div className="px-4 md:px-[112px] flex flex-col gap-[50px] md:gap-[100px] items-center">
           <PageSection
             title="Home Page Before"
             before="/tt/before1.png"
@@ -277,17 +274,16 @@ export default function SmartNotes() {
         </div>
       </div>
       <Image
-    quality={100}    
         src="/tt/final.svg"
         width={1278}
         height={1072.43}
         style={{ height: "auto", width: "100%" }}
         alt="final"
       />
-      <div className="flex flex-col gap-8 py-16 px-[182px]">
-        <h1 className="text-[32px] font-bold mb-4">REFLECTIONS</h1>
-        <div className="flex flex-row gap-20 justify-between items-center">
-          <p className="max-w-[50vw]">
+      <div className="flex flex-col gap-8 py-8 md:py-16 px-4 md:px-[182px]">
+        <h1 className="text-2xl md:text-[32px] font-bold mb-4">REFLECTIONS</h1>
+        <div className="flex flex-col md:flex-row gap-8 md:gap-20 justify-between items-center">
+          <p className="w-full md:max-w-[50vw] text-sm md:text-base">
             This project was a great way for me to start practicing my UI design
             skills. I was able to get feedback and make improvements in each
             iteration to improve the usability, user flows, and overall
@@ -296,17 +292,15 @@ export default function SmartNotes() {
             paper cranes!
           </p>
           <Image
-    quality={100}    
             src="/tt/reflections.png"
-            width={192 * 8}
-            height={246 * 8}
-            style={{ height: "auto", maxWidth: "25%" }}
+            width={192 * 4}
+            height={246 * 4}
+            className="w-full md:w-auto h-auto max-w-[200px] md:max-w-[25%]"
             alt="reflections"
           />
         </div>
       </div>
-      <WIP />
-      <Footer />
+      <Footer className="mt-20 md:mt-[160px]" />
     </>
   );
 }

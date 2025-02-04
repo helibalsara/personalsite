@@ -23,7 +23,6 @@ export default function ProjectSection({
       </div>
       <div className="flex-1">
         <Image
-    quality={100}    
           src={imageSrc}
           width={imageWidth}
           height={imageHeight}
@@ -34,4 +33,4 @@ export default function ProjectSection({
       </div>
     </div>
   );
-} 
+}

@@ -19,19 +19,15 @@ export default function Navbar({ darkTheme }: Props) {
   useEffect(() => {
     setIsDesktop(window.innerWidth >= 769);
     const handleResize = () => setIsDesktop(window.innerWidth >= 769);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
     <div className="absolute top-[54px] left-[70px] w-[calc(100%-140px)] md:left-12 md:w-[calc(100%-96px)]">
       <div className="flex h-[60px] relative flex-row justify-between items-center">
-        <Link
-          className="h-full w-auto"
-          href="/"
-        >
+        <Link className="h-full w-auto" href="/">
           <Image
-    quality={100}    
             src={darkTheme ? "/logoLight.svg" : "/logo.svg"}
             alt="HB Logo"
             className="h-full w-auto"

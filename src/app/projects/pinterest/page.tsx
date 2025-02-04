@@ -93,12 +93,12 @@ export default function Pinterest() {
             description: (
               <>
                 Many users thought the UI was too &ldquo;
-                <strong>white and plain</strong>&rdquo; and certain elements could
-                stand out. We enhanced the card format so active section is
-                dynamically highlighted. We also changed the &ldquo;Promote&rdquo; button to
-                red to help it stand out. We included a pop-up{" "}
-                <strong>confirmation</strong> once the pin is promoted with
-                links to resources helping new users.
+                <strong>white and plain</strong>&rdquo; and certain elements
+                could stand out. We enhanced the card format so active section
+                is dynamically highlighted. We also changed the
+                &ldquo;Promote&rdquo; button to red to help it stand out. We
+                included a pop-up <strong>confirmation</strong> once the pin is
+                promoted with links to resources helping new users.
               </>
             ),
             imageSrc: "/pinterest/uiimprovements1.gif",
@@ -152,7 +152,9 @@ export default function Pinterest() {
           alt="current flow"
         />
         <Line className="my-8" />
-        <h2 className="text-2xl md:text-3xl font-bold">LET&apos;S DIVE DEEPER.</h2>
+        <h2 className="text-2xl md:text-3xl font-bold">
+          LET&apos;S DIVE DEEPER.
+        </h2>
         <p className="text-sm md:text-base">
           We needed to learn from SMB&apos;s themselves, through a survey,
           contextual inquiries, and user interviews. We built on top of the
@@ -161,7 +163,9 @@ export default function Pinterest() {
         <p className="text-lg md:text-xl font-semibold">USER SURVEYS</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-[40.5px] self-center">
           <div className="flex flex-col gap-2">
-            <p className="text-lg md:text-xl font-bold">GUIDANCE & EXPERIENCE</p>
+            <p className="text-lg md:text-xl font-bold">
+              GUIDANCE & EXPERIENCE
+            </p>
             <p className="text-sm md:text-base">
               Users have limited knowledge using Pinterest and seek a guided
               experience.
@@ -177,8 +181,9 @@ export default function Pinterest() {
           <div className="flex flex-col gap-2">
             <p className="text-lg md:text-xl font-bold">CONFUSING USER FLOW</p>
             <p className="text-sm md:text-base">
-              New users have difficulties navigating to the &ldquo;Promote pin&rdquo;
-              feature and confuse it with &ldquo;Create campaign.&rdquo; **
+              New users have difficulties navigating to the &ldquo;Promote
+              pin&rdquo; feature and confuse it with &ldquo;Create
+              campaign.&rdquo; **
             </p>
           </div>
           <div className="flex flex-row">
@@ -260,8 +265,8 @@ export default function Pinterest() {
               description: (
                 <p>
                   <strong>Facebook</strong> and <strong>Google</strong> Ads
-                  offers advanced features such as &ldquo;Bid Strategy&rdquo; and &ldquo;Pixel
-                  Tracking.&rdquo;
+                  offers advanced features such as &ldquo;Bid Strategy&rdquo;
+                  and &ldquo;Pixel Tracking.&rdquo;
                 </p>
               ),
               images: ["/pinterest/fb.png", "/pinterest/gads.png"],

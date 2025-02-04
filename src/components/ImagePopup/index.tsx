@@ -9,13 +9,18 @@ interface ImagePopupProps {
   style?: React.CSSProperties;
 }
 
-export default function ImagePopup({ src, width, height, alt, style }: ImagePopupProps) {
+export default function ImagePopup({
+  src,
+  width,
+  height,
+  alt,
+  style,
+}: ImagePopupProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
       <Image
-    quality={100}    
         src={src}
         width={width}
         height={height}
@@ -24,18 +29,23 @@ export default function ImagePopup({ src, width, height, alt, style }: ImagePopu
         onClick={() => setIsOpen(true)}
       />
       {isOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 animate-fadeIn"
           onClick={() => setIsOpen(false)}
         >
           <div className="relative max-w-[85vw] max-h-[85vh] animate-scaleIn">
             <Image
-    quality={100}    
               src={src}
               width={width * 2}
               height={height * 2}
               alt={alt}
-              style={{ height: "auto", width: "auto", maxWidth: "100%", maxHeight: "85vh", objectFit: "contain" }}
+              style={{
+                height: "auto",
+                width: "auto",
+                maxWidth: "100%",
+                maxHeight: "85vh",
+                objectFit: "contain",
+              }}
             />
             <button
               className="absolute -right-12 -top-12 text-white text-3xl hover:text-gray-300 transition-colors"
@@ -51,4 +61,4 @@ export default function ImagePopup({ src, width, height, alt, style }: ImagePopu
       )}
     </>
   );
-} 
+}

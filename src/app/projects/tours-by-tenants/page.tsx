@@ -134,7 +134,7 @@ export default function SmartNotes() {
         </div>
         <Line className="my-4 md:my-8" />
         <h1 className="text-2xl md:text-[32px] font-bold mb-4">
-          LET'S LOOK INTO THE MAIN COMPETITOR
+          LET&apos;S LOOK INTO THE MAIN COMPETITOR
         </h1>
         <p className="text-sm md:text-base">
           At this stage, we broke off from our teams and began our individual

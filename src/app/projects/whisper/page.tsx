@@ -209,13 +209,14 @@ export default function Whisper() {
         <p className="text-lg md:text-xl font-semibold">SECONDARY RESEARCH</p>
         <div className="flex flex-col md:flex-row gap-8">
           <p className="text-sm md:text-base w-full md:w-3/4">
-            We found Kay from the YouTube channel "From Kay to Zee", where she
-            explained her personal experience with playing board games as
-            visually impaired. Next was Angela from the YouTube channel
-            "Visually Impaired Designer" who listed several game ideas for
-            playing with the visually impaired such as her. Lastly, Reddit there
-            was a good breakdown on the forum r/boardgames that listed things to
-            know when playing board games with the visually impaired.
+            We found Kay from the YouTube channel &ldquo;From Kay to Zee&rdquo;,
+            where she explained her personal experience with playing board games
+            as visually impaired. Next was Angela from the YouTube channel
+            &ldquo;Visually Impaired Designer&rdquo; who listed several game
+            ideas for playing with the visually impaired such as her. Lastly,
+            Reddit there was a good breakdown on the forum r/boardgames that
+            listed things to know when playing board games with the visually
+            impaired.
           </p>
           <div className="w-full md:w-1/4">
             <Image
@@ -371,9 +372,9 @@ export default function Whisper() {
                 </li>
               </ol>
               <p className="text-sm md:text-base">
-                Visual impairment was simulated with a "Wizard of Oz" approach
-                and a script. Card scanning and navigation was simulated by a
-                team member.
+                Visual impairment was simulated with a &ldquo;Wizard of
+                Oz&rdquo; approach and a script. Card scanning and navigation
+                was simulated by a team member.
               </p>
             </div>
             <p className="text-sm md:text-base">
@@ -441,8 +442,8 @@ export default function Whisper() {
             <p className="text-sm md:text-base">
               For the final iteration, only 1 mistake and 3 slip-ups were made.
               The slips still showed that there was a break in flow in the game,
-              most likely due to the "Wizard of Oz" experiment conductor for
-              simulating the button pushes.
+              most likely due to the &ldquo;Wizard of Oz&rdquo; experiment
+              conductor for simulating the button pushes.
             </p>
             <p className="text-sm md:text-base">
               Results

@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Footer from "@/components/Footer";
-import WIP from "@/components/WIP";
 import ProjectOverview from "@/components/ProjectOverview";
 import FinalDesignsSection from "@/components/FinalDesignsSection";
 
@@ -141,9 +140,9 @@ export default function InternConnect() {
               We conducted audits on our Communities, Resume Builder, and
               Resources pages which initially received scores of 84, 61, and 77
               respectively. We then integrated alt text and utilized
-              "aria-labels" to provide accessible names for buttons and links.
-              We also changed some low contrast color selections. Subsequent
-              evaluations showcased improved scores, with the Project
+              &ldquo;aria-labels&rdquo; to provide accessible names for buttons
+              and links. We also changed some low contrast color selections.
+              Subsequent evaluations showcased improved scores, with the Project
               Collaboration, Resume Builder, and Resources tabs registering{" "}
               <strong>100</strong>, <strong>92</strong>, and <strong>92</strong>{" "}
               respectively.

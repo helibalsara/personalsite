@@ -301,7 +301,7 @@ export default function SmartNotes() {
             id="box"
           >
             <p className="text-base text-center">
-              After: HMW improve a college student's focus in class to aid
+              After: HMW improve a college student&apos;s focus in class to aid
               understanding course content?
             </p>
           </div>
@@ -481,10 +481,10 @@ export default function SmartNotes() {
             Users enjoyed how it was a compact and usable everyday solution.
             They thought the summaries would be usefulness in supplementing
             lecture content. The varying levels of synthesis could help
-            "pinpoint what I need to hear while studying." One user expressed
-            that they were a visual learner and hearing the summary would be
-            difficult to understand, which is something I would explore further
-            with this project.
+            &ldquo;pinpoint what I need to hear while studying.&rdquo; One user
+            expressed that they were a visual learner and hearing the summary
+            would be difficult to understand, which is something I would explore
+            further with this project.
             <br />
             <br />
             Having such a broad HMW statement was daunting at first, but I

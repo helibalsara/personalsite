@@ -56,10 +56,10 @@ export default function Staramics() {
           <p className="text-base">
             I chose warm and earthy colors to bring a warm, fuzzy feeling to the
             brand. I went with a fun font to showcase the playful nature of the
-            studio's products. Editing the font slightly to extend the "r" to
-            hug the "a" further highlights the fun! I chose a cat hugging a star
-            for the main mascot of this brand since it brought the playfulness
-            to another level.
+            studio&apos;s products. Editing the font slightly to extend the
+            &ldquo;r&rdquo; to hug the &ldquo;a&rdquo; further highlights the
+            fun! I chose a cat hugging a star for the main mascot of this brand
+            since it brought the playfulness to another level.
           </p>
         </div>
         <Line className="my-8" />

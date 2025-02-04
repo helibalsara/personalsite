@@ -220,7 +220,7 @@ export default function SmartNotes() {
           so it was essential to break down to project scope. I focused on these
           3 affinity clusters:
         </p>
-        <div className="flex flex-col md:flex-row gap-8 md:gap-16 self-center justify-center h-[30vh] w-full">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16 self-center justify-center w-full">
           <div className="flex flex-col gap-4 md:gap-8">
             <div className="flex flex-col gap-2">
               <p className="text-sm md:text-base font-bold">Focus</p>
@@ -243,14 +243,14 @@ export default function SmartNotes() {
               </p>
             </div>
           </div>
-          <div className="h-full">
+          <div className="w-full md:w-1/2">
             <ExpandableImage
               src="/smartnotes/stickies.jpeg"
               width={3979}
               height={3723}
               style={{
-                height: "100%",
                 width: "100%",
+                height: "300px",
                 borderRadius: "13.762px",
                 boxShadow: "0px 3.67px 3.67px 0px rgba(0, 0, 0, 0.25)",
                 objectFit: "cover",
@@ -291,25 +291,30 @@ export default function SmartNotes() {
         <Line className="my-8" />
         <h1 className="text-[32px] font-bold mb-4">REDEFINING THE HMW.</h1>
         <div className="flex flex-row justify-between">
-          <div id="text" className="h-fit pr-1">
+          <div id="text" className="flex-1 md:flex-none h-fit pr-1">
             <p className="text-base">
-              HMW improve a college student&apos;s learning experience?
+              Before: HMW improve a college student&apos;s learning experience?
             </p>
           </div>
-          <div className="p-2 bg-[#BFD3DF] rounded-[10px] w-1/3" id="box">
+          <div
+            className="flex-1 md:flex-none p-2 bg-[#BFD3DF] rounded-[10px] w-1/3"
+            id="box"
+          >
             <p className="text-base text-center">
-              HMW improve a college student's focus in class to aid
+              After: HMW improve a college student's focus in class to aid
               understanding course content?
             </p>
           </div>
-          <Xarrow
-            start="text"
-            end="box"
-            color="#000"
-            strokeWidth={1}
-            headSize={6}
-            curveness={0.5}
-          />
+          <div className="invisible sm:visible">
+            <Xarrow
+              start="text"
+              end="box"
+              color="#000"
+              strokeWidth={1}
+              headSize={6}
+              curveness={0.5}
+            />
+          </div>
         </div>
         <div className="flex flex-row flex-1 gap-8 justify-between">
           <div className="flex flex-col gap-2">
@@ -401,7 +406,7 @@ export default function SmartNotes() {
 
         <div className="flex gap-8 md:gap-0 flex-col self-center w-full md:max-w-[65%] items-center">
           <div className="flex flex-row gap-4 md:gap-[42px] justify-between items-center">
-            <div className="flex flex-1 flex-col gap-2 flex-1">
+            <div className="flex flex-1 flex-col gap-2">
               <h4 className="text-xl md:text-2xl font-bold text-[#28536B]">
                 Lack of focus during class time
               </h4>
